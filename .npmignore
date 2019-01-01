@@ -25,5 +25,7 @@ test/
 # Travis CI configuration
 .travis.yml
 
-# Contribution guidelines
+# markdown files
 CONTRIBUTING.md
+ISSUE_TEMPLATE.md
+PULL_REQUEST_TEMPLATE.md

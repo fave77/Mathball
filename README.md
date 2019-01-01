@@ -1,6 +1,6 @@
 # Introduction
 
-[![Build Status](https://travis-ci.org/pbiswas101/Mathball.svg?branch=master)](https://travis-ci.org/pbiswas101/Mathball) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/pbiswas101/Mathball.svg?branch=master)](https://travis-ci.org/pbiswas101/Mathball) [![Known Vulnerabilities](https://snyk.io/test/github/pbiswas101/Mathball/badge.svg?targetFile=package.json)](https://snyk.io/test/github/pbiswas101/Mathball?targetFile=package.json) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![](https://github.com/pbiswas101/Mathball/blob/master/assets/mathball-banner.png)
 
