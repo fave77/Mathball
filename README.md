@@ -1,8 +1,8 @@
 # Introduction
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/pbiswas101/Mathball.svg?branch=master)](https://travis-ci.org/pbiswas101/Mathball) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![](https://github.com/pbiswas101/Mathball/blob/master/assets/mathball-logo.png)
+![](https://github.com/pbiswas101/Mathball/blob/master/assets/mathball-banner.png)
 
 **Mathball** is an npm package for competitive programming in [JavaScript][1] with a focus on common mathematical utilities being implemented in relevant algorithms & data structures for optimized performance!
 
@@ -19,26 +19,26 @@ $ npm install mathball --save
 ## Features
 
 - **Number Checkers**
-	- isArmstrong()
-	- isAutomorphic()
-	- isNeon()
-	- isPalindrome()
-	- isPrime()
+	- [isArmstrong()][3]
+	- [isAutomorphic()][4]
+	- [isNeon()][5]
+	- [isPalindrome()][6]
+	- [isPrime()][7]
 
 - **Find nth Number**
-	- fibonacci()
-	- magic()
+	- [fibonacci()][8]
+	- [magic()][9]
 
 - **Mathematical Utilities**
-	- gcd()
-	- isEven()
-	- isOdd()
-	- lcm()
-	- length()
-	- max()
-	- min()
-	- sort()
-	- sum()
+	- [gcd()][10]
+	- [isEven()][11]
+	- [isOdd()][12]
+	- [lcm()][13]
+	- [length()][14]
+	- [max()][15]
+	- [min()][16]
+	- [sort()][17]
+	- [sum()][18]
 
 ## Examples
 
@@ -52,7 +52,7 @@ console.log(M.isEven(7))		//false
 console.log(M.sum([4, 5, 9]))		//18
 ```
 
-Or, you can directly access the function given you only care about an individual component as given below:
+Or, you can directly access an individual function as given below:
 
 ```
 let gcd = require('mathball/gcd');
@@ -64,15 +64,31 @@ console.log(gcd([12, 18, 24]));		//6
 
 1. Fork the project. :grey_exclamation:
 2. Fix issues & add changes. :wrench:
-3. Follow the guidelines given in [CONTRIBUTING.md][3]. :star2:
+3. Follow the guidelines given in [CONTRIBUTING.md][19]. :star2:
 4. Make a PR. :bowtie:
 5. Mission Acomplished! :tada:
 
 ## License
 
-The MIT License 2018 - [Priyabrata Biswas][4].
+The MIT License 2018 - [Priyabrata Biswas][20].
 
 [1]: https://developer.mozilla.org/bm/docs/Web/JavaScript
 [2]: https://en.wikipedia.org/wiki/Brendan_Eich
-[3]: https://github.com/pbiswas101/Mathball/blob/master/CONTRIBUTING.md
-[4]: https://github.com/pbiswas101
+[3]: https://github.com/pbiswas101/Mathball/blob/master/src/armstrong/index.js
+[4]: https://github.com/pbiswas101/Mathball/blob/master/src/automorphic/index.js
+[5]: https://github.com/pbiswas101/Mathball/blob/master/src/neon/index.js
+[6]: https://github.com/pbiswas101/Mathball/blob/master/src/palindrome/index.js
+[7]: https://github.com/pbiswas101/Mathball/blob/master/src/prime/index.js
+[8]: https://github.com/pbiswas101/Mathball/blob/master/src/fibonacci/index.js
+[9]: https://github.com/pbiswas101/Mathball/blob/master/src/magic/index.js
+[10]: https://github.com/pbiswas101/Mathball/blob/master/src/gcd/index.js
+[11]: https://github.com/pbiswas101/Mathball/blob/master/src/isEven/index.js
+[12]: https://github.com/pbiswas101/Mathball/blob/master/src/isOdd/index.js
+[13]: https://github.com/pbiswas101/Mathball/blob/master/src/lcm/index.js
+[14]: https://github.com/pbiswas101/Mathball/blob/master/src/length/index.js
+[15]: https://github.com/pbiswas101/Mathball/blob/master/src/max/index.js
+[16]: https://github.com/pbiswas101/Mathball/blob/master/src/min/index.js
+[17]: https://github.com/pbiswas101/Mathball/blob/master/src/sort/index.js
+[18]: https://github.com/pbiswas101/Mathball/blob/master/src/sum/index.js
+[19]: https://github.com/pbiswas101/Mathball/blob/master/CONTRIBUTING.md
+[20]: https://github.com/pbiswas101

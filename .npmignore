@@ -22,5 +22,8 @@ test/
 # Editor configuration
 .editorconfig
 
+# Travis CI configuration
+.travis.yml
+
 # Contribution guidelines
 CONTRIBUTING.md
