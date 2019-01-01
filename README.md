@@ -55,17 +55,17 @@ console.log(M.sum([4, 5, 9]))		//18
 Or, you can directly access an individual function as given below:
 
 ```
-let gcd = require('mathball/gcd');
+let gcd = require('mathball/lib/gcd');
 
 console.log(gcd([12, 18, 24]));		//6
 ```
 
 ## Contribution
 
-1. Fork the project. :grey_exclamation:
+1. Fork the project. :fork_and_knife:
 2. Fix issues & add changes. :wrench:
 3. Follow the guidelines given in [CONTRIBUTING.md][19]. :star2:
-4. Make a PR. :bowtie:
+4. Make a PR. :hammer:
 5. Mission Acomplished! :tada:
 
 ## License
