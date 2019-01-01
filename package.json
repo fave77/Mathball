@@ -1,0 +1,34 @@
+{
+  "name": "mathball",
+  "version": "0.1.0",
+  "description": "A npm package for competitive programming in JavaScript",
+  "keywords": [
+    "competitive-programming",
+    "computer-science",
+    "algorithms",
+    "data-structures",
+    "javascript",
+    "mathematical-utilities"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src -d ./lib",
+		"test": "nyc mocha --require babel-core/register",
+		"prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbiswas101/Mathball.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pbiswas101/Mathball/issues"
+  },
+  "author": "Priyabrata Biswas",
+  "license": "MIT"
+}

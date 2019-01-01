@@ -1,0 +1,26 @@
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output/
+
+# media files
+assets/
+
+# Dependency directories
+node_modules/
+
+# source directory
+src/
+
+# test directory
+test/
+
+# Babel presets
+.babelrc
+
+# Editor configuration
+.editorconfig
+
+# Contribution guidelines
+CONTRIBUTING.md
