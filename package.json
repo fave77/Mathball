@@ -13,11 +13,11 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel ./src -d ./lib",
-		"test": "nyc mocha --require babel-core/register",
-		"report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-		"prepublishOnly": "npm run build"
-	},
-	"nyc": {
+    "test": "nyc mocha --require babel-core/register",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "prepublishOnly": "npm run build"
+  },
+  "nyc": {
     "reporter": [
       "lcov",
       "text"
@@ -26,6 +26,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "codecov": "^3.1.0",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0"
   },
