@@ -1,5 +1,6 @@
 # Coverage directory used by tools like istanbul
 coverage/
+*.lcov
 
 # nyc test coverage
 .nyc_output/
@@ -25,7 +26,11 @@ test/
 # Travis CI configuration
 .travis.yml
 
+# Theme configuration
+_config.yml
+
 # markdown files
 CONTRIBUTING.md
 ISSUE_TEMPLATE.md
 PULL_REQUEST_TEMPLATE.md
+CODE_OF_CONDUCT.md

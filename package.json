@@ -14,7 +14,14 @@
   "scripts": {
     "build": "babel ./src -d ./lib",
 		"test": "nyc mocha --require babel-core/register",
+		"report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
 		"prepublishOnly": "npm run build"
+	},
+	"nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
