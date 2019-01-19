@@ -6,7 +6,8 @@ const armstrong = require('./armstrong'),
 	magic = require('./magic'),
 	neon = require('./neon'),
 	palindrome = require('./palindrome'),
-	prime = require('./prime');
+	prime = require('./prime'),
+	factorial = require('./factorial');
 
 /* Mathematical Utilities */
 
@@ -18,8 +19,7 @@ const gcd = require('./gcd'),
 	max = require('./max'),
 	min = require('./min'),
 	sort = require('./sort'),
-	sum = require('./sum'),
-	factorial = require('./factorial')
+	sum = require('./sum');
 
 /* M - mathball utility object */
 
@@ -28,6 +28,7 @@ module.exports = {
 	isAutomorphic: automorphic.isAutomorphic,
 	fibonacci: fibonacci.fibonacci,
 	magic: magic.magic,
+	factorial: factorial.factorial,
 	isNeon: neon.isNeon,
 	isPalindrome: palindrome.isPalindrome,
 	isPrime: prime.isPrime,
@@ -39,6 +40,5 @@ module.exports = {
 	max,
 	min,
 	sort,
-	sum,
-	factorial
-}
+	sum
+};

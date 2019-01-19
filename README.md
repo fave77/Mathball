@@ -28,6 +28,7 @@ $ npm install mathball --save
 - **Find nth Number**
 	- [fibonacci()][8]
 	- [magic()][9]
+	- [factorial()][21]
 
 - **Mathematical Utilities**
 	- [gcd()][10]
@@ -39,7 +40,6 @@ $ npm install mathball --save
 	- [min()][16]
 	- [sort()][17]
 	- [sum()][18]
-	- [factorial()][21]
 
 ## Examples
 
