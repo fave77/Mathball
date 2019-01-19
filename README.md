@@ -39,6 +39,7 @@ $ npm install mathball --save
 	- [min()][16]
 	- [sort()][17]
 	- [sum()][18]
+	- [factorial()][21]
 
 ## Examples
 
@@ -92,3 +93,4 @@ The MIT License 2018 - [Priyabrata Biswas][20].
 [18]: https://github.com/pbiswas101/Mathball/blob/master/src/sum/index.js
 [19]: https://github.com/pbiswas101/Mathball/blob/master/CONTRIBUTING.md
 [20]: https://github.com/pbiswas101
+[21]: https://github.com/pbiswas101/Mathball/blob/master/src/factorial/index.js

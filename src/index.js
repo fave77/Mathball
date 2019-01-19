@@ -18,7 +18,8 @@ const gcd = require('./gcd'),
 	max = require('./max'),
 	min = require('./min'),
 	sort = require('./sort'),
-	sum = require('./sum');
+	sum = require('./sum'),
+	factorial = require('./factorial')
 
 /* M - mathball utility object */
 
@@ -30,5 +31,14 @@ module.exports = {
 	isNeon: neon.isNeon,
 	isPalindrome: palindrome.isPalindrome,
 	isPrime: prime.isPrime,
-	gcd, isEven, isOdd, lcm, length, max, min, sort, sum
-};
+	gcd,
+	isEven,
+	isOdd,
+	lcm,
+	length,
+	max,
+	min,
+	sort,
+	sum,
+	factorial
+}
