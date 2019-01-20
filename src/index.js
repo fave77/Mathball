@@ -6,7 +6,8 @@ const armstrong = require('./armstrong'),
 	magic = require('./magic'),
 	neon = require('./neon'),
 	palindrome = require('./palindrome'),
-	prime = require('./prime');
+	prime = require('./prime'),
+	factorial = require('./factorial');
 
 /* Mathematical Utilities */
 
@@ -27,8 +28,17 @@ module.exports = {
 	isAutomorphic: automorphic.isAutomorphic,
 	fibonacci: fibonacci.fibonacci,
 	magic: magic.magic,
+	factorial: factorial.factorial,
 	isNeon: neon.isNeon,
 	isPalindrome: palindrome.isPalindrome,
 	isPrime: prime.isPrime,
-	gcd, isEven, isOdd, lcm, length, max, min, sort, sum
+	gcd,
+	isEven,
+	isOdd,
+	lcm,
+	length,
+	max,
+	min,
+	sort,
+	sum
 };

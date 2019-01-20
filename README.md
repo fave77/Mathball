@@ -28,6 +28,7 @@ $ npm install mathball --save
 - **Find nth Number**
 	- [fibonacci()][8]
 	- [magic()][9]
+	- [factorial()][21]
 
 - **Mathematical Utilities**
 	- [gcd()][10]
@@ -92,3 +93,4 @@ The MIT License 2018 - [Priyabrata Biswas][20].
 [18]: https://github.com/pbiswas101/Mathball/blob/master/src/sum/index.js
 [19]: https://github.com/pbiswas101/Mathball/blob/master/CONTRIBUTING.md
 [20]: https://github.com/pbiswas101
+[21]: https://github.com/pbiswas101/Mathball/blob/master/src/factorial/index.js
