@@ -3,7 +3,16 @@
  */
 
 function fib(num) {
-	return num <= 1 ? num : fib(num - 1) + fib(num - 2);
+	if (num <= 2) {
+		return 1;
+	}
+	let n1 = 1, n2 = 1, total;
+	for (let i = 3; i <= num; i++) {
+		total	= n1 + n2;
+		n1 = n2;
+		n2 = total;
+	}
+	return total;
 }
 
 function handleError(type) {
