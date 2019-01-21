@@ -1,41 +1,27 @@
 /* Function: length() */
 
-function handleError(type) {
-	if(typeof type == 'undefined') {
-		try {
-			throw new Error('\'length()\' didn\'t receive any valid argument!');
-		} catch(err) {
-			console.error('\x1b[36m%s\x1b[0m', err);
-			process.exit(0);
-		}
-	} else {
-		try {
-			throw new TypeError('Pass any of the type - <number, string, array, object> to \'length()\'!');
-		} catch(err) {
-			console.error('\x1b[36m%s\x1b[0m', err, `\x1b[5m\nDo not pass a '${type}'\x1b[0m`);
-			process.exit(0);
-		}
+function validate(arg) {
+	let types = ['number', 'object', 'string'];
+	if(types.indexOf(typeof arg) == -1 || String(arg) == 'null' ||
+	(typeof arg == 'number' && (arg + 1 == arg || arg != arg))) {
+		throw new TypeError(`Invalid argument recieved: ${JSON.stringify(arg)}\n'length()' only accept either a real number, string, object or array!\n`);
 	}
 }
 
 module.exports = item => {
-	switch(typeof item) {
-		case 'number':
-			if(item != item) handleError('NaN');
-			else if(item + 1 == item) handleError('Infinity');
-			else if(parseInt(item, 10) != item) {
+	validate(item);
+	switch(item.constructor) {
+		case Number:
+			if(Number.isInteger(item)) return item.toString().length;
+			else {
 				let arr = item.toString().split('');
 				arr.splice(arr.indexOf('.'), 1);
 				return arr.length;
 			}
-			return item.toString().length;
-		case 'string':
-		case 'object':
-			if(item == null) handleError('null');
-			return item.hasOwnProperty('length') ? item.length : Object.keys(item).length;
-		case 'undefined':
-			handleError();
-		default:
-			handleError(typeof item);
+		case String:
+		case Array:
+			return item.length;
+		case Object:
+			return Object.keys(item).length;
 	}
 };

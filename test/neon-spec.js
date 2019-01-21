@@ -19,4 +19,20 @@ describe('[Function: isNeon]', () => {
 		assert.strictEqual(isNeon(7), false);
 	});
 
+	it('should throw an error when a negative number is passed', () => {
+		assert.throws(() => isNeon(-20), TypeError);
+	});
+
+	it('should throw an error when a floating point is passed', () => {
+		assert.throws(() => isNeon(31.101996), TypeError);
+	});
+
+	it('should throw an error when a string is passed', () => {
+		assert.throws(() => isNeon('31'), TypeError);
+	});
+
+	it('should throw an error when no arguments passed', () => {
+		assert.throws(() => isNeon(), TypeError);
+	});
+
 });

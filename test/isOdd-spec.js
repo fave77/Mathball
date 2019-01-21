@@ -19,4 +19,16 @@ describe('[Function: isOdd]', () => {
 		assert.strictEqual(isOdd(56), false);
 	});
 
+	it('should throw an error when a floating point is passed', () => {
+		assert.throws(() => isOdd(31.101996), TypeError);
+	});
+
+	it('should throw an error when a string is passed', () => {
+		assert.throws(() => isOdd('31'), TypeError);
+	});
+
+	it('should throw an error when no arguments passed', () => {
+		assert.throws(() => isOdd(), TypeError);
+	});
+
 });

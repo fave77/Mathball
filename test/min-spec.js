@@ -19,4 +19,20 @@ describe('[Function: min]', () => {
 		assert.strictEqual(min([1, 0, 3, 22]), 0);
 	});
 
+	it('should throw an error when a negative number is passed', () => {
+		assert.throws(() => min(-20), TypeError);
+	});
+
+	it('should throw an error when a floating point is passed', () => {
+		assert.throws(() => min(31.101996), TypeError);
+	});
+
+	it('should throw an error when a string is passed', () => {
+		assert.throws(() => min('31'), TypeError);
+	});
+
+	it('should throw an error when no arguments passed', () => {
+		assert.throws(() => min(), TypeError);
+	});
+
 });

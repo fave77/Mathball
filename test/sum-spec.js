@@ -19,4 +19,20 @@ describe('[Function: sum]', () => {
 		assert.strictEqual(sum([-2, -1, 1, 2]), 0);
 	});
 
+	it('should throw an error when a negative number is passed', () => {
+		assert.throws(() => sum(-20), TypeError);
+	});
+
+	it('should throw an error when a floating point is passed', () => {
+		assert.throws(() => sum(31.101996), TypeError);
+	});
+
+	it('should throw an error when a string is passed', () => {
+		assert.throws(() => sum('31'), TypeError);
+	});
+
+	it('should throw an error when no arguments passed', () => {
+		assert.throws(() => sum(), TypeError);
+	});
+
 });

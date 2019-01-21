@@ -51,15 +51,17 @@ $ npm run build
 
 Being an open-source contributor is awesome :star: but along with that awesomeness comes responsibility. So, the responsibility of what you may ask! Well, you certainly don't want to make a PR that breaks the codebase itself, or for that matter instead of fixing bugs, it creates more. So, here are some curated guidelines one should follow in order for their PR getting merged: :pizza:
 
+- First raise an issue regarding any feature enhancements or bugs found, before making a PR.
 - While raising an issue, please follow the **ISSUE_TEMPLATE.md** guidelines.
 - Write your code adhered to [Airbnb style guide][1] as much as possible.
 - Make sure your editor supports the preferences from the **.editorconfig** file.
 - When adding a new feature, also make sure to include the corresponding unit tests.
 - Always squash your commits for cleaner commit history.
--  While making a PR, please follow the **PULL_REQUEST_TEMPLATE.md** guidelines.
-- When making a PR, mention the issue you are solving.
+- While making a PR, please follow the **PULL_REQUEST_TEMPLATE.md** guidelines.
+- When making a PR, mention the issue you are solving, like so - `Fixed #2`.
 - Your PR must pass the [Travis CI][2] checks for it to be merged.
 - Do not shy away from using ES6+ syntax!
+- Do not review others' PR!
 
 **HAPPY CONTRIBUTING** :slightly_smiling_face:
 

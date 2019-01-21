@@ -20,4 +20,20 @@ describe('[Function: sort]', () => {
 		assert.deepStrictEqual(sort([4, 5, 13, 2, 8, 0], false), [13, 8, 5, 4, 2, 0]);
 	});
 
+	it('should throw an error when a negative number is passed', () => {
+		assert.throws(() => sort(-20), TypeError);
+	});
+
+	it('should throw an error when a floating point is passed', () => {
+		assert.throws(() => sort(31.101996), TypeError);
+	});
+
+	it('should throw an error when a string is passed', () => {
+		assert.throws(() => sort('31'), TypeError);
+	});
+
+	it('should throw an error when no arguments passed', () => {
+		assert.throws(() => sort(), TypeError);
+	});
+
 });
