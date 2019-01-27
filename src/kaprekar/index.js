@@ -3,12 +3,13 @@
  */
 
 function validate(arg) {
-	if (typeof arg != "number" || arg < 1 || !Number.isInteger(arg))
+	if (typeof arg != "number" || arg < 1 || !Number.isInteger(arg)) {
 		throw new TypeError(
 			`Invalid argument recieved: ${JSON.stringify(
 				arg
 			)}\n'isKaprekar()' only accepts a positive integer!\n`
 		);
+	}
 }
 
 exports.isKaprekar = num => {
