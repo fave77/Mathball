@@ -8,6 +8,7 @@ const armstrong = require("./armstrong"),
 	palindrome = require("./palindrome"),
 	prime = require("./prime"),
 	factorial = require("./factorial"),
+	catalan = require("./catalan"),
 	kaprekar = require("./kaprekar");
 
 /* Mathematical Utilities */
@@ -33,6 +34,7 @@ module.exports = {
 	isNeon: neon.isNeon,
 	isPalindrome: palindrome.isPalindrome,
 	isPrime: prime.isPrime,
+	catalan: catalan.catalan,
 	isKaprekar: kaprekar.isKaprekar,
 	gcd,
 	isEven,
