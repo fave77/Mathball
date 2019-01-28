@@ -9,7 +9,8 @@ const armstrong = require("./armstrong"),
 	prime = require("./prime"),
 	factorial = require("./factorial"),
 	catalan = require("./catalan"),
-	kaprekar = require("./kaprekar");
+	kaprekar = require("./kaprekar"),
+	lucky = require("./lucky");
 
 /* Mathematical Utilities */
 
@@ -36,6 +37,7 @@ module.exports = {
 	isPrime: prime.isPrime,
 	catalan: catalan.catalan,
 	isKaprekar: kaprekar.isKaprekar,
+	isLucky: lucky.isLucky,
 	gcd,
 	isEven,
 	isOdd,
