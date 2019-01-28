@@ -15,7 +15,7 @@ function validate(arg) {
 exports.isLucky = num => {
 	validate(num);
 	var counter = 2;
-	while (1) {
+	while (true) {
 		if (counter > num) {
 			return true;
 		} else if (num % counter === 0) {
