@@ -1,0 +1,36 @@
+/* Smart Number
+ * Function: smart()
+ */
+const sort = require("../sort");
+function validate(arg) {
+	if (typeof arg != "number" || arg < 1 || !Number.isInteger(arg)) {
+		throw new TypeError(
+			`Invalid argument recieved: ${JSON.stringify(
+				arg
+			)}\n'smart()' only accept a positive integer!\n`
+		);
+	}
+}
+
+exports.smart = num => {
+	validate(num);
+	const size = 3000;
+	var primes = new Array(size);
+	for (var i = 0; i < size; i++) {
+		primes[i] = 0;
+	}
+	var result = new Array();
+	for (var i = 2; i < size; i++) {
+		if (primes[i] === 0) {
+			primes[i] = 1;
+			for (var j = i * 2; j < size; j = j + i) {
+				primes[j] = primes[j] - 1;
+				if (primes[j] + 3 === 0) {
+					result.push(j);
+				}
+			}
+		}
+	}
+	sort(result);
+	return result[num - 1];
+};

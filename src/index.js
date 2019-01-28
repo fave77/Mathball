@@ -10,7 +10,8 @@ const armstrong = require("./armstrong"),
 	factorial = require("./factorial"),
 	catalan = require("./catalan"),
 	kaprekar = require("./kaprekar"),
-	lucky = require("./lucky");
+	lucky = require("./lucky"),
+	smart = require("./smart");
 
 /* Mathematical Utilities */
 
@@ -38,6 +39,7 @@ module.exports = {
 	catalan: catalan.catalan,
 	isKaprekar: kaprekar.isKaprekar,
 	isLucky: lucky.isLucky,
+	smart: smart.smart,
 	gcd,
 	isEven,
 	isOdd,
