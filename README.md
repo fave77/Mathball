@@ -1,12 +1,12 @@
 # Introduction
 
-[![npm version](https://badge.fury.io/js/mathball.svg)](https://badge.fury.io/js/mathball) [![Build Status](https://travis-ci.org/pbiswas101/Mathball.svg?branch=master)](https://travis-ci.org/pbiswas101/Mathball) [![Known Vulnerabilities](https://snyk.io/test/github/pbiswas101/Mathball/badge.svg?targetFile=package.json)](https://snyk.io/test/github/pbiswas101/Mathball?targetFile=package.json) [![codecov](https://codecov.io/gh/pbiswas101/Mathball/branch/master/graph/badge.svg)](https://codecov.io/gh/pbiswas101/Mathball) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1750f9ec92a14adea5593be4ad56d3a2)](https://www.codacy.com/app/pbiswas101/Mathball?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pbiswas101/Mathball&amp;utm_campaign=Badge_Grade) ![](https://img.shields.io/github/issues/pbiswas101/Mathball.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) ![](https://img.shields.io/github/stars/pbiswas101/Mathball.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/mathball.svg)](https://badge.fury.io/js/mathball) [![Build Status](https://travis-ci.org/pbiswas101/Mathball.svg?branch=master)](https://travis-ci.org/pbiswas101/Mathball) [![Known Vulnerabilities](https://snyk.io/test/github/pbiswas101/Mathball/badge.svg?targetFile=package.json)](https://snyk.io/test/github/pbiswas101/Mathball?targetFile=package.json) [![codecov](https://codecov.io/gh/pbiswas101/Mathball/branch/master/graph/badge.svg)](https://codecov.io/gh/pbiswas101/Mathball) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1750f9ec92a14adea5593be4ad56d3a2)](https://www.codacy.com/app/pbiswas101/Mathball?utm_source=github.com&utm_medium=referral&utm_content=pbiswas101/Mathball&utm_campaign=Badge_Grade) ![](https://img.shields.io/github/issues/pbiswas101/Mathball.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) ![](https://img.shields.io/github/stars/pbiswas101/Mathball.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![](https://github.com/pbiswas101/Mathball/blob/master/assets/mathball-banner.png)
 
 **Mathball** is an npm package for competitive programming in [JavaScript][1] with a focus on common mathematical utilities being implemented in relevant algorithms & data structures for optimized performance!
 
-JavaScript was never built while keeping competitive coding in mind; let us all agree on that. But, the stuff that we build with it today was not something it was built for either! Back in 1995, [Brendan Eich][2] designed JS only for adding interactivity to web pages; and now with it, we can build *web servers*, *microservices*, *games*, *mobile apps*, *IoT apps*, *ML in the browser*, and so on. Based on the notion - **JS is everywhere!** I also believe that maybe its time to motivate people who are well versed with this language to finally consider it in the realm of competitive programming.
+JavaScript was never built while keeping competitive coding in mind; let us all agree on that. But, the stuff that we build with it today was not something it was built for either! Back in 1995, [Brendan Eich][2] designed JS only for adding interactivity to web pages; and now with it, we can build _web servers_, _microservices_, _games_, _mobile apps_, _IoT apps_, _ML in the browser_, and so on. Based on the notion - **JS is everywhere!** I also believe that maybe its time to motivate people who are well versed with this language to finally consider it in the realm of competitive programming.
 
 ## Installation
 
@@ -18,32 +18,11 @@ $ npm install mathball --save
 
 ## Features
 
-- **Number Checkers**
-	- [isArmstrong()][3]
-	- [isAutomorphic()][4]
-	- [isKaprekar()][23]
-	- [isLucky()][24]
-	- [isNeon()][5]
-	- [isPalindrome()][6]
-	- [isPrime()][7]
+- **Number Checkers** - [isArmstrong()][3] - [isAutomorphic()][4] - [isKaprekar()][23] - [isLucky()][24] - [isNeon()][5] - [isPalindrome()][6] - [isPrime()][7] - [isSmith()][26]
 
-- **Find nth Number**
-	- [catalan()][22]
-	- [factorial()][21]
-	- [fibonacci()][8]
-	- [magic()][9]
-	- [smart()][25]
+- **Find nth Number** - [catalan()][22] - [factorial()][21] - [fibonacci()][8] - [magic()][9] - [smart()][25]
 
-- **Mathematical Utilities**
-	- [gcd()][10]
-	- [isEven()][11]
-	- [isOdd()][12]
-	- [lcm()][13]
-	- [length()][14]
-	- [max()][15]
-	- [min()][16]
-	- [sort()][17]
-	- [sum()][18]
+- **Mathematical Utilities** - [gcd()][10] - [isEven()][11] - [isOdd()][12] - [lcm()][13] - [length()][14] - [max()][15] - [min()][16] - [sort()][17] - [sum()][18]
 
 ## Examples
 
@@ -102,3 +81,4 @@ The MIT License 2018 - [Priyabrata Biswas][20].
 [23]: https://github.com/pbiswas101/Mathball/blob/master/src/kaprekar/index.js
 [24]: https://github.com/pbiswas101/Mathball/blob/master/src/lucky/index.js
 [25]: https://github.com/pbiswas101/Mathball/blob/master/src/smart/index.js
+[26]: https://github.com/pbiswas101/Mathball/blob/master/src/smith/index.js
