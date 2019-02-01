@@ -5,7 +5,7 @@ const sort = require("../sort");
 function validate(arg) {
 	if (typeof arg != "number" || arg < 1 || !Number.isInteger(arg)) {
 		throw new TypeError(
-			`Invalid argument recieved: ${JSON.stringify(
+			`Invalid argument received: ${JSON.stringify(
 				arg
 			)}\n'smart()' only accept a positive integer!\n`
 		);

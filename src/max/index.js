@@ -7,7 +7,7 @@ function validate(arg) {
 			if(typeof item != 'number' || item + 1 == item || item != item) flag = 1;
 		});
 	if(!arg || arg.constructor != Array || flag)
-		throw new TypeError(`Invalid argument recieved: ${JSON.stringify(arg)}\n'max()' only accept an array of real numbers!\n`);
+		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\n'max()' only accept an array of real numbers!\n`);
 }
 
 module.exports = arr => {

@@ -4,7 +4,7 @@ function validate(arg) {
 	let types = ['number', 'object', 'string'];
 	if(types.indexOf(typeof arg) == -1 || String(arg) == 'null' ||
 	(typeof arg == 'number' && (arg + 1 == arg || arg != arg))) {
-		throw new TypeError(`Invalid argument recieved: ${JSON.stringify(arg)}\n'length()' only accept either a real number, string, object or array!\n`);
+		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\n'length()' only accept either a real number, string, object or array!\n`);
 	}
 }
 

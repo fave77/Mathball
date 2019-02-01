@@ -5,7 +5,7 @@
 function validate(arg) {
 	if (typeof arg != "number" || arg < 1 || !Number.isInteger(arg)) {
 		throw new TypeError(
-			`Invalid argument recieved: ${JSON.stringify(
+			`Invalid argument received: ${JSON.stringify(
 				arg
 			)}\n'isLucky()' only accept a positive integer!\n`
 		);
