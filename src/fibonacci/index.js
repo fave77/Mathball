@@ -17,7 +17,7 @@ function fib(num) {
 
 function validate(arg) {
 	if(typeof arg != 'number' || arg + 1 == arg || arg != arg || arg < 1 || !Number.isInteger(arg))
-		throw new TypeError(`Invalid argument recieved: ${JSON.stringify(arg)}\n'fibonacci()' only accept a positive integer!\n`);
+		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\n'fibonacci()' only accept a positive integer!\n`);
 }
 
 exports.fibonacci = num => {

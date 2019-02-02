@@ -11,7 +11,7 @@ function validate(arg) {
 			if(typeof item != 'number' || item + 1 == item || item != item || !Number.isInteger(item) || item < 1) flag = 1;
 		});
 	if(!arg || arg.constructor != Array || flag)
-		throw new TypeError(`Invalid argument recieved: ${JSON.stringify(arg)}\n'gcd()' only accept an array of positive integers!\n`);
+		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\n'gcd()' only accept an array of positive integers!\n`);
 }
 
 module.exports = arr => {

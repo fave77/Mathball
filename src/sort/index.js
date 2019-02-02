@@ -7,7 +7,7 @@ function validate(arg, order) {
 			if(typeof item != 'number' || item + 1 == item || item != item) flag = 1;
 		});
 	if(!arg || arg.constructor != Array || flag || typeof order != 'boolean')
-		throw new TypeError(`Invalid argument recieved: ${JSON.stringify(arg)}, ${order}\n'sort()' only accept an array of real numbers and boolean <optional> as the arguments!\n`);
+		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}, ${order}\n'sort()' only accept an array of real numbers and boolean <optional> as the arguments!\n`);
 }
 
 module.exports = (arr, ascend = true) => {

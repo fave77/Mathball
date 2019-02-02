@@ -5,7 +5,7 @@
 function validate(arg) {
 	if (typeof arg != "number" || arg < 0 || !Number.isInteger(arg)) {
 		throw new TypeError(
-			`Invalid argument recieved: ${JSON.stringify(
+			`Invalid argument received: ${JSON.stringify(
 				arg
 			)}\n'catalan()' only accepts a non-negative integer!\n`
 		);
