@@ -1,19 +1,12 @@
 /* Smart Number
  * Function: smart()
  */
+
 const sort = require("../sort");
-function validate(arg) {
-	if (typeof arg != "number" || arg < 1 || !Number.isInteger(arg)) {
-		throw new TypeError(
-			`Invalid argument received: ${JSON.stringify(
-				arg
-			)}\n'smart()' only accept a positive integer!\n`
-		);
-	}
-}
+const validate = require('../validation/positive-integer');
 
 exports.smart = num => {
-	validate(num);
+	validate(num, 'smart');
 	const size = 3000;
 	var primes = new Array(size);
 	for (var i = 0; i < size; i++) {

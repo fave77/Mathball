@@ -2,12 +2,9 @@
  * Function: isPalindrome()
  */
 
-function validate(arg) {
-	if(typeof arg != 'number' || arg + 1 == arg || arg != arg || arg < 0 || !Number.isInteger(arg))
-		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\n'isPalindrome()' only accept a non-negative integer!\n`);
-}
+const validate = require('../validation/non-negative-integer');
 
 exports.isPalindrome = num => {
-	validate(num);
+	validate(num, 'isPalindrome');
 	return num == num.toString().split('').reverse().join('');
 };

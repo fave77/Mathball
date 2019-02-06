@@ -15,10 +15,6 @@ describe('[Function: lcm]', () => {
 		assert.strictEqual(lcm([2, 3, 5, 15]), 30);
 	});
 
-	it('should return \'70\' when \'[-5, 7, 10, 5]\' is passed', () => {
-		assert.strictEqual(lcm([-5, 7, 10, 5]), 70);
-	});
-
 	it('should throw an error when a negative number is passed', () => {
 		assert.throws(() => lcm(-20), TypeError);
 	});

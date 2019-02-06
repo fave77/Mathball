@@ -2,15 +2,7 @@
  * Function: isSmith()
  */
 
-function validate(arg) {
-	if (typeof arg != "number" || arg < 1 || !Number.isInteger(arg)) {
-		throw new TypeError(
-			`Invalid argument received: ${JSON.stringify(
-				arg
-			)}\n'isSmith()' only accept a positive integer!\n`
-		);
-	}
-}
+const validate = require('../validation/positive-integer');
 
 var primes = new Array();
 const MAX = 10000;
@@ -68,7 +60,7 @@ function smith(num) {
 }
 
 exports.isSmith = num => {
-	validate(num);
+	validate(num, 'isSmith');
 	sieveSundaram();
 	return smith(num);
 };

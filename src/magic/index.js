@@ -2,13 +2,10 @@
  * Function: magic()
  */
 
-function validate(arg) {
-	if(typeof arg != 'number' || arg + 1 == arg || arg != arg || arg < 1 || !Number.isInteger(arg))
-		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\n'magic()' only accept a positive integer!\n`);
-}
+const validate = require('../validation/positive-integer');
 
 exports.magic = num => {
-	validate(num);
+	validate(num, 'magic');
 	let pow = 1, res = 0;
 	while (num) {
 		pow *= 5;

@@ -2,18 +2,10 @@
  * Function: isKaprekar()
  */
 
-function validate(arg) {
-	if (typeof arg != "number" || arg < 1 || !Number.isInteger(arg)) {
-		throw new TypeError(
-			`Invalid argument received: ${JSON.stringify(
-				arg
-			)}\n'isKaprekar()' only accepts a positive integer!\n`
-		);
-	}
-}
+const validate = require('../validation/positive-integer');
 
 exports.isKaprekar = num => {
-	validate(num);
+	validate(num, 'isKaprekar');
 	if (num == 1) {
 		return true;
 	}

@@ -2,6 +2,8 @@
  * Function: fibonacci()
  */
 
+const validate = require('../validation/positive-integer');
+
 function fib(num) {
 	if (num <= 2) {
 		return 1;
@@ -15,12 +17,7 @@ function fib(num) {
 	return total;
 }
 
-function validate(arg) {
-	if(typeof arg != 'number' || arg + 1 == arg || arg != arg || arg < 1 || !Number.isInteger(arg))
-		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\n'fibonacci()' only accept a positive integer!\n`);
-}
-
 exports.fibonacci = num => {
-	validate(num);
+	validate(num, 'fibonacci');
 	return fib(num);
 };

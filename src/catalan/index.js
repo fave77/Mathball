@@ -2,15 +2,7 @@
  * Function: catalan()
  */
 
-function validate(arg) {
-	if (typeof arg != "number" || arg < 0 || !Number.isInteger(arg)) {
-		throw new TypeError(
-			`Invalid argument received: ${JSON.stringify(
-				arg
-			)}\n'catalan()' only accepts a non-negative integer!\n`
-		);
-	}
-}
+const validate = require('../validation/non-negative-integer');
 
 function binomialCoeff(n, k) {
 	let res = 1;
@@ -25,7 +17,7 @@ function binomialCoeff(n, k) {
 }
 
 exports.catalan = num => {
-	validate(num);
+	validate(num, 'catalan');
 	let c = binomialCoeff(2 * num, num);
 	return c / (num + 1);
 };

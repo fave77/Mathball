@@ -31,6 +31,10 @@ describe('[Function: min]', () => {
 		assert.throws(() => min('31'), TypeError);
 	});
 
+	it('should throw an error when a boolean is passed', () => {
+		assert.throws(() => min(true), TypeError);
+	});
+
 	it('should throw an error when no arguments passed', () => {
 		assert.throws(() => min(), TypeError);
 	});

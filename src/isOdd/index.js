@@ -1,11 +1,8 @@
 /* Function: isOdd() */
 
-function validate(arg) {
-	if(typeof arg != 'number' || arg + 1 == arg || arg != arg || !Number.isInteger(arg))
-		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\n'isEven()' only accept a positive integer!\n`);
-}
+const validate = require('../validation/integer');
 
 module.exports = num => {
-	validate(num)
+	validate(num, 'isOdd');
 	return num & 1 ? true : false;
 };

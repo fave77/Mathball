@@ -2,18 +2,10 @@
  * Function: isLucky()
  */
 
-function validate(arg) {
-	if (typeof arg != "number" || arg < 1 || !Number.isInteger(arg)) {
-		throw new TypeError(
-			`Invalid argument received: ${JSON.stringify(
-				arg
-			)}\n'isLucky()' only accept a positive integer!\n`
-		);
-	}
-}
+const validate = require('../validation/positive-integer');
 
 exports.isLucky = num => {
-	validate(num);
+	validate(num, 'isLucky');
 	var counter = 2;
 	while (true) {
 		if (counter > num) {

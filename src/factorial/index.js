@@ -2,10 +2,7 @@
  * Function: factorial()
  */
 
-function validate(arg) {
-	if(typeof arg != 'number' || arg + 1 == arg || arg != arg || arg < 0 || !Number.isInteger(arg))
-		throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\n'factorial()' only accept a positive integer!\n`);
-}
+const validate = require('../validation/non-negative-integer');
 
 /**
  *
@@ -22,6 +19,6 @@ function factorial(number) {
 }
 
 exports.factorial = num => {
- validate(num);
+ validate(num, 'factorial');
  return factorial(num);
 };

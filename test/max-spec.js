@@ -31,6 +31,10 @@ describe('[Function: max]', () => {
 		assert.throws(() => max('31'), TypeError);
 	});
 
+	it('should throw an error when a boolean is passed', () => {
+		assert.throws(() => max(true), TypeError);
+	});
+
 	it('should throw an error when no arguments passed', () => {
 		assert.throws(() => max(), TypeError);
 	});

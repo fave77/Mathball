@@ -6,7 +6,7 @@ describe("[Function: catalan]", () => {
 		assert.strictEqual(typeof catalan, "function");
 	});
 
-	it("should return a number when a positive integer is passed", () => {
+	it("should return a number when a non-negative integer is passed", () => {
 		assert.strictEqual(typeof catalan(1), "number");
 	});
 
@@ -22,6 +22,10 @@ describe("[Function: catalan]", () => {
 		assert.strictEqual(catalan(5), 42);
 	});
 
+	it("should return '429' when '7' is passed", () => {
+		assert.strictEqual(catalan(7), 429);
+	});
+
 	it("should throw an error when a negative number is passed", () => {
 		assert.throws(() => catalan(-20), TypeError);
 	});
@@ -32,6 +36,14 @@ describe("[Function: catalan]", () => {
 
 	it("should throw an error when a string is passed", () => {
 		assert.throws(() => catalan("31"), TypeError);
+	});
+
+	it("should throw an error when a boolean is passed", () => {
+		assert.throws(() => catalan(true), TypeError);
+	});
+
+	it("should throw an error when an array is passed", () => {
+		assert.throws(() => catalan([1, 2]), TypeError);
 	});
 
 	it("should throw an error when no arguments passed", () => {
