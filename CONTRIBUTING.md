@@ -1,4 +1,4 @@
-# Contributing is fun! :green_heart:
+# Contribution is fun! :green_heart:
 
 With your help, we can create a comprehensive mathematical tool that will help millions of people who want to do competitive programming in JavaScript for years to come. So, to make a hassle-free environment I implore you all (*while contributing*) to follow the guidelines mentioned below.
 
@@ -56,7 +56,7 @@ Being an open-source contributor is awesome :star: but along with that awesomene
 - Always claim an issue and make sure you've been assigned before you start working on it.
 - Write your code adhered to [Airbnb style guide][1] as much as possible.
 - Make sure your editor supports the preferences from the **.editorconfig** file.
-- When adding a new feature, also make sure to include the corresponding unit tests.
+- When adding a new feature, make sure to include the corresponding unit tests & update the **README.md** as well.
 - Always squash your commits for cleaner commit history.
 - While making a PR, please follow the **PULL_REQUEST_TEMPLATE.md** guidelines.
 - When making a PR, mention the issue you are solving, like so - `Fixed #2`.

@@ -6,7 +6,11 @@
 
 **Mathball** is an npm package for competitive programming in [JavaScript][1] with a focus on common mathematical utilities being implemented in relevant algorithms & data structures for optimized performance!
 
-JavaScript was never built while keeping competitive coding in mind; let us all agree on that. But, the stuff that we build with it today was not something it was built for either! Back in 1995, [Brendan Eich][2] designed JS only for adding interactivity to web pages; and now with it, we can build _web servers_, _microservices_, _games_, _mobile apps_, _IoT apps_, _ML in the browser_, and so on. Based on the notion - **JS is everywhere!** I also believe that maybe its time to motivate people who are well versed with this language to finally consider it in the realm of competitive programming.
+JavaScript was never built while keeping competitive coding in mind; let us all agree on that. But, the stuff that we build with it today was not something it was built for either! Back in 1995, [Brendan Eich][2] developed JavaScript only for adding interactivity to web pages like handling a mouse click. Today, we can build _servers_, _games_, _mobile apps_, _IoT apps_ and even _machine learning_ in the browser is possible with JavaScript.
+
+> "Any application that can be written in JavaScript, will eventually be written in JavaScript." -- Atwood's Law.
+
+Based on the notion - **JS is everywhere!** I also believe that maybe its time to motivate people who are well versed with this language to finally consider it in the realm of competitive programming.
 
 ## Installation
 
@@ -54,7 +58,7 @@ console.log(gcd([12, 18, 24]));		//6
 
 ## License
 
-The MIT License 2018 - [Priyabrata Biswas][20].
+The MIT License 2019 - [Priyabrata Biswas][20].
 
 [1]: https://developer.mozilla.org/bm/docs/Web/JavaScript
 [2]: https://en.wikipedia.org/wiki/Brendan_Eich
