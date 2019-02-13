@@ -12,7 +12,7 @@ const armstrong = require("./armstrong"),
 	kaprekar = require("./kaprekar"),
 	lucky = require("./lucky"),
 	smart = require("./smart"),
-	smith = require("./smith");
+	smith = require("./smith"),
 	deficient  = require("./deficient");
 
 /* Mathematical Utilities */
