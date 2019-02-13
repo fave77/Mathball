@@ -13,6 +13,7 @@ const armstrong = require("./armstrong"),
 	lucky = require("./lucky"),
 	smart = require("./smart"),
 	smith = require("./smith");
+	deficient  = require("./deficient");
 
 /* Mathematical Utilities */
 
@@ -42,6 +43,7 @@ module.exports = {
 	isLucky: lucky.isLucky,
 	smart: smart.smart,
 	isSmith: smith.isSmith,
+	isDeficient: deficient.isDeficient,
 	gcd,
 	isEven,
 	isOdd,
