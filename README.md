@@ -60,7 +60,7 @@ console.log(gcd([12, 18, 24]));		//6
 
 ## Important Notice
 
-> **Mathball** has been selected in [GirlScript Summer of Code 2019][29]!
+> **Mathball** has been selected at [GirlScript Summer of Code 2019][29]!
 
 ![](https://cdn-images-1.medium.com/max/600/1*47hUn6EfnP5hZkHslmUsxQ.jpeg)
 
