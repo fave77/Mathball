@@ -10,8 +10,6 @@ Happy Contributing :slightly_smiling_face:
 
 > NOTE: Do not make a PR on `gh-pages` directly:heavy_exclamation_mark:
 
-
-
 ## :arrow_down: Installation
 
 - First, fork this repository :fork_and_knife: and follow the given instructions:
@@ -33,7 +31,7 @@ $ git merge upstream/master
 
 ```bash
 $ git clone https://github.com/<YOUR-GITHUB-USERNAME>/Mathball.git
-$ cd Mathball && npm i --save-dev
+$ cd Mathball && npm i
 
 $ git checkout -b deploy
 
