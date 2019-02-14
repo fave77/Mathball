@@ -1,54 +1,59 @@
-/* Types of Numbers */
+/* Number Checkers */
+const armstrong = require('./armstrong'),
+	automorphic = require('./automorphic'),
+	kaprekar = require('./kaprekar'),
+	lucky = require('./lucky'),
+	neon = require('./neon'),
+	palindrome = require('./palindrome'),
+	prime = require('./prime'),
+	smith = require('./smith');
 
-const armstrong = require("./armstrong"),
-	automorphic = require("./automorphic"),
-	fibonacci = require("./fibonacci"),
-	magic = require("./magic"),
-	neon = require("./neon"),
-	palindrome = require("./palindrome"),
-	prime = require("./prime"),
-	factorial = require("./factorial"),
-	catalan = require("./catalan"),
-	kaprekar = require("./kaprekar"),
-	lucky = require("./lucky"),
-	smart = require("./smart"),
-	smith = require("./smith");
+/* Find nth Number */
+const catalan = require('./catalan'),
+	factorial = require('./factorial'),
+	fibonacci = require('./fibonacci'),
+	magic = require('./magic'),
+	smart = require('./smart');
 
 /* Mathematical Utilities */
+const gcd = require('./gcd'),
+	isEven = require('./isEven'),
+	isOdd = require('./isOdd'),
+	lcm = require('./lcm'),
+	length = require('./length'),
+	max = require('./max'),
+	min = require('./min'),
+	sort = require('./sort'),
+	sum = require('./sum');
 
-const gcd = require("./gcd"),
-	isEven = require("./isEven"),
-	isOdd = require("./isOdd"),
-	lcm = require("./lcm"),
-	length = require("./length"),
-	max = require("./max"),
-	min = require("./min"),
-	sort = require("./sort"),
-	sum = require("./sum");
+/* Helper Methods */
+const performance = require('./performance'),
+	pipe = require('./pipe');
 
-/* M - mathball utility object */
-
+/* M - Mathball Object */
 module.exports = {
 	isArmstrong: armstrong.isArmstrong,
 	isAutomorphic: automorphic.isAutomorphic,
-	fibonacci: fibonacci.fibonacci,
-	magic: magic.magic,
-	factorial: factorial.factorial,
-	isNeon: neon.isNeon,
-	isPalindrome: palindrome.isPalindrome,
-	isPrime: prime.isPrime,
 	catalan: catalan.catalan,
-	isKaprekar: kaprekar.isKaprekar,
-	isLucky: lucky.isLucky,
-	smart: smart.smart,
-	isSmith: smith.isSmith,
+	factorial: factorial.factorial,
+	fibonacci: fibonacci.fibonacci,
 	gcd,
 	isEven,
 	isOdd,
+	isKaprekar: kaprekar.isKaprekar,
 	lcm,
 	length,
+	isLucky: lucky.isLucky,
+	magic: magic.magic,
 	max,
 	min,
+	isNeon: neon.isNeon,
+	isPalindrome: palindrome.isPalindrome,
+	performance,
+	pipe,
+	isPrime: prime.isPrime,
+	smart: smart.smart,
+	isSmith: smith.isSmith,
 	sort,
 	sum
 };

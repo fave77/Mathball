@@ -1,6 +1,6 @@
 {
   "name": "mathball",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A npm package for competitive programming in JavaScript",
   "keywords": [
     "competitive-programming",
@@ -28,7 +28,7 @@
     "babel-preset-env": "^1.7.0",
     "codecov": "^3.1.0",
     "mocha": "^5.2.0",
-    "nyc": "^13.1.0"
+    "nyc": "^13.2.0"
   },
   "repository": {
     "type": "git",
