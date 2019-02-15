@@ -5,6 +5,7 @@ const armstrong = require('./armstrong'),
 	lucky = require('./lucky'),
 	neon = require('./neon'),
 	palindrome = require('./palindrome'),
+	perfect = require('./perfect'),
 	prime = require('./prime'),
 	smith = require('./smith');
 
@@ -49,6 +50,7 @@ module.exports = {
 	min,
 	isNeon: neon.isNeon,
 	isPalindrome: palindrome.isPalindrome,
+	isPerfect: perfect.isPerfect,
 	performance,
 	pipe,
 	isPrime: prime.isPrime,
