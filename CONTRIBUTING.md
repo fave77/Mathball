@@ -1,44 +1,53 @@
 # Contribution is fun! :green_heart:
 
-With your help, we can create a comprehensive mathematical tool that will help millions of people who want to do competitive programming in JavaScript for years to come. So, to make a hassle-free environment I implore you all (*while contributing*) to follow the guidelines mentioned below.
+With your contribution, we can create a comprehensive mathematical tool that may potentially aid millions of people who wanna do competitive programming in JavaScript for years to come. In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions/guidelines mentioned below!
 
-## Table of Contents :page_with_curl:
+Happy Contributing :slightly_smiling_face:
 
-- [Cloning Locally](#cloning-locally) :cd:
-- [Running Locally](#running-locally) :cyclone:
-- [Guidelines](#guidelines) :white_check_mark:
+## :mag: Project Architecture
 
-## Cloning Locally
+![](https://github.com/pbiswas101/Mathball/blob/master/assets/project_architecture.png)
 
-- Fork this repository :fork_and_knife:
+> NOTE: Do not make a PR on `gh-pages` directly:heavy_exclamation_mark:
 
-- Copy it to your local machine by running the following command in the terminal:
-```
+## :arrow_down: Installation
+
+- First, fork this repository :fork_and_knife: and follow the given instructions:
+
+```bash
+# clone the repository to your local machine
 $ git clone https://github.com/<YOUR-GITHUB-USERNAME>/Mathball.git
-```
 
-- Navigate to the project directory:
-```
-$ cd Mathball/
-```
+# navigate to the project's directory and install all the relevant dev-dependencies
+$ cd Mathball && npm i --save-dev
 
-- Add a remote upstream so git knows where the official **Mathball** repository is located by running the following command:
-```
+# include all the latest changes from the remote repository
 $ git remote add upstream https://github.com/pbiswas101/Mathball.git
+$ git fetch upstream
+$ git merge upstream/master
 ```
 
-- Create a new branch for your work - `$ git checkout -b <NEW-BRANCH-NAME>`.
+- If you wanna work on **deploy** branch then you need to make a slight change regarding the above commands, like so:
 
-## Running Locally
+```bash
+$ git clone https://github.com/<YOUR-GITHUB-USERNAME>/Mathball.git
+$ cd Mathball && npm i
 
-- Make sure to have **Node.js** and **npm** installed on your machine beforehand.
+$ git checkout -b deploy
 
-- Install all the *dev-dependencies* by running the command:
+$ git remote add upstream https://github.com/pbiswas101/Mathball.git
+$ git fetch upstream
+$ git merge upstream/deploy
+
 ```
-$ npm install --dev
-```
 
-- For working on the project you can run the following script:
+Next, create a new branch for the particular issue - `$ git checkout -b <NEW-BRANCH-NAME>` and make PR from that branch while leaving **master** branch unchanged :white_check_mark:
+
+
+
+## :construction: Development
+
+- In **master** branch you can run the following command:
 ```bash
 # testing locally
 $ npm run test
@@ -47,26 +56,71 @@ $ npm run test
 $ npm run build
 ```
 
-## Guidelines
+- In **deploy** branch you can run the following command:
+```bash
+# setting up development server
+$ npm run start
+```
 
-Being an open-source contributor is awesome :star: but along with that awesomeness comes responsibility. So, the responsibility of what you may ask! Well, you certainly don't want to make a PR that breaks the codebase itself, or for that matter instead of fixing bugs, it creates more. So, here are some curated guidelines one should follow in order for their PR getting merged: :pizza:
+- While working on the [documentation site][1], make sure to make PR for **deploy** branch! Under no circumstance should you use `$ npm run eject` :x:
+- Once you have made your changes, run the following command:
 
-- First raise an issue regarding any feature enhancements or bugs found, before making a PR.
+```bash
+# add your changes
+$ git add .
+
+# make your commit
+$ git commit -m "<YOUR-COMMIT-MESSAGE>"
+```
+
+> Think you're ready :grey_question: Make the PR :tropical_drink:
+
+
+## :page_with_curl: Guidelines
+
+Being an open-source contributor is awesome :bowtie: but with great awesomeness comes great responsibility; and the responsibility of what you might ask! Well, you certainly don't wanna make a PR that would break the codebase :x:, or instead of fixing bugs, creates more :beetle:. So, here are some curated guidelines one should follow while contributing :trophy:
+
+- Raise an issue regarding bug fixes or feature enhancements, before making a PR.
+
 - While raising an issue, please follow the **ISSUE_TEMPLATE.md** guidelines.
-- Always claim an issue and make sure you've been assigned before you start working on it.
-- Write your code adhered to [Airbnb style guide][1] as much as possible.
-- Make sure your editor supports the preferences from the **.editorconfig** file.
-- When adding a new feature, make sure to include the corresponding unit tests & update the **README.md** as well.
-- Always squash your commits for cleaner commit history.
-- While making a PR, please follow the **PULL_REQUEST_TEMPLATE.md** guidelines.
-- When making a PR, mention the issue you are solving, like so - `Fixed #2`.
-- Your PR must pass the [Travis CI][2] checks for it to be merged.
-- Do not shy away from using ES6+ syntax!
-- Do not review others' PR!
 
-**HAPPY CONTRIBUTING** :slightly_smiling_face:
+- First, claim an issue and make a PR only when you're assigned to it.
 
-------------
+- To claim an issue, just leave a comment and you'll be assigned on `first come, first serve` basis.
 
-[1]: https://github.com/airbnb/javascript
-[2]: https://travis-ci.org/
+- Organize your code adhered to [Airbnb style guide][2] as much as possible.
+
+- Configure your editor to support the preferences from the **.editorconfig** file.
+
+- A feature enhancement PR should include corresponding unit tests. Also, make sure to update **src/index.js** and **README.md** in an alphabetical manner under the proper category.
+
+- Squash your commits for cleaner commit history.
+
+- While making a PR, please follow the **PULL_REQUEST_TEMPLATE.md** guidelines and mention the issue you are solving, like so - `Fixed #2`.
+
+- Your PR must pass the [Travis CI][3], [Codacy][4], [Snyk][5] checks for it to be considered getting merged.
+
+- [Codecov][6] checks ain't mandatory to pass but your PR shouldn't decrease the overall project's coverage by a huge margin.
+
+- Use ES6+ syntax precisely and do not review others' PR!
+
+- Maintain a healthy environment and don't indulge in any kind of activities that's against the CODE_OF_CONDUCT.md
+
+##### Additional Instructions for GirlScript Summer of Code 2019 Participants:
+
+- If a participant resolves any issue which includes the label `gssoc19`, he/she would earn a score!
+
+- Scores are rewarded according to the difficulty level of the corresponding issue which can be identified by the labels like `easy`, `medium` and `hard`.
+
+- Biweekly evaluation will be conducted based on each participants' score and the result will be declared on the Slack Workspace.
+
+###### Made with :hearts: for the Community!
+
+---
+
+[1]: https://pbiswas101.github.io/Mathball/
+[2]: https://github.com/airbnb/javascript
+[3]: https://travis-ci.org/
+[4]: https://www.codacy.com/
+[5]: https://snyk.io/
+[6]: https://codecov.io/

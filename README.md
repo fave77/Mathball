@@ -28,6 +28,8 @@ $ npm install mathball --save
 
 - **Mathematical Utilities** - [gcd()][10] - [isEven()][11] - [isOdd()][12] - [lcm()][13] - [length()][14] - [max()][15] - [min()][16] - [sort()][17] - [sum()][18]
 
+- **Helper Methods** - [performance()][27] - [pipe()][28]
+
 ## Examples
 
 You can access all the utilities via **mathball** object, `M` (or whatever you end up calling it) like so:
@@ -55,6 +57,12 @@ console.log(gcd([12, 18, 24]));		//6
 3. Follow the guidelines given in [CONTRIBUTING.md][19]. :star2:
 4. Make a PR. :hammer:
 5. Mission Acomplished! :tada:
+
+## Important Notice
+
+> **Mathball** has been selected at [GirlScript Summer of Code 2019][29]!
+
+![](https://cdn-images-1.medium.com/max/600/1*47hUn6EfnP5hZkHslmUsxQ.jpeg)
 
 ## License
 
@@ -86,3 +94,6 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [24]: https://github.com/pbiswas101/Mathball/blob/master/src/lucky/index.js
 [25]: https://github.com/pbiswas101/Mathball/blob/master/src/smart/index.js
 [26]: https://github.com/pbiswas101/Mathball/blob/master/src/smith/index.js
+[27]: https://github.com/pbiswas101/Mathball/blob/master/src/performance/index.js
+[28]: https://github.com/pbiswas101/Mathball/blob/master/src/pipe/index.js
+[29]: https://www.gssoc.tech/
