@@ -39,4 +39,8 @@ describe('[Function: max]', () => {
 		assert.throws(() => max(), TypeError);
 	});
 
+	it('should throw an error when arguments are not number', () => {
+		assert.throws(() => max(['hi', 'hello']), TypeError);
+	});
+
 });

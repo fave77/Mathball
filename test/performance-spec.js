@@ -31,4 +31,8 @@ describe('[Function: performance]', () => {
 		assert.throws(() => performance(), TypeError);
 	});
 
+	it('should throw a RangeError when there is more than 3 args', () => {
+		assert.throws(() => performance(Number, 2, 3, 4, 5), RangeError);
+	});
+
 });

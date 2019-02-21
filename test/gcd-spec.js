@@ -35,4 +35,8 @@ describe('[Function: gcd]', () => {
 		assert.throws(() => gcd(), TypeError);
 	});
 
+	it('should throw an error when arguments are not numbers', () => {
+		assert.throws(() => gcd(['string', 'string']), TypeError);
+	});
+
 });
