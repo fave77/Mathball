@@ -33,4 +33,8 @@ describe("[Function: isKaprekar]", () => {
 	it("should throw an error when no arguments passed", () => {
 		assert.throws(() => isKaprekar(), TypeError);
 	});
+
+	it("should 'continue' loop execution instead of throwing error", () => {
+		assert.doesNotThrow(() => isKaprekar(10), Error);
+	});
 });

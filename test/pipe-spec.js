@@ -31,4 +31,11 @@ describe('[Function: pipe]', () => {
 		assert.throws(() => pipe(), TypeError);
 	});
 
+	it('should not throw TypeError when functions are passed', () => {
+		assert.doesNotThrow(() => pipe(Boolean, Number), TypeError);
+	});
+
+	it('should throw Error when functions are not passed as arguments', () => {
+		assert.throws(() => pipe([], {}, true), TypeError);
+	});
 });

@@ -39,4 +39,7 @@ describe('[Function: length]', () => {
 		assert.strictEqual(length({}), 0);
 	});
 
+	it('should throw a \'TypeError\' when a \'Bool\' is passed', () => {
+		assert.throws(() => length(true), TypeError);
+	});
 });

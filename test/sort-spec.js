@@ -36,4 +36,7 @@ describe('[Function: sort]', () => {
 		assert.throws(() => sort(), TypeError);
 	});
 
+	it('should throw an error when `order` is not boolean', () => {
+		assert.throws(() => sort([], 'hey yoo'), TypeError);
+	});
 });
