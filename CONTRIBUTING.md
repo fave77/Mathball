@@ -1,14 +1,8 @@
 # Contribution is fun! :green_heart:
 
-With your contribution, we can create a comprehensive mathematical tool that may potentially aid millions of people who wanna do competitive programming in JavaScript for years to come. In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions/guidelines mentioned below!
+With your contribution, we can create a comprehensive mathematical tool that may potentially aid millions of people who wanna do competitive programming in JavaScript for years to come. In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
 Happy Contributing :slightly_smiling_face:
-
-## :mag: Project Architecture
-
-![](https://github.com/pbiswas101/Mathball/blob/master/assets/project_architecture.png)
-
-> NOTE: Do not make a PR on `gh-pages` directly:heavy_exclamation_mark:
 
 ## :arrow_down: Installation
 
@@ -19,7 +13,7 @@ Happy Contributing :slightly_smiling_face:
 $ git clone https://github.com/<YOUR-GITHUB-USERNAME>/Mathball.git
 
 # navigate to the project's directory and install all the relevant dev-dependencies
-$ cd Mathball && npm i --save-dev
+$ cd Mathball && npm i --dev
 
 # include all the latest changes from the remote repository
 $ git remote add upstream https://github.com/pbiswas101/Mathball.git
@@ -27,27 +21,11 @@ $ git fetch upstream
 $ git merge upstream/master
 ```
 
-- If you wanna work on **deploy** branch then you need to make a slight change regarding the above commands, like so:
-
-```bash
-$ git clone https://github.com/<YOUR-GITHUB-USERNAME>/Mathball.git
-$ cd Mathball && npm i
-
-$ git checkout -b deploy
-
-$ git remote add upstream https://github.com/pbiswas101/Mathball.git
-$ git fetch upstream
-$ git merge upstream/deploy
-
-```
-
 Next, create a new branch for the particular issue - `$ git checkout -b <NEW-BRANCH-NAME>` and make PR from that branch while leaving **master** branch unchanged :white_check_mark:
-
-
 
 ## :construction: Development
 
-- In **master** branch you can run the following command:
+- In your branch you can run the following command:
 ```bash
 # testing locally
 $ npm run test
@@ -56,13 +34,6 @@ $ npm run test
 $ npm run build
 ```
 
-- In **deploy** branch you can run the following command:
-```bash
-# setting up development server
-$ npm run start
-```
-
-- While working on the [documentation site][1], make sure to make PR for **deploy** branch! Under no circumstance should you use `$ npm run eject` :x:
 - Once you have made your changes, run the following command:
 
 ```bash
@@ -88,7 +59,7 @@ Being an open-source contributor is awesome :bowtie: but with great awesomeness 
 
 - To claim an issue, just leave a comment and you'll be assigned on `first come, first serve` basis.
 
-- Organize your code adhered to [Airbnb style guide][2] as much as possible.
+- Organize your code adhered to [Airbnb style guide][1] as much as possible.
 
 - Configure your editor to support the preferences from the **.editorconfig** file.
 
@@ -98,9 +69,9 @@ Being an open-source contributor is awesome :bowtie: but with great awesomeness 
 
 - While making a PR, please follow the **PULL_REQUEST_TEMPLATE.md** guidelines and mention the issue you are solving, like so - `Fixed #2`.
 
-- Your PR must pass the [Travis CI][3], [Codacy][4], [Snyk][5] checks for it to be considered getting merged.
+- Your PR must pass the [Travis CI][2], [Codacy][3], [Snyk][4] checks for it to be considered getting merged.
 
-- [Codecov][6] checks ain't mandatory to pass but your PR shouldn't decrease the overall project's coverage by a huge margin.
+- [Codecov][5] checks ain't mandatory to pass but your PR shouldn't decrease the overall project's coverage by a huge margin.
 
 - Use ES6+ syntax precisely and do not review others' PR!
 
@@ -110,17 +81,26 @@ Being an open-source contributor is awesome :bowtie: but with great awesomeness 
 
 - If a participant resolves any issue which includes the label `gssoc19`, he/she would earn a score!
 
-- Scores are rewarded according to the difficulty level of the corresponding issue which can be identified by the labels like `easy`, `medium` and `hard`.
+- Scores are rewarded according to the difficulty level of the corresponding issue which can be identified by the labels like `beginner`, `easy`, `medium` and `hard`.
+
+- When a participant is assigned an issue, he/she would've to make a PR within a particular duration according to the difficulty level:
+	- 1 day for `beginner`
+	- 1 day for `easy`
+	- 3 days for `medium`
+	- 5 days for `hard`
+
+- Failing to make a PR within the given time would result in its corresponding issue being assigned to someone else or labeled as `up-for-grabs`.
+
+- One cannot claim more than one issue at a time!
 
 - Biweekly evaluation will be conducted based on each participants' score and the result will be declared on the Slack Workspace.
 
-###### Made with :hearts: for the Community!
-
 ---
 
-[1]: https://pbiswas101.github.io/Mathball/
-[2]: https://github.com/airbnb/javascript
-[3]: https://travis-ci.org/
-[4]: https://www.codacy.com/
-[5]: https://snyk.io/
-[6]: https://codecov.io/
+<p align="center">Made with :hearts: for the Community!</p>
+
+[1]: https://github.com/airbnb/javascript
+[2]: https://travis-ci.org/
+[3]: https://www.codacy.com/
+[4]: https://snyk.io/
+[5]: https://codecov.io/
