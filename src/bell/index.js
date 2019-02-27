@@ -1,4 +1,4 @@
-/* N-th bell Number
+/* Nth Bell Number
  * Function: bell()
  */
 

@@ -10,7 +10,7 @@ const armstrong = require('./armstrong'),
 	smith = require('./smith');
 
 /* Find nth Number */
-const bell = require('./bell');
+const bell = require('./bell'),
 	catalan = require('./catalan'),
 	factorial = require('./factorial'),
 	fibonacci = require('./fibonacci'),
