@@ -1,6 +1,7 @@
 /* Number Checkers */
 const armstrong = require('./armstrong'),
 	automorphic = require('./automorphic'),
+	hoax = require('./hoax'),
 	kaprekar = require('./kaprekar'),
 	lucky = require('./lucky'),
 	neon = require('./neon'),
@@ -57,5 +58,6 @@ module.exports = {
 	smart: smart.smart,
 	isSmith: smith.isSmith,
 	sort,
-	sum
+	sum,
+	isHoax: hoax.isHoax
 };
