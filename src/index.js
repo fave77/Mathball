@@ -26,7 +26,8 @@ const gcd = require('./gcd'),
 	max = require('./max'),
 	min = require('./min'),
 	sort = require('./sort'),
-	sum = require('./sum');
+	sum = require('./sum'),
+	modInv = require('./modInv');
 
 /* Helper Methods */
 const performance = require('./performance'),
@@ -59,5 +60,6 @@ module.exports = {
 	smart: smart.smart,
 	isSmith: smith.isSmith,
 	sort,
-	sum
+	sum,
+	modInv: modInv.modInv
 };
