@@ -4,13 +4,13 @@
 
 ![](https://github.com/pbiswas101/Mathball/blob/master/assets/mathball-banner.png)
 
-**Mathball** is an npm package for competitive programming in [JavaScript][1] with a focus on common mathematical utilities being implemented in relevant algorithms & data structures for optimized performance!
+**Mathball** is a JavaScript library for competitive programming, implementing optimized algorithms for faster execution.
 
-JavaScript was never built while keeping competitive coding in mind; let us all agree on that. But, the stuff that we build with it today was not something it was built for either! Back in 1995, [Brendan Eich][2] developed JavaScript only for adding interactivity to web pages like handling a mouse click. Today, we can build _servers_, _games_, _mobile apps_, _IoT apps_ and even _machine learning_ in the browser is possible with JavaScript.
+JavaScript was never built while keeping competitive coding in mind; let us all agree on that. Back in 1995, [Brendan Eich][1] developed JavaScript only for adding interactivity to web pages like handling a mouse click. Today, we can build _servers_, _games_, _mobile apps_, _IoT apps_ and even _machine learning_ in the browser is possible with JavaScript.
 
 > "Any application that can be written in JavaScript, will eventually be written in JavaScript." -- Atwood's Law.
 
-Based on the notion - **JS is everywhere!** I also believe that maybe its time to motivate people who are well versed with this language to finally consider it in the realm of competitive programming.
+Hence, I believe maybe its time for people who are well versed with this particular language to finally consider using it in the realm of competitive programming as well.
 
 ## Installation
 
@@ -21,13 +21,13 @@ $ npm install mathball --save
 ```
 ## Features
 
-- **Number Checkers** - [isArmstrong()][3] - [isAutomorphic()][4] - [isKaprekar()][23] - [isLucky()][24] - [isNeon()][5] - [isPalindrome()][6] - [isPerfect()][27] - [isPrime()][7] - [isSmith()][26]
+- **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26]
 
-- **Find nth Number** - [catalan()][22] - [factorial()][21] - [fibonacci()][8] - [magic()][9] - [smart()][25]
+- **Find nth Number** - [catalan][22] - [factorial][21] - [fibonacci][8] - [magic][9] - [smart][25]
 
-- **Mathematical Utilities** - [gcd()][10] - [isEven()][11] - [isOdd()][12] - [lcm()][13] - [length()][14] - [max()][15] - [min()][16] - [sort()][17] - [sum()][18] - [modInv()][39]
+- **Mathematical Utilities** - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [sort][17] - [sum][18] - [modInv][39]
 
-- **Helper Methods** - [performance()][28] - [pipe()][29]
+- **Helper Methods** - [performance][28] - [pipe][29]
 
 ## Examples
 
@@ -63,12 +63,13 @@ console.log(gcd([12, 18, 24]));		//6
 
 ![](https://cdn-images-1.medium.com/max/600/1*47hUn6EfnP5hZkHslmUsxQ.jpeg)
 
+> **Mentors** - Neel Shah, Rishabh Malik, Mridul Aggarwal
+
 ## License
 
 The MIT License 2019 - [Priyabrata Biswas][20].
 
-[1]: https://developer.mozilla.org/bm/docs/Web/JavaScript
-[2]: https://en.wikipedia.org/wiki/Brendan_Eich
+[1]: https://en.wikipedia.org/wiki/Brendan_Eich
 [3]: https://github.com/pbiswas101/Mathball/blob/master/src/armstrong/index.js
 [4]: https://github.com/pbiswas101/Mathball/blob/master/src/automorphic/index.js
 [5]: https://github.com/pbiswas101/Mathball/blob/master/src/neon/index.js
