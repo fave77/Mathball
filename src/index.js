@@ -10,7 +10,8 @@ const armstrong = require('./armstrong'),
 	smith = require('./smith');
 
 /* Find nth Number */
-const catalan = require('./catalan'),
+const bell = require('./bell'),
+	catalan = require('./catalan'),
 	factorial = require('./factorial'),
 	fibonacci = require('./fibonacci'),
 	magic = require('./magic'),
@@ -36,6 +37,7 @@ const performance = require('./performance'),
 module.exports = {
 	isArmstrong: armstrong.isArmstrong,
 	isAutomorphic: automorphic.isAutomorphic,
+	bell: bell.bell,
 	catalan: catalan.catalan,
 	factorial: factorial.factorial,
 	fibonacci: fibonacci.fibonacci,
