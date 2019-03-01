@@ -1,3 +1,5 @@
+const validate = require('../validation/frequency');
+
 /**
  * Frequency
  *
@@ -6,9 +8,10 @@
  * @param {string|number} occurence - The phrase or array item you want to find
  */
 module.exports = (arg, occurence) => {
+  validate(arg, 'frequency');
+  
   if (arg && arg.constructor === Array) return (arg = arg.filter(val => val === occurence).length);
   else if (arg && typeof arg === 'string') return findStrOccurence(arg, occurence);
-  else throw new TypeError(`Invalid argument received: ${JSON.stringify(arg)}\nfrequency() only accepts an Array or a String`);
 };
 
 /**

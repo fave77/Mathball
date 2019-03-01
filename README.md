@@ -25,7 +25,7 @@ $ npm install mathball --save
 
 - **Find nth Number** - [catalan][22] - [factorial][21] - [fibonacci][8] - [magic][9] - [smart][25]
 
-- **Mathematical Utilities** - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [sort][17] - [sum][18] - [modInv][39]
+- **Mathematical Utilities** - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [sort][17] - [sum][18] - [modInv][39] - [frequency][40]
 
 - **Helper Methods** - [performance][28] - [pipe][29]
 
@@ -99,3 +99,4 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [29]: https://github.com/pbiswas101/Mathball/blob/master/src/pipe/index.js
 [30]: https://www.gssoc.tech/
 [39]: https://github.com/pbiswas101/Mathball/blob/master/src/modInv/index.js
+[40]: https://github.com/pbiswas101/Mathball/blob/master/src/frequency/index.js
