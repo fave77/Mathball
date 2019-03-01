@@ -25,7 +25,7 @@ function bell(number){
     let v = bell[number][0];
     return v;
 
-};
+}
 
 exports.bell = num => {
 
