@@ -57,6 +57,7 @@ module.exports = {
 	performance,
 	pipe,
 	isPrime: prime.isPrime,
+	rangePrime: prime.rangePrime,
 	smart: smart.smart,
 	isSmith: smith.isSmith,
 	sort,
