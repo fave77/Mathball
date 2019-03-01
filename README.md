@@ -25,7 +25,7 @@ $ npm install mathball --save
 
 - **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [fibonacci][8] - [magic][9] - [smart][25]
 
-- **Mathematical Utilities** - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [sort][17] - [sum][18] - [modInv][39]
+- **Mathematical Utilities** - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [sort][17] - [sum][18] - [modInv][39] - [rangePrime][7]
 
 - **Helper Methods** - [performance][28] - [pipe][29]
 
