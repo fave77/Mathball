@@ -4,7 +4,7 @@
 
 module.exports = (arg, func) => {
 	let flag = 0;
-	if(arg && arg.constructor == Array)
+	if(arg.length != 0)
 		arg.forEach(item => {
 			if(typeof item != 'function') flag = 1;
 		});

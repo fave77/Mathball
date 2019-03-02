@@ -25,7 +25,5 @@ module.exports = (fn, ...arg) => {
 			fn(arg[0], arg[1], arg[2]);
 			console.timeEnd('\x1b[36mTime Taken\x1b[0m');
 			break;
-		default:
-			validate(fn, arg, 'performance');
 	}
 }
