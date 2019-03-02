@@ -7,7 +7,8 @@ const armstrong = require('./armstrong'),
 	palindrome = require('./palindrome'),
 	perfect = require('./perfect'),
 	prime = require('./prime'),
-	smith = require('./smith');
+	smith = require('./smith'),
+	isDeficient = require('./isDeficient');;
 
 /* Find nth Number */
 const bell = require('./bell'),
@@ -64,5 +65,6 @@ module.exports = {
 	sort,
 	sum,
 	modInv: modInv.modInv,
-	frequency
+	frequency,
+	isDeficient
 };
