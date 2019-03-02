@@ -16,20 +16,21 @@ const bell = require('./bell'),
 	factorial = require('./factorial'),
 	fibonacci = require('./fibonacci'),
 	magic = require('./magic'),
+	padovan = require('./padovan'),
 	smart = require('./smart');
 
 /* Mathematical Utilities */
-const gcd = require('./gcd'),
+const frequency = require('./frequency'),
+  gcd = require('./gcd'),
 	isEven = require('./isEven'),
 	isOdd = require('./isOdd'),
 	lcm = require('./lcm'),
 	length = require('./length'),
 	max = require('./max'),
 	min = require('./min'),
-	sort = require('./sort'),
-	sum = require('./sum'),
 	modInv = require('./modInv'),
-	frequency = require('./frequency');
+	sort = require('./sort'),
+	sum = require('./sum');
 
 /* Helper Methods */
 const performance = require('./performance'),
@@ -43,6 +44,7 @@ module.exports = {
 	catalan: catalan.catalan,
 	factorial: factorial.factorial,
 	fibonacci: fibonacci.fibonacci,
+	padovan: padovan.padovan,
 	gcd,
 	isEven,
 	isOdd,
