@@ -9,7 +9,7 @@ function pad(num) {
 		pPrev = 1,
 		pCurr = 1,
 		pNext = 1;
-	for (let i = 3; i < num; i++) {
+	for (let i = 3; i <= num; i++) {
 		pNext = pPrevPrev + pPrev;
 		pPrevPrev = pPrev;
 		pPrev = pCurr;

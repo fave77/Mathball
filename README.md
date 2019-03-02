@@ -19,11 +19,12 @@ You can download the package in your working directory by simply typing in the *
 ```
 $ npm install mathball --save
 ```
+
 ## Features
 
 - **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26]
 
-- **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [fibonacci][8] - [magic][9] - [smart][25]
+- **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [fibonacci][8] - [magic][9] - [smart][25] - [padovan][40]
 
 - **Mathematical Utilities** - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [sort][17] - [sum][18] - [modInv][39]
 
@@ -34,19 +35,19 @@ $ npm install mathball --save
 You can access all the utilities via **mathball** object, `M` (or whatever you end up calling it) like so:
 
 ```js
-let M = require('mathball');
+let M = require("mathball");
 
-console.log(M.isPalindrome(1551))       //true
-console.log(M.isEven(7))		//false
-console.log(M.sum([4, 5, 9]))		//18
+console.log(M.isPalindrome(1551)); //true
+console.log(M.isEven(7)); //false
+console.log(M.sum([4, 5, 9])); //18
 ```
 
 Or, you can directly access an individual function as given below:
 
 ```js
-let gcd = require('mathball/lib/gcd');
+let gcd = require("mathball/lib/gcd");
 
-console.log(gcd([12, 18, 24]));		//6
+console.log(gcd([12, 18, 24])); //6
 ```
 
 ## Contribution
@@ -100,3 +101,4 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [30]: https://www.gssoc.tech/
 [32]: https://github.com/pbiswas101/Mathball/blob/master/src/bell/index.js
 [39]: https://github.com/pbiswas101/Mathball/blob/master/src/modInv/index.js
+[40]: https://github.com/pbiswas101/Mathball/blob/master/src/padovan/index.js
