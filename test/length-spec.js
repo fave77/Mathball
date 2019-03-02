@@ -42,4 +42,13 @@ describe('[Function: length]', () => {
 	it('should throw a \'TypeError\' when a \'Bool\' is passed', () => {
 		assert.throws(() => length(true), TypeError);
 	});
+
+	it('should return \'5\' when the number \'124.34\' is passed', () => {
+		assert.strictEqual(length(124.34), 5);
+	});
+
+	it('should throw an error when no value is passed', () => {
+		assert.throws(() => length(), TypeError);
+	});
+
 });
