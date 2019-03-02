@@ -22,7 +22,7 @@ $ npm install mathball --save
 
 ## Features
 
-- **Number Checkers** - [isArmstrong()][3] - [isAutomorphic()][4] - [isKaprekar()][23] - [isLucky()][24] - [isNeon()][5] - [isPalindrome()][6] - [isPrime()][7] - [isSmith()][26]
+- **Number Checkers** - [isArmstrong()][3] - [isAutomorphic()][4] - [isFrugal()][27] - [isKaprekar()][23] - [isLucky()][24] - [isNeon()][5] - [isPalindrome()][6] - [isPrime()][7] - [isSmith()][26]
 
 - **Find nth Number** - [catalan()][22] - [factorial()][21] - [fibonacci()][8] - [magic()][9] - [smart()][25]
 
@@ -86,3 +86,4 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [24]: https://github.com/pbiswas101/Mathball/blob/master/src/lucky/index.js
 [25]: https://github.com/pbiswas101/Mathball/blob/master/src/smart/index.js
 [26]: https://github.com/pbiswas101/Mathball/blob/master/src/smith/index.js
+[27]: https://github.com/pbiswas101/Mathball/blob/master/src/frugalNumber/index.js
