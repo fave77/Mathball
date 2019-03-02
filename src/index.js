@@ -27,7 +27,8 @@ const gcd = require('./gcd'),
 	min = require('./min'),
 	sort = require('./sort'),
 	sum = require('./sum'),
-	modInv = require('./modInv');
+	modInv = require('./modInv'),
+	frequency = require('./frequency');
 
 /* Helper Methods */
 const performance = require('./performance'),
@@ -62,5 +63,6 @@ module.exports = {
 	isSmith: smith.isSmith,
 	sort,
 	sum,
-	modInv: modInv.modInv
+	modInv: modInv.modInv,
+	frequency
 };
