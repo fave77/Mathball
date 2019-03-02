@@ -1,37 +1,38 @@
 /* Number Checkers */
-const armstrong = require('./armstrong'),
-	automorphic = require('./automorphic'),
-	kaprekar = require('./kaprekar'),
-	lucky = require('./lucky'),
-	neon = require('./neon'),
-	palindrome = require('./palindrome'),
-	perfect = require('./perfect'),
-	prime = require('./prime'),
-	smith = require('./smith');
+const armstrong = require("./armstrong"),
+	automorphic = require("./automorphic"),
+	kaprekar = require("./kaprekar"),
+	lucky = require("./lucky"),
+	neon = require("./neon"),
+	palindrome = require("./palindrome"),
+	perfect = require("./perfect"),
+	prime = require("./prime"),
+	smith = require("./smith");
 
 /* Find nth Number */
-const bell = require('./bell'),
-	catalan = require('./catalan'),
-	factorial = require('./factorial'),
-	fibonacci = require('./fibonacci'),
-	magic = require('./magic'),
-	smart = require('./smart');
+const bell = require("./bell"),
+	catalan = require("./catalan"),
+	factorial = require("./factorial"),
+	fibonacci = require("./fibonacci"),
+	padovan = require("./padovan"),
+	magic = require("./magic"),
+	smart = require("./smart");
 
 /* Mathematical Utilities */
-const gcd = require('./gcd'),
-	isEven = require('./isEven'),
-	isOdd = require('./isOdd'),
-	lcm = require('./lcm'),
-	length = require('./length'),
-	max = require('./max'),
-	min = require('./min'),
-	sort = require('./sort'),
-	sum = require('./sum'),
-	modInv = require('./modInv');
+const gcd = require("./gcd"),
+	isEven = require("./isEven"),
+	isOdd = require("./isOdd"),
+	lcm = require("./lcm"),
+	length = require("./length"),
+	max = require("./max"),
+	min = require("./min"),
+	sort = require("./sort"),
+	sum = require("./sum"),
+	modInv = require("./modInv");
 
 /* Helper Methods */
-const performance = require('./performance'),
-	pipe = require('./pipe');
+const performance = require("./performance"),
+	pipe = require("./pipe");
 
 /* M - Mathball Object */
 module.exports = {
@@ -41,6 +42,7 @@ module.exports = {
 	catalan: catalan.catalan,
 	factorial: factorial.factorial,
 	fibonacci: fibonacci.fibonacci,
+	padovan: padovan.padovan,
 	gcd,
 	isEven,
 	isOdd,
