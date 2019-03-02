@@ -36,10 +36,10 @@ describe('[Function: performance]', () => {
 	});
 
 	it('should reuturn \'undefined\'', () => {
-		assert.strictEqual(performance(Math.sqrt) , undefined);
+		assert.strictEqual(performance(Math.sqrt), undefined);
 	});
 
 	it('should return \'undefined\'', () => {
-		assert.strictEqual(performance(Number, 1, 2, 3), undefined);
+		assert.strictEqual(performance(Math.pow, 1, 2, 3), undefined);
 	});
 });
