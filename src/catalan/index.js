@@ -6,9 +6,6 @@ const validate = require('../validation/non-negative-integer');
 
 function binomialCoeff(n, k) {
 	let res = 1;
-	if (k > n - k) {
-		k = n - k;
-	}
 	for (let i = 0; i < k; i++) {
 		res = res * (n - i);
 		res = res / (i + 1);

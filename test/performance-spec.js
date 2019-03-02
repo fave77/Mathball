@@ -35,4 +35,11 @@ describe('[Function: performance]', () => {
 		assert.throws(() => performance(Number, 2, 3, 4, 5), RangeError);
 	});
 
+	it('should reuturn \'undefined\'', () => {
+		assert.strictEqual(performance(Math.sqrt), undefined);
+	});
+
+	it('should return \'undefined\'', () => {
+		assert.strictEqual(performance(Math.pow, 1, 2, 3), undefined);
+	});
 });

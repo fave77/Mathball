@@ -1,5 +1,7 @@
 const assert = require('assert'),
-	isPrime = require('../src/prime').isPrime;
+	prime = require('../src/prime'),
+	isPrime = prime.isPrime,
+	rangePrime = prime.rangePrime;
 
 describe('[Function: isPrime]', () => {
 
@@ -33,6 +35,54 @@ describe('[Function: isPrime]', () => {
 
 	it('should throw an error when no arguments passed', () => {
 		assert.throws(() => isPrime(), TypeError);
+	});
+
+});
+
+describe('[Function: rangePrime]', () => {
+	it('should be a function', () => {
+		assert.strictEqual(typeof rangePrime, 'function');
+	});
+
+	it('should throw an error when a negative number is passed', () => {
+		assert.throws(() => rangePrime(-15), TypeError);
+	});
+
+	it('should throw an error when a floating point is passed', () => {
+		assert.throws(() => rangePrime(3.1415), TypeError);
+	});
+
+	it('should throw an error when a string is passed', () => {
+		assert.throws(() => rangePrime('14'), TypeError);
+	});
+
+	it('should throw an error when no arguments passed', () => {
+		assert.throws(() => rangePrime(), TypeError);
+	});
+
+	it('should return an array when a positive integer is passed', () => {
+		assert.strictEqual(typeof rangePrime(1), 'object');
+		assert.strictEqual(rangePrime(3).hasOwnProperty('length'), true);
+	});
+
+	it('should throw an error when no arguments passed', () => {
+		assert.throws(() => rangePrime(), TypeError);
+	});
+
+	it('should return \'[2]\' when \'2\' is passed', () => {
+		assert.deepStrictEqual(rangePrime(2), [2]);
+	});
+
+	it('should return \'[2, 3, 5, 7, 11]\' when \'11\' is passed', () => {
+		assert.deepStrictEqual(rangePrime(11), [2, 3, 5, 7, 11]);
+	});
+
+	it('should return \'[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]\' when \'31\' is passed', () => {
+		assert.deepStrictEqual(rangePrime(31), [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]);
+	});
+
+	it('should return \'[]\' when \'1\' is passed', () => {
+		assert.deepStrictEqual(rangePrime(1), []);
 	});
 
 });
