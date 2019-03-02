@@ -6,14 +6,14 @@ const validate = require('../validation/frequency');
 * @param {string} occurance
 */
 const findStrOccurence = (str, occurance) => {
-  let count = 0,
-      flag = -1;
+  let count = 0;
+  let flag = -1;
 
   do {
-      flag = str.indexOf(occurance, flag + 1);
-      if (flag !== -1) {
-        count++
-      }
+    flag = str.indexOf(occurance, flag + 1);
+    if (flag !== -1) {
+      count++;
+    }
   } while (flag !== -1);
 
   return count;

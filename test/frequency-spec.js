@@ -50,4 +50,8 @@ describe('[Function: frequency]', () => {
 	it('should throw TypeError when nothing is passed as arguments', () => {
 		assert.throws(() => frequency(), TypeError);
 	});
+
+	it('should throw TypeError when an Objectis passed', () => {
+		assert.throws(() => frequency({foo: 'bar'}), TypeError);
+	});
 });
