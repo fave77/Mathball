@@ -104,4 +104,4 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [40]: https://github.com/pbiswas101/Mathball/blob/master/src/frequency/index.js
 [41]: https://github.com/pbiswas101/Mathball/blob/master/src/padovan/index.js
 [42]: https://github.com/pbiswas101/Mathball/blob/master/src/isDeficient/index.js
-[43]: https://github.com/pbiswas101/Mathball/blob/master/src/isCarmichael/index.js
+[43]: https://github.com/pbiswas101/Mathball/blob/master/src/carmichael/index.js
