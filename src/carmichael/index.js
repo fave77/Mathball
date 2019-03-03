@@ -6,7 +6,7 @@ const validate = require('../validation/positive-integer');
 const prime = require('../prime');
 
 function squarefree(i){
-	for(let k = 2; (k <= Math.sqrt(i) && i % k != 0 && i/k % k != 0); k++){
+	for(let k = 2; (k <= Math.sqrt(i) && i % k !== 0 && i/k % k !== 0); k++){
 		return true;
 	}
 }
