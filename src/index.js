@@ -9,6 +9,7 @@ const armstrong = require('./armstrong'),
 	prime = require('./prime'),
 	smith = require('./smith'),
 	isDeficient = require('./isDeficient');
+	carmichael = require('./carmichael');
 
 /* Find nth Number */
 const bell = require('./bell'),
@@ -69,4 +70,5 @@ module.exports = {
 	modInv: modInv.modInv,
 	frequency,
 	isDeficient
+	isCarmichael: carmichael.isCarmichael
 };
