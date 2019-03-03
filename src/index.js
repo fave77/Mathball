@@ -1,6 +1,7 @@
 /* Number Checkers */
 const armstrong = require('./armstrong'),
 	automorphic = require('./automorphic'),
+	frugal = require('./frugal'),
 	kaprekar = require('./kaprekar'),
 	lucky = require('./lucky'),
 	neon = require('./neon'),
@@ -21,7 +22,7 @@ const bell = require('./bell'),
 
 /* Mathematical Utilities */
 const frequency = require('./frequency'),
-  gcd = require('./gcd'),
+    gcd = require('./gcd'),
 	isEven = require('./isEven'),
 	isOdd = require('./isOdd'),
 	lcm = require('./lcm'),
@@ -43,6 +44,7 @@ module.exports = {
 	bell: bell.bell,
 	catalan: catalan.catalan,
 	factorial: factorial.factorial,
+	frugal: frugal.isFrugal,
 	fibonacci: fibonacci.fibonacci,
 	padovan: padovan.padovan,
 	gcd,
