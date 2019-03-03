@@ -1,5 +1,16 @@
 const validateNumber = require('../validation/number');
 
+
+
+class PriorityQueue {
+	constructor(elem, priority) {
+		this.element = elem;
+		this.priority = priority;
+	}
+}
+
+
+
 class pQ {
 	constructor() {
 		this.queueArr = [];
@@ -14,10 +25,7 @@ class pQ {
 	enqueue(elem, priority) {
 		validateNumber(priority, 'enqueue');
 
-		let item = {
-			element: elem,
-			priority: priority
-		};
+		let item = new PriorityQueue(elem, priority);
 		let flag = false;
 
 		for (let i in this.queueArr) {
