@@ -29,4 +29,4 @@ function isCarmichael(n){
 exports.isCarmichael = n => {
 	validate(n, 'isCarmichael');
 	return isCarmichael(n);
-}
+};
