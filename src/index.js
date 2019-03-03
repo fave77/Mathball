@@ -69,6 +69,6 @@ module.exports = {
 	sum,
 	modInv: modInv.modInv,
 	frequency,
-	isDeficient
+	isDeficient,
 	isCarmichael: carmichael.isCarmichael
 };
