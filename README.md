@@ -35,7 +35,7 @@ $ npm install mathball --save
 You can access all the utilities via **mathball** object, `M` (or whatever you end up calling it) like so:
 
 ```js
-let M = require("mathball");
+let M = require('mathball');
 
 console.log(M.isPalindrome(1551)); //true
 console.log(M.isEven(7)); //false
@@ -45,7 +45,7 @@ console.log(M.sum([4, 5, 9])); //18
 Or, you can directly access an individual function as given below:
 
 ```js
-let gcd = require("mathball/lib/gcd");
+let gcd = require('mathball/lib/gcd');
 
 console.log(gcd([12, 18, 24])); //6
 ```
