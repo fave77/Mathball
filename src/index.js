@@ -1,41 +1,41 @@
 /* Number Checkers */
-const armstrong = require("./armstrong"),
-	automorphic = require("./automorphic"),
-	harshad = require("./harshad"),
-	kaprekar = require("./kaprekar"),
-	lucky = require("./lucky"),
-	neon = require("./neon"),
-	palindrome = require("./palindrome"),
-	perfect = require("./perfect"),
-	prime = require("./prime"),
-	smith = require("./smith"),
-	isDeficient = require("./isDeficient");
+const armstrong = require('./armstrong'),
+	automorphic = require('./automorphic'),
+	harshad = require('./harshad'),
+	kaprekar = require('./kaprekar'),
+	lucky = require('./lucky'),
+	neon = require('./neon'),
+	palindrome = require('./palindrome'),
+	perfect = require('./perfect'),
+	prime = require('./prime'),
+	smith = require('./smith'),
+	isDeficient = require('./isDeficient');
 
 /* Find nth Number */
-const bell = require("./bell"),
-	catalan = require("./catalan"),
-	factorial = require("./factorial"),
-	fibonacci = require("./fibonacci"),
-	magic = require("./magic"),
-	padovan = require("./padovan"),
-	smart = require("./smart");
+const bell = require('./bell'),
+	catalan = require('./catalan'),
+	factorial = require('./factorial'),
+	fibonacci = require('./fibonacci'),
+	magic = require('./magic'),
+	padovan = require('./padovan'),
+	smart = require('./smart');
 
 /* Mathematical Utilities */
-const frequency = require("./frequency"),
-	gcd = require("./gcd"),
-	isEven = require("./isEven"),
-	isOdd = require("./isOdd"),
-	lcm = require("./lcm"),
-	length = require("./length"),
-	max = require("./max"),
-	min = require("./min"),
-	modInv = require("./modInv"),
-	sort = require("./sort"),
-	sum = require("./sum");
+const frequency = require('./frequency'),
+	gcd = require('./gcd'),
+	isEven = require('./isEven'),
+	isOdd = require('./isOdd'),
+	lcm = require('./lcm'),
+	length = require('./length'),
+	max = require('./max'),
+	min = require('./min'),
+	modInv = require('./modInv'),
+	sort = require('./sort'),
+	sum = require('./sum');
 
 /* Helper Methods */
-const performance = require("./performance"),
-	pipe = require("./pipe");
+const performance = require('./performance'),
+	pipe = require('./pipe');
 
 /* M - Mathball Object */
 module.exports = {
