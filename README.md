@@ -22,7 +22,7 @@ $ npm install mathball --save
 
 ## Features
 
-- **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26] - [isDeficient][42]
+- **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26] - [isDeficient][42] - [isHarshad][43]
 
 - **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [fibonacci][8] - [magic][9] - [smart][25] - [padovan][41]
 
@@ -35,7 +35,7 @@ $ npm install mathball --save
 You can access all the utilities via **mathball** object, `M` (or whatever you end up calling it) like so:
 
 ```js
-let M = require('mathball');
+let M = require("mathball");
 
 console.log(M.isPalindrome(1551)); //true
 console.log(M.isEven(7)); //false
@@ -45,7 +45,7 @@ console.log(M.sum([4, 5, 9])); //18
 Or, you can directly access an individual function as given below:
 
 ```js
-let gcd = require('mathball/lib/gcd');
+let gcd = require("mathball/lib/gcd");
 
 console.log(gcd([12, 18, 24])); //6
 ```
@@ -104,3 +104,4 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [40]: https://github.com/pbiswas101/Mathball/blob/master/src/frequency/index.js
 [41]: https://github.com/pbiswas101/Mathball/blob/master/src/padovan/index.js
 [42]: https://github.com/pbiswas101/Mathball/blob/master/src/isDeficient/index.js
+[43]: https://github.com/pbiswas101/Mathball/blob/master/src/harshad/index.js
