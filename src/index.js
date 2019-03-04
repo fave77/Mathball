@@ -1,12 +1,13 @@
 const validate = require('../validation/integer');
 const pi = 22/7;
 
-function toRadian(num) {
-	return (num * (pi/180));
+function toDegree(num) {
+	return (num * (180/pi));
+	 
 }
 
-exports.toRadian = num => {
-	validate(num, 'toRadian');
-	return toRadian(num);
+exports.toDegree = num => {
+	validate(num, 'toDegree');
+	return toDegree(num);
 };
 
