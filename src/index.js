@@ -1,7 +1,8 @@
 const validate = require('../validation/integer');
 const pi = 22/7;
 
-function toRadian(num) {
+function toRadian(num) 
+{
 	return (num * (pi/180));
 	 
 }
