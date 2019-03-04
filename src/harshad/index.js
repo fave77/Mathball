@@ -1,0 +1,18 @@
+/* Harshad Number
+ * Function: isHarshad()
+ */
+
+const validate = require("../validation/positive-integer");
+
+function isHarshad(num) {
+	let sum = 0;
+	for (let i = num; i > 0; i /= 10) {
+		sum += i % 10;
+	}
+	return num % sum === 0;
+}
+
+exports.isHarshad = num => {
+	validate(num, "isHarshad");
+	return isHarshad(num);
+};
