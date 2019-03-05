@@ -1,8 +1,8 @@
 const assert = require('assert'),
     pow = require('../src/pow');
 
-describe('[Function: pow', () =>{
-    it('should be a function', () =>{
+describe('[Function: pow', () => {
+    it('should be a function', () => {
         assert.strictEqual(typeof pow, 'function');
     });
 
@@ -18,15 +18,15 @@ describe('[Function: pow', () =>{
 		assert.throws(() => pow(-20), TypeError);
     });
     
-    it('should return \'25\' when \'[5, 2]\' is passed', () =>{
+    it('should return \'25\' when \'[5, 2]\' is passed', () => {
         assert.strictEqual(pow([5, 2]), 25);
     });
 
-    it('should return \'5\' when \'[5, 3, 6]\' is passed', () =>{
+    it('should return \'5\' when \'[5, 3, 6]\' is passed', () => {
         assert.strictEqual(pow([5, 3, 6]), 5);
     });
 
-    it('should return \'0\' when \'[5, 3, 1]\' is passed', () =>{
+    it('should return \'0\' when \'[5, 3, 1]\' is passed', () => {
         assert.strictEqual(pow([5, 3, 1]), 0);
     });
 
