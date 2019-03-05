@@ -31,4 +31,4 @@ module.exports = arr => {
 		{
 			return pow(arr[0], arr[1]);
 		}
-}
+};
