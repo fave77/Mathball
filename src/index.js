@@ -37,6 +37,9 @@ const frequency = require('./frequency'),
 const performance = require('./performance'),
 	pipe = require('./pipe');
 
+/* Data Structure */
+const PriorityQueue = require('./PriorityQueue');
+
 /* M - Mathball Object */
 module.exports = {
 	isArmstrong: armstrong.isArmstrong,
@@ -70,5 +73,6 @@ module.exports = {
 	modInv: modInv.modInv,
 	frequency,
 	isDeficient,
+	PriorityQueue,
 	isCarmichael: carmichael.isCarmichael
 };
