@@ -30,12 +30,14 @@ const frequency = require('./frequency'),
 	min = require('./min'),
 	modInv = require('./modInv'),
 	sort = require('./sort'),
-	sum = require('./sum'),
-	priorityQueue = require('./priorityQueue');
+	sum = require('./sum');
 
 /* Helper Methods */
 const performance = require('./performance'),
 	pipe = require('./pipe');
+
+/* Data Structure */
+const PriorityQueue = require('./PriorityQueue');
 
 /* M - Mathball Object */
 module.exports = {
@@ -70,5 +72,5 @@ module.exports = {
 	modInv: modInv.modInv,
 	frequency,
 	isDeficient,
-	priorityQueue
+	PriorityQueue
 };

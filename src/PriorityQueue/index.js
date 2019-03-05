@@ -1,50 +1,38 @@
 const validateNumber = require('../validation/number');
 
-
-
 class PriorityQueue {
-	constructor(elem, priority) {
-		this.element = elem;
-		this.priority = priority;
-	}
-}
-
-
-
-class pQ {
 	constructor() {
 		this.queueArr = [];
 	}
 
 	// show the current queue
 	queue() {
-		return this.queueArr.map(val => val.element).join(' ');
+		return this.queueArr.join(' ');
 	}
 
 	// enqueue method
-	enqueue(elem, priority) {
-		validateNumber(priority, 'enqueue');
+	push(elem) {
+		validateNumber(elem, 'PriorityQueue.push');
 
-		let item = new PriorityQueue(elem, priority);
 		let flag = false;
 
 		for (let i in this.queueArr) {
-			if (this.queueArr[i].priority > item.priority) {
-				this.queueArr.splice(i, 0, item);
+			if (this.queueArr[i] > elem) {
+				this.queueArr.splice(i, 0, elem);
 				flag = true;
 				break;
 			}
 		}
 
 		if (!flag) {
-			this.queueArr.push(item);
+			this.queueArr.push(elem);
 		}
 
 		return true;
 	}
 
 	// dequeue
-	dequeue() {
+	pop() {
 		if (this.queueArr.length === 0) {
 			return 'Queue Underflow';
 		}
@@ -56,7 +44,7 @@ class pQ {
 		if (this.queueArr.length === 0) {
 			return 'Queue Underflow';
 		}
-		return this.queueArr[0].element;
+		return this.queueArr[0];
 	}
 
 	// rear of the priority queue
@@ -64,8 +52,18 @@ class pQ {
 		if (this.queueArr.length === 0) {
 			return 'Queue Underflow';
 		}
-		return this.queueArr[this.queueArr.length - 1].element;
+		return this.queueArr[this.queueArr.length - 1];
+	}
+
+	// returns if the queue is empty or not
+	empty() {
+		return this.queueArr.length === 0 ? true : false;
+	}
+
+	// should return the queue size
+	size() {
+		return this.queueArr.length;
 	}
 }
 
-module.exports = pQ;
+module.exports = PriorityQueue;

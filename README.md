@@ -26,7 +26,9 @@ $ npm install mathball --save
 
 - **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [fibonacci][8] - [magic][9] - [smart][25] - [padovan][41]
 
-- **Mathematical Utilities** - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [sort][17] - [sum][18] - [modInv][39] - [rangePrime][7] - [frequency][40] - [priorityQueue][43]
+- **Mathematical Utilities** - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [sort][17] - [sum][18] - [modInv][39] - [rangePrime][7] - [frequency][40]
+
+- **Data Structures** - [priorityQueue][43]
 
 - **Helper Methods** - [performance][28] - [pipe][29]
 
@@ -104,4 +106,4 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [40]: https://github.com/pbiswas101/Mathball/blob/master/src/frequency/index.js
 [41]: https://github.com/pbiswas101/Mathball/blob/master/src/padovan/index.js
 [42]: https://github.com/pbiswas101/Mathball/blob/master/src/isDeficient/index.js
-[43]: https://github.com/pbiswas101/Mathball/blob/master/src/priorityQueue/index.js
+[43]: https://github.com/pbiswas101/Mathball/blob/master/src/PriorityQueue/index.js
