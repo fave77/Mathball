@@ -36,7 +36,7 @@ class PriorityQueue {
 		if (this.queueArr.length === 0) {
 			return 'Queue Underflow';
 		}
-		return this.queueArr.shift();
+		return this.queueArr.pop();
 	}
 
 	// front of the priority queue
