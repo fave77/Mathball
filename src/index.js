@@ -1,6 +1,7 @@
 /* Number Checkers */
 const armstrong = require('./armstrong'),
 	automorphic = require('./automorphic'),
+	harshad = require('./harshad'),
 	kaprekar = require('./kaprekar'),
 	lucky = require('./lucky'),
 	neon = require('./neon'),
@@ -50,6 +51,7 @@ module.exports = {
 	fibonacci: fibonacci.fibonacci,
 	padovan: padovan.padovan,
 	gcd,
+	isHarshad: harshad.isHarshad,
 	isEven,
 	isOdd,
 	isKaprekar: kaprekar.isKaprekar,
