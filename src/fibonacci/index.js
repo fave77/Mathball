@@ -36,7 +36,7 @@ const rangeFib = num => {
 		n2 = nextT;
 	} while (n1 <= num);
 	return rangeArr;
-}
+};
 
 exports.rangeFibonacci = num => {
 	validate(num, 'rangeFibonacci');
