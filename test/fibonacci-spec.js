@@ -1,5 +1,6 @@
 const assert = require('assert'),
-	fibonacci = require('../src/fibonacci').fibonacci;
+	fibonacci = require('../src/fibonacci').fibonacci,
+	rangeFibonacci = require('../src/fibonacci').rangeFibonacci;
 
 describe('[Function: fibonacci]', () => {
 
@@ -35,4 +36,20 @@ describe('[Function: fibonacci]', () => {
 		assert.throws(() => fibonacci(), TypeError);
 	});
 
+});
+
+
+describe('[Function: rangeFibonacci]', () => {
+
+	it('should be a function', () => {
+		assert.strictEqual(typeof rangeFibonacci, 'function');
+	});
+
+	it('should return `[0, 1, 1]` when 1 is passed', () => {
+		assert.deepEqual(rangeFibonacci(1), [0, 1, 1]);
+	});
+
+	it('should return `[0, 1, 1, 2]` when 2 is passed', () => {
+		assert.deepEqual(rangeFibonacci(2), [0, 1, 1, 2]);
+	});
 });
