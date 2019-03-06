@@ -1,15 +1,15 @@
 
-const validate = require('../validation/number-array');
+const validate = require('../validation/number');
 
 
 function pow(a, b, c = Number.MAX_SAFE_INTEGER)
 {
     if(b == 0)
-		{
-			return 1;
-		}
+    {
+        return 1;
+    }
     
-    var y;
+    let y;
     if(b%2 == 0){
         y = pow(a, b/2, c);
         y = (y*y)%c;
@@ -21,14 +21,16 @@ function pow(a, b, c = Number.MAX_SAFE_INTEGER)
     return Math.trunc((y+c)%c);
 }
 
-module.exports = arr => {
-    validate(arr, 'pow');
-    if( arr.length == 3)
-		{
-			return pow(arr[0], arr[1], arr[2]);
-		}
+module.exports = (a, b, c) => {
+    validate(a, 'pow');
+    validate(b, 'pow');
+    
+    if( c != undefined)
+    {
+        return pow(a, b, c);
+    }
     else
-		{
-			return pow(arr[0], arr[1]);
-		}
-};
+    {
+        return pow(a, b);
+    }
+}

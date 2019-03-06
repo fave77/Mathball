@@ -6,28 +6,24 @@ describe('[Function: pow', () => {
         assert.strictEqual(typeof pow, 'function');
     });
 
-    it('should return a number when an array of number is passed', () => {
-        assert.strictEqual(typeof pow([1, 1, 1]), 'number');
-    });
-
-    it('should throw an error when a floating point is passed to modulo', () => {
-		assert.throws(() => pow(5,2, 1.2465), TypeError);
+    it('should return a number when three numbers are passed', () => {
+        assert.strictEqual(typeof pow(1, 1, 1), 'number');
     });
 
     it('should throw an error when a negative number is passed', () => {
 		assert.throws(() => pow(-20), TypeError);
     });
     
-    it('should return \'25\' when \'[5, 2]\' is passed', () => {
-        assert.strictEqual(pow([5, 2]), 25);
+    it('should return \'25\' when \'5, 2\' is passed', () => {
+        assert.strictEqual(pow(5, 2), 25);
     });
 
-    it('should return \'5\' when \'[5, 3, 6]\' is passed', () => {
-        assert.strictEqual(pow([5, 3, 6]), 5);
+    it('should return \'5\' when \'5, 3, 6\' is passed', () => {
+        assert.strictEqual(pow(5, 3, 6), 5);
     });
 
-    it('should return \'0\' when \'[5, 3, 1]\' is passed', () => {
-        assert.strictEqual(pow([5, 3, 1]), 0);
+    it('should return \'0\' when \'5, 3, 1\' is passed', () => {
+        assert.strictEqual(pow(5, 3, 1), 0);
     });
 
     it('should throw an error when no arguments passed', () => {
