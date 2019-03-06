@@ -21,3 +21,24 @@ exports.fibonacci = num => {
 	validate(num, 'fibonacci');
 	return fib(num);
 };
+
+/* Range Fibonacci Number
+ * Function: rangeFibonacci()
+ */
+
+const rangeFib = num => {
+	let n1 = 0, n2 = 1, nextT = null, rangeArr = [];
+
+	do {
+		rangeArr.push(n1);
+		nextT = n1 + n2;
+		n1 = n2;
+		n2 = nextT;
+	} while (n1 <= num);
+	return rangeArr;
+}
+
+exports.rangeFibonacci = num => {
+	validate(num, 'rangeFibonacci');
+	return rangeFib(num);
+};
