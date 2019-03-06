@@ -25,7 +25,7 @@ module.exports = (a, b, c) => {
     validate(a, 'pow');
     validate(b, 'pow');
     
-    if( c === undefined)
+    if(typeof c === "undefined")
     {
         return pow(a, b);
     }
