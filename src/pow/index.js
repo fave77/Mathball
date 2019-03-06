@@ -25,12 +25,12 @@ module.exports = (a, b, c) => {
     validate(a, 'pow');
     validate(b, 'pow');
     
-    if( c != undefined)
-    {
-        return pow(a, b, c);
-    }
-    else
+    if( c === undefined)
     {
         return pow(a, b);
     }
-}
+    else
+    {
+        return pow(a, b, c);
+    }
+};
