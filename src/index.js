@@ -33,7 +33,8 @@ const frequency = require('./frequency'),
 	modInv = require('./modInv'),
 	pow = require('./pow'),
 	sort = require('./sort'),
-	sum = require('./sum');
+	sum = require('./sum'),
+	Complex = require('./complex');
 
 /* Helper Methods */
 const performance = require('./performance'),
@@ -82,3 +83,4 @@ module.exports = {
 	rangeFibonacci: fibonacci.rangeFibonacci,
 	rangePalindrome: palindrome.rangePalindrome
 };
+
