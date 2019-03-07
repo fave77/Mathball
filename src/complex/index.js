@@ -19,7 +19,7 @@ class Complex {
         return parseFloat(Math.sqrt(Math.pow(this.r , 2) + Math.pow(this.i , 2)).toFixed(2));
     }
     conjugate(){
-        let img = -this.i
+        let img = -this.i;
         const obj = new Complex(this.r, img);
         return obj;
     }
