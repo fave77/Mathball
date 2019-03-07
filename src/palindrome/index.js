@@ -18,7 +18,9 @@ exports.rangePalindrome = num => {
 
   const palindromes = [];
   for (let i = 0; i <= num; i++) {
-    if (i == i.toString().split('').reverse().join('')) palindromes.push(i)
+    if (i == i.toString().split('').reverse().join('')) {
+      palindromes.push(i);
+    }
   }
   return palindromes;
 };
