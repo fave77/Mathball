@@ -79,5 +79,6 @@ module.exports = {
 	isDeficient,
 	PriorityQueue,
 	isCarmichael: carmichael.isCarmichael,
-	rangeFibonacci: fibonacci.rangeFibonacci
+	rangeFibonacci: fibonacci.rangeFibonacci,
+	rangePalindrome: palindrome.rangePalindrome
 };
