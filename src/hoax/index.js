@@ -32,12 +32,12 @@ function isHoax(num){
 	let allPfsum=0;
 	for(let i=0;i<pf.length;i++){
 		let pfSum=0;
-		while(pfSum[i]>0){
+		while(pfSum[i]>0)
+		{
 			pfSum+=pf[i]%10;
 			pf[i]/=10;
-			}
-		allPfsum+=pfSum;
 		}
+		allPfsum+=pfSum;
 	}
 	let sumN=0;
 	while(num>0){
