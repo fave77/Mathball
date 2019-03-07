@@ -1,5 +1,5 @@
 const assert = require('assert'),
-        pow = require("../src/pow")
+        pow = require("../src/pow");
 
 describe('[Function: pow]', () => {
 
