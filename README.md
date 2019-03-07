@@ -24,11 +24,11 @@ $ npm install mathball --save
 
 - **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isCarmichael][43] - [isDeficient][42] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26] - [isHarshad][45]
 
-- **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [fibonacci][8] - [magic][9] - [padovan][41] - [smart][25]
+- **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [nCr][47] - [fibonacci][8] - [magic][9] - [padovan][41] - [smart][25]
 
 - **Range of Numbers** - [rangePrime][7] - [rangeFibonacci][8]
 
-- **Mathematical Utilities** - [frequency][40] - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [modInv][39] - [sort][17] - [sum][18] - [pow][46]
+- **Mathematical Utilities** - [frequency][40] - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [modInv][39] - [sort][17] - [sum][18] - [pow][46] - [Complex][57]
 
 - **Data Structures** - [priorityQueue][44]
 
@@ -112,3 +112,5 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [44]: https://github.com/pbiswas101/Mathball/blob/master/src/PriorityQueue/index.js
 [45]: https://github.com/pbiswas101/Mathball/blob/master/src/harshad/index.js
 [46]: https://github.com/pbiswas101/Mathball/blob/master/src/pow/index.js
+[47]: https://github.com/pbiswas101/Mathball/blob/master/src/nCr/index.js
+[57]: https://github.com/pbiswas101/Mathball/blob/master/src/complex/index.js
