@@ -11,7 +11,7 @@ function primeFactors(num){
 	}
 	for(let i=3;i<=Math.sqrt(num);i=i+2){
 		if(num%i==0){
-			while(num%i==0)
+			while(num%i===0)
 				num=num/i;
 			res.push(i);
 		}
