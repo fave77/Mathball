@@ -31,6 +31,7 @@ const frequency = require('./frequency'),
 	max = require('./max'),
 	min = require('./min'),
 	modInv = require('./modInv'),
+	pow = require('./pow'),
 	sort = require('./sort'),
 	sum = require('./sum');
 
@@ -66,6 +67,7 @@ module.exports = {
 	isPerfect: perfect.isPerfect,
 	performance,
 	pipe,
+	pow,
 	isPrime: prime.isPrime,
 	rangePrime: prime.rangePrime,
 	smart: smart.smart,
