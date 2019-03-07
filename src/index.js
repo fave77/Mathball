@@ -81,6 +81,5 @@ module.exports = {
 	PriorityQueue,
 	isCarmichael: carmichael.isCarmichael,
 	rangeFibonacci: fibonacci.rangeFibonacci,
-	isCarmichael: carmichael.isCarmichael,
 	Complex
 };
