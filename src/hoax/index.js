@@ -11,7 +11,7 @@ function primeFactors(num){
 	}
 	for(let i=3;i<=Math.sqrt(num);i=i+2){
 		if(num%i==0){
-			while(num%i===0)
+			while(num%i==0)
 				num=num/i;
 			res.push(i);
 		}
@@ -25,15 +25,15 @@ function isHoax(num){
 	pf=primeFactors(num);
 	if(pf[0]==num)
 		return false;
-	let all_pf_sum=0;
+	let allPfsum=0;
 	for(let i=0;i<pf.length;i++){
-		let pf_sum;
-		for(pf_sum=0;pf_sum[i]>0;pf_sum+=pf[i]%10,pf[i]/=10);
-	all_pf_sum;
+		let pfSum;
+		for(pfSum=0;pfSum[i]>0;pfSum+=pf[i]%10,pf[i]/=10);
+	allPfsum;
 	}
-	int sum_n;
-	for(sum_n=0;num>0;sum_n+=num%10,num/=10);
-	return sum_n === all_pf_sum;
+	int sumN;
+	for(sumN=0;num>0;sumN+=num%10,num/=10);
+	return sumN === allPfsum;
 }
 exports.isHoax = num => {
 	validate(num, 'isHoax');
