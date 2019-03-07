@@ -31,7 +31,7 @@ function isHoax(num){
 		for(pfSum=0;pfSum[i]>0;pfSum+=pf[i]%10,pf[i]/=10);
 	allPfsum;
 	}
-	int sumN;
+	let sumN;
 	for(sumN=0;num>0;sumN+=num%10,num/=10);
 	return sumN === allPfsum;
 }
