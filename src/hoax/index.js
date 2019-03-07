@@ -31,14 +31,19 @@ function isHoax(num){
 	}
 	let allPfsum=0;
 	for(let i=0;i<pf.length;i++){
-		let pfSum;
-		for(pfSum=0;pfSum[i]>0;pfSum+=pf[i]%10,pf[i]/=10){
-			;
+		let pfSum=0;
+		while(pfSum[i]>0){
+			pfSum+=pf[i]%10;
+			pf[i]/=10;
+			}
+		allPfsum+=pfSum;
 		}
-	allPfsum;
 	}
-	let sumN;
-	for(sumN=0;num>0;sumN+=num%10,num/=10);
+	let sumN=0;
+	while(num>0){
+		sumN+=num%10;
+		num/=10;
+	}
 	return sumN === allPfsum;
 }
 exports.isHoax = num => {
