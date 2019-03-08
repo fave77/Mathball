@@ -19,6 +19,7 @@ const bell = require('./bell'),
 	factorial = require('./factorial'),
 	fibonacci = require('./fibonacci'),
 	magic = require('./magic'),
+	nCr = require('./nCr'),
 	padovan = require('./padovan'),
 	smart = require('./smart');
 
@@ -64,6 +65,7 @@ module.exports = {
 	magic: magic.magic,
 	max,
 	min,
+	nCr,
 	isNeon: neon.isNeon,
 	isPalindrome: palindrome.isPalindrome,
 	isPerfect: perfect.isPerfect,
