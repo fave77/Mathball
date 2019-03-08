@@ -40,6 +40,6 @@ describe('[Function: isFrugal]', () => {
     });
 
     it('should return \'false\' when \'129\' is passed ', () => {
-        assert.strictEqual(isFrugal(128), false);
+        assert.strictEqual(isFrugal(129), false);
     });
 });        
