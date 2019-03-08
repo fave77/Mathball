@@ -41,17 +41,17 @@ exports.isFrugal = inp => {
     validate(inp, 'isFrugal');
     
     let primeFactorisation = genPrimeList(inp);
-    let factors_length = 0;
-    let inp_length = inp.toString().length;
+    let factorsLength = 0;
+    let inpLength = inp.toString().length;
 
     for(let i = 0; i < primeFactorisation.length; i++){
 
-        factors_length += primeFactorisation[i].num.toString().length;
+        factorsLength += primeFactorisation[i].num.toString().length;
 
         if(primeFactorisation[i].occurance > 1){
-            factors_length += primeFactorisation[i].occurance.toString().length;
+            factorsLength += primeFactorisation[i].occurance.toString().length;
         }
     }
     
-    return ((inp_length - factors_length) > 0)? true: false;
+    return ((inpLength - factorsLength) > 0)? true: false;
 };
