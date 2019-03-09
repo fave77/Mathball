@@ -19,6 +19,10 @@ describe('[Function: isStormer', () => {
 		assert.throws(() => isStormer(-31), TypeError);
     });
 
+    it("should throw an error when no arguments passed", () => {
+		assert.throws(() => isStormer(), TypeError);
+    });
+    
     it("should return a boolean", () => {
 		assert.strictEqual(typeof isStormer(5), "boolean");
     });
@@ -27,7 +31,15 @@ describe('[Function: isStormer', () => {
         assert.strictEqual(isStormer(11), true);
       });
 
-      it("should return 'false' when '7' is passed", () => {
-        assert.strictEqual(isStormer(7), false);
-      });
+    it("should return 'true' when '1' is passed", () => {
+    assert.strictEqual(isStormer(1), true);
+    });
+
+    it("should return 'true' when '6' is passed", () => {
+        assert.strictEqual(isStormer(6), true);
+    });
+
+    it("should return 'false' when '7' is passed", () => {
+    assert.strictEqual(isStormer(7), false);
+    });
 });      
