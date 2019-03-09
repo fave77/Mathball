@@ -37,4 +37,4 @@ exports.rangePal = (start, end) => {
 	}
 
 	return palinList;
-}
+};
