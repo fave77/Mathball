@@ -22,7 +22,7 @@ $ npm install mathball --save
 
 ## Features
 
-- **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isCarmichael][43] - [isDeficient][42] - [isFrugal][47] - [isHarshad][45] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26]
+- **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isCarmichael][43] - [isDeficient][42] - [isFrugal][47] - [isHarshad][45] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26] - [isStormer][52]
 
 - **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [nCr][48] - [fibonacci][8] - [magic][9] - [padovan][41] - [smart][25]
 
@@ -117,3 +117,4 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [49]: https://github.com/pbiswas101/Mathball/blob/master/src/complex/index.js
 [50]: https://github.com/pbiswas101/Mathball/blob/master/src/degree/index.js
 [51]: https://github.com/pbiswas101/Mathball/blob/master/src/radian/index.js
+[52]: https://github.com/pbiswas101/Mathball/blob/master/src/isStormer/index.js
