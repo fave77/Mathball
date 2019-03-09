@@ -10,7 +10,7 @@ exports.isPalindrome = num => {
 	return num == num.toString().split('').reverse().join('');
 };
 
-exports.rangePal = (start, end) => {
+exports.rangePalindrome = (start, end) => {
 	validate(start, 'rangePal');
 	validate(end, 'rangePal');
 	
