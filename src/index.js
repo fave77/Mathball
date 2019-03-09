@@ -11,6 +11,7 @@ const armstrong = require('./armstrong'),
 	smith = require('./smith'),
 	isDeficient = require('./isDeficient'),
 	isFrugal = require('./isFrugal'),
+	isStormer = require('./isStormer'),
 	carmichael = require('./carmichael');
 
 /* Find nth Number */
@@ -76,6 +77,7 @@ module.exports = {
 	pipe,
 	pow,
 	isPrime: prime.isPrime,
+	isStormer: isStormer.isStormer,
 	rangePrime: prime.rangePrime,
 	smart: smart.smart,
 	isSmith: smith.isSmith,
