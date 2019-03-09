@@ -10,6 +10,7 @@ const armstrong = require('./armstrong'),
 	prime = require('./prime'),
 	smith = require('./smith'),
 	isDeficient = require('./isDeficient'),
+	isFrugal = require('./isFrugal'),
 	carmichael = require('./carmichael');
 
 /* Find nth Number */
@@ -68,6 +69,7 @@ module.exports = {
 	isNeon: neon.isNeon,
 	isPalindrome: palindrome.isPalindrome,
 	isPerfect: perfect.isPerfect,
+	isFrugal: isFrugal.isFrugal,
 	performance,
 	pipe,
 	pow,
