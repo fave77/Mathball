@@ -36,6 +36,8 @@ const frequency = require('./frequency'),
 	pow = require('./pow'),
 	sort = require('./sort'),
 	sum = require('./sum'),
+	toDegrees = require('./degree'),
+	toRadians = require('./radian'),
 	Complex = require('./complex');
 
 /* Helper Methods */
@@ -79,6 +81,8 @@ module.exports = {
 	isSmith: smith.isSmith,
 	sort,
 	sum,
+	toDegrees: toDegrees.toDegrees,
+	toRadians: toString.toRadians,
 	modInv: modInv.modInv,
 	frequency,
 	isDeficient,
