@@ -12,7 +12,8 @@ const armstrong = require('./armstrong'),
 	isDeficient = require('./isDeficient'),
 	isFrugal = require('./isFrugal'),
 	isStormer = require('./isStormer'),
-	carmichael = require('./carmichael');
+	carmichael = require('./carmichael'),
+	{ isHoax } = require('./isHoax');
 
 /* Find nth Number */
 const bell = require('./bell'),
@@ -92,5 +93,6 @@ module.exports = {
 	PriorityQueue,
 	isCarmichael: carmichael.isCarmichael,
 	rangeFibonacci: fibonacci.rangeFibonacci,
-	Complex
+	Complex,
+	isHoax
 };
