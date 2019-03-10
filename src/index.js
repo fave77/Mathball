@@ -14,6 +14,9 @@ const armstrong = require('./armstrong'),
 	isStormer = require('./isStormer'),
 	carmichael = require('./carmichael');
 
+/* String Checkers */
+const permutation=require('./permutation');
+
 /* Find nth Number */
 const bell = require('./bell'),
 	catalan = require('./catalan'),
@@ -57,6 +60,7 @@ module.exports = {
 	factorial: factorial.factorial,
 	fibonacci: fibonacci.fibonacci,
 	padovan: padovan.padovan,
+	permutation:permutation.permutation,
 	gcd,
 	isHarshad: harshad.isHarshad,
 	isEven,
