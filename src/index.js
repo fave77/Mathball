@@ -71,6 +71,7 @@ module.exports = {
 	nCr,
 	isNeon: neon.isNeon,
 	isPalindrome: palindrome.isPalindrome,
+	rangePalindrome:palindrome.rangePalindrome,
 	isPerfect: perfect.isPerfect,
 	isFrugal: isFrugal.isFrugal,
 	performance,
