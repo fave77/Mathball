@@ -22,7 +22,7 @@ $ npm install mathball --save
 
 ## Features
 
-- **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isCarmichael][43] - [isDeficient][42] - [isFrugal][47] - [isHarshad][45] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26] - [isStormer][52] -[isHoax][53]
+- **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isCarmichael][43] - [isDeficient][42] - [isFrugal][47] - [isHarshad][45] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26] - [isStormer][52] -[isHoax][54]
 
 - **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [nCr][48] - [fibonacci][8] - [magic][9] - [padovan][41] - [smart][25]
 
@@ -30,7 +30,7 @@ $ npm install mathball --save
 
 - **Mathematical Utilities** - [Complex][49] - [frequency][40] - [gcd][10] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [modInv][39] - [nCr][48] - [pow][46] - [sort][17] - [sum][18] - [toDegrees][50] - [toRadians][51]
 
-- **Data Structures** - [priorityQueue][44]
+- **Data Structures** - [priorityQueue][44] - [stack][53]
 
 - **Helper Methods** - [performance][28] - [pipe][29]
 
@@ -118,4 +118,5 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [50]: https://github.com/pbiswas101/Mathball/blob/master/src/degree/index.js
 [51]: https://github.com/pbiswas101/Mathball/blob/master/src/radian/index.js
 [52]: https://github.com/pbiswas101/Mathball/blob/master/src/isStormer/index.js
-[53]: https://github.com/pbiswas101/Mathball/blob/master/src/isHoax/index.js
+[53]: https://github.com/pbiswas101/Mathball/blob/master/src/stack/index.js
+[54]: https://github.com/pbiswas101/Mathball/blob/master/src/isHoax/index.js
