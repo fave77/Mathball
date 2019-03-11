@@ -8,7 +8,7 @@ const triangular = (n) => {
 	let sum = 0;
 	for(let i = 1; sum <= n; i++){
 		sum += i;
-		if(sum === n) 
+		if(sum === n)
 			return true;
 	}
 	return false;
