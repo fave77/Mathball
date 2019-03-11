@@ -76,22 +76,22 @@ const assert = require('assert'),
             assert.strictEqual(sample.removeEdge('B', 9), 'Edge not found!');
         });
 
-        it(`should return 'D' when 'removeEdge('A', 'D')' is called`, () => {
-            assert.strictEqual(sample.removeEdge('A', 'D'), 'D');
-        });
-        
         it(`should return 'object' type when 'bfs('A')' is called`, () => {
             assert.strictEqual(typeof sample.bfs('A'), 'object');
         });
 
         it(`should return '[ 'A', 'B', 'D', 'C', 'E' ]' type when 'bfs('A')' is called`, () => {
-            assert.strictEqual(sample.bfs('A'), [ "A", "B", "D", "C", "E" ]);
-        });
-
-        it(`should return 'Node doesn't exist in the Graph' when 'bfs('f')' is called`, () => {
-            assert.strictEqual(sample.bfs('f'), 'Node doesn\'t exist in the Graph');
+            assert.deepEqual(sample.bfs('A'), ["A", "B", "D", "C", "E"]);
         });
         
+        it(`should return 'Node doesn't exist in the Graph' when 'bfs('f')' is called`, () => {
+            assert.deepEqual(sample.bfs('f'), 'Node doesn\'t exist in the Graph');
+        });
+        
+        it(`should return 'D' when 'removeEdge('A', 'D')' is called`, () => {
+            assert.strictEqual(sample.removeEdge('A', 'D'), 'D');
+        });
+
         it(`should return 'true' when 'removeVertex(A)' is called`, () => {
             assert.strictEqual(sample.removeVertex('A'), true);
         });
