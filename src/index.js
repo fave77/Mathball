@@ -94,14 +94,11 @@ module.exports = {
 	modInv: modInv.modInv,
 	frequency,
 	isDeficient,
-<<<<<<< HEAD
 	PriorityQueue,
 	Stack,
 	isCarmichael: carmichael.isCarmichael,
 	rangeFibonacci: fibonacci.rangeFibonacci,
 	Complex,
-	isHoax
-=======
+	isHoax,
 	triangular: triangular.triangular
->>>>>>> triangle
 };
