@@ -83,11 +83,11 @@ const assert = require('assert'),
         it(`should return 'object' type when 'bfs('A')' is called`, () => {
             assert.strictEqual(typeof sample.bfs('A'), 'object');
         });
-/*
+
         it(`should return '[ 'A', 'B', 'D', 'C', 'E' ]' type when 'bfs('A')' is called`, () => {
             assert.strictEqual(sample.bfs('A'), [ "A", "B", "D", "C", "E" ]);
         });
-  */  
+
         it(`should return 'Node doesn't exist in the Graph' when 'bfs('f')' is called`, () => {
             assert.strictEqual(sample.bfs('f'), 'Node doesn\'t exist in the Graph');
         });
