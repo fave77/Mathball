@@ -40,7 +40,8 @@ const frequency = require('./frequency'),
 	sum = require('./sum'),
 	toDegrees = require('./degree'),
 	toRadians = require('./radian'),
-	Complex = require('./complex');
+	Complex = require('./complex'),
+	permutation=require('./permutation');
 
 /* Helper Methods */
 const performance = require('./performance'),
@@ -59,6 +60,7 @@ module.exports = {
 	factorial: factorial.factorial,
 	fibonacci: fibonacci.fibonacci,
 	padovan: padovan.padovan,
+	permutation:permutation.permutation,
 	gcd,
 	isHarshad: harshad.isHarshad,
 	isEven,
