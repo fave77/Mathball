@@ -13,7 +13,7 @@ const triangular = (n) => {
 			
 	}
 	return false;
-}
+};
 
 exports.triangular = (n) => {
 	validate(n, 'triangular');
