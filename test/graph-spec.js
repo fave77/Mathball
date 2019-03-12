@@ -16,52 +16,52 @@ const assert = require('assert'),
             assert.strictEqual(sample.removeEdge('A', 'B'), 'Empty Graph');
         });
         
-        it(`should return 'undefined' when 'sample.addVertex('A')' is called`, () => {
-            assert.strictEqual(sample.addVertex('A'), undefined);
+        it(`should return 'object' when 'sample.addVertex('A')' is called`, () => {
+            assert.strictEqual(typeof sample.addVertex('A'), 'object');
         });
 
-        it(`should return 'undefined' when 'sample.addVertex('B')' is called`, () => {
-            assert.strictEqual(sample.addVertex('B'), undefined);
+        it(`should return 'object' when 'sample.addVertex('B')' is called`, () => {
+            assert.strictEqual(typeof sample.addVertex('B'), 'object');
         });
 
-        it(`should return 'undefined' when 'sample.addVertex('C')' is called`, () => {
-            assert.strictEqual(sample.addVertex('C'), undefined);
+        it(`should return 'object' when 'sample.addVertex('C')' is called`, () => {
+            assert.strictEqual(typeof sample.addVertex('C'), 'object');
         });
 
-        it(`should return 'undefined' when 'sample.addVertex('D')' is called`, () => {
-            assert.strictEqual(sample.addVertex('D'), undefined);
+        it(`should return 'object' when 'sample.addVertex('D')' is called`, () => {
+            assert.strictEqual(typeof sample.addVertex('D'), 'object');
         });
         
-        it(`should return 'undefined' when 'sample.addVertex('E')' is called`, () => {
-            assert.strictEqual(sample.addVertex('E'), undefined);
+        it(`should return 'object' when 'sample.addVertex('E')' is called`, () => {
+            assert.strictEqual(typeof sample.addVertex('E'), 'object');
         });
         
-        it(`should return 'undefined' when 'sample.addEdge('A', 'B')' is called`, () => {
-            assert.strictEqual(sample.addEdge('A', 'B'), undefined);
+        it(`should return 'number' when 'sample.addEdge('A', 'B')' is called`, () => {
+            assert.strictEqual(typeof sample.addEdge('A', 'B'), 'number');
         });
 
-        it(`should return 'undefined' when 'sample.addEdge('D', 'E')' is called`, () => {
-            assert.strictEqual(sample.addEdge('D', 'E'), undefined);
+        it(`should return 'number' when 'sample.addEdge('D', 'E')' is called`, () => {
+            assert.strictEqual(typeof sample.addEdge('D', 'E'), 'number');
         });
 
-        it(`should return 'undefined' when 'sample.addEdge('C', 'E')' is called`, () => {
-            assert.strictEqual(sample.addEdge('C', 'E'), undefined);
+        it(`should return 'number' when 'sample.addEdge('C', 'E')' is called`, () => {
+            assert.strictEqual(typeof sample.addEdge('C', 'E'), 'number');
         });
 
-        it(`should return 'undefined' when 'sample.addEdge('A', 'D')' is called`, () => {
-            assert.strictEqual(sample.addEdge('A', 'D'), undefined);
+        it(`should return 'number' when 'sample.addEdge('A', 'D')' is called`, () => {
+            assert.strictEqual(typeof sample.addEdge('A', 'D'), 'number');
         });
 
-        it(`should return 'undefined' when 'sample.addEdge('A', 'C')' is called`, () => {
-            assert.strictEqual(sample.addEdge('A', 'C'), undefined);
+        it(`should return 'number' when 'sample.addEdge('A', 'C')' is called`, () => {
+            assert.strictEqual(typeof sample.addEdge('A', 'C'), 'number');
         });
 
-        it(`should return 'undefined' when 'sample.addEdge('E', 'B')' is called`, () => {
-            assert.strictEqual(sample.addEdge('E', 'B'), undefined);
+        it(`should return 'number' when 'sample.addEdge('E', 'B')' is called`, () => {
+            assert.strictEqual(typeof sample.addEdge('E', 'B'), 'number');
         });
 
-        it(`should return 'undefined' when 'sample.addEdge('D', 'B')' is called`, () => {
-            assert.strictEqual(sample.addEdge('D', 'B'), undefined);
+        it(`should return 'number' when 'sample.addEdge('D', 'B')' is called`, () => {
+            assert.strictEqual(typeof sample.addEdge('D', 'B'), 'number');
         });
        
         it(`should return an 'object' when 'printGraph()' is called`, () => {

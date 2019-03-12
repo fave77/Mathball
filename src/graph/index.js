@@ -5,26 +5,14 @@ class Graph{
     }
 
     addVertex(vertexData){
-        this.Adjlist.set(vertexData, []);
+        return this.Adjlist.set(vertexData, []);
     }
 
     addEdge(source, destination){
-        this.Adjlist.get(source).push(destination);
+        return this.Adjlist.get(source).push(destination);
     }
 
     printGraph(){
-        let keys = this.Adjlist.keys();
-
-        for(let i of keys)
-        {
-            let values = this.Adjlist.get(i);
-            let conc = "";
-
-            for(let j of values){
-                conc += j + " ";
-            }
-            console.log(i + " -> " + conc);
-        }
         return this.Adjlist;
     }
 
@@ -83,7 +71,7 @@ class Graph{
             
             let getList =  this.Adjlist.get(getQueueElement);
 
-            for(let i in getList){
+            for(let i = 0; i < getList.length; i++){
                 
                 let neighbour = getList[i];
                 
