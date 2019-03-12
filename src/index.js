@@ -101,5 +101,6 @@ module.exports = {
 	rangeFibonacci: fibonacci.rangeFibonacci,
 	Complex,
 	isHoax,
+	ugly,
 	triangular: triangular.triangular
 };
