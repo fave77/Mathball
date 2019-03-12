@@ -24,7 +24,11 @@ const bell = require('./bell'),
 	nCr = require('./nCr'),
 	padovan = require('./padovan'),
 	smart = require('./smart'),
+
 	triangular = require('./triangular');
+
+	{ ugly } = require('./ugly');
+we
 
 /* Mathematical Utilities */
 const frequency = require('./frequency'),
@@ -89,7 +93,7 @@ module.exports = {
 	isSmith: smith.isSmith,
 	sort,
 	sum,
-	toDegrees: toDegrees.toDegrees,
+	toDegrees: toDegrees.toDegrees
 	toRadians: toString.toRadians,
 	modInv: modInv.modInv,
 	frequency,
@@ -100,5 +104,9 @@ module.exports = {
 	rangeFibonacci: fibonacci.rangeFibonacci,
 	Complex,
 	isHoax,
+
 	triangular: triangular.triangular
+
+
+
 };
