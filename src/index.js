@@ -23,7 +23,8 @@ const bell = require('./bell'),
 	magic = require('./magic'),
 	nCr = require('./nCr'),
 	padovan = require('./padovan'),
-	smart = require('./smart');
+	smart = require('./smart'),
+	{ ugly } = require('./ugly');
 
 /* Mathematical Utilities */
 const frequency = require('./frequency'),
@@ -100,5 +101,6 @@ module.exports = {
 	isCarmichael: carmichael.isCarmichael,
 	rangeFibonacci: fibonacci.rangeFibonacci,
 	Complex,
-	isHoax
+	isHoax,
+	ugly
 };
