@@ -6,9 +6,18 @@ const validate = require('../validation/positive-integer');
 
 exports.isPrime = num => {
 	validate(num, 'isPrime');
-	for (let i = 2; i <= Math.sqrt(num); i++)
-		if (num % i == 0) return false;
-	return num == 1 ? false : true;
+  if (num === 2 || num === 3) { return true; }
+  if (num < 2 || num % 2 === 0) { return false; }
+  if (num < 9) { return true; }
+  if (num % 3 === 0) { return false; }
+  let r = Math.sqrt(num);
+  let f = 5;
+  while (f <= r) {
+    if (num % f === 0) { return false; }
+    if (num % (f + 2) === 0) { return false; }
+    f = f + 6;
+  }
+  return true;
 };
 
 /* Range of Prime Numbers
