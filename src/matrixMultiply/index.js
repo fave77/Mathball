@@ -3,12 +3,6 @@ const validate = require('../validation/number-array');
 function dimValidation(arr){
     const dimension = arr[0].length;
     for(let i = 1; i< arr.length; i++){
-        try{
-            validate(arr[i], 'dimValidation');
-        }
-        catch(error){
-            return false;
-        }
 
         if(arr[i].length !== dimension){
             return false;
@@ -43,9 +37,8 @@ function multiply(arr1, arr2){
 
 module.exports = (arr1, arr2) => {
 
-    if(typeof arr1 === "string" || typeof arr2 === "string"){
-        return "Enter 2-D arrays of number type only";
-    }
+    validate([].concat(...arr1), 'multiply');
+    validate([].concat(...arr2), 'multiply');
     
     if(!dimValidation(arr1) || !dimValidation(arr2) || (arr1[0].length !== arr2.length)){
         return "Matrices are not compatible for multiplication";

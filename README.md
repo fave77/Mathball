@@ -126,4 +126,4 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [93]: https://github.com/pbiswas101/Mathball/blob/master/src/triangular/index.js
 [56]: https://github.com/pbiswas101/Mathball/blob/master/src/ugly/index.js
 [57]: https://github.com/pbiswas101/Mathball/blob/master/src/graph/index.js
-[57]: https://github.com/pbiswas101/Mathball/blob/master/src/matrixMultiply/index.js
+[58]: https://github.com/pbiswas101/Mathball/blob/master/src/matrixMultiply/index.js
