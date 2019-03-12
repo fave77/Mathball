@@ -51,7 +51,8 @@ const performance = require('./performance'),
 
 /* Data Structure */
 const PriorityQueue = require('./PriorityQueue'),
-	Stack = require('./stack');
+	Stack = require('./stack'),
+	Graph = require('./graph');
 
 /* M - Mathball Object */
 module.exports = {
@@ -97,6 +98,7 @@ module.exports = {
 	isDeficient,
 	PriorityQueue,
 	Stack,
+	Graph,
 	isCarmichael: carmichael.isCarmichael,
 	rangeFibonacci: fibonacci.rangeFibonacci,
 	Complex,
