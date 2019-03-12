@@ -24,6 +24,7 @@ const bell = require('./bell'),
 	nCr = require('./nCr'),
 	padovan = require('./padovan'),
 	smart = require('./smart'),
+	triangular = require('./triangular'),
 	{ ugly } = require('./ugly');
 
 /* Mathematical Utilities */
@@ -102,5 +103,6 @@ module.exports = {
 	rangeFibonacci: fibonacci.rangeFibonacci,
 	Complex,
 	isHoax,
-	ugly
+	ugly,
+	triangular: triangular.triangular
 };
