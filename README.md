@@ -30,7 +30,7 @@ $ npm install mathball --save
 
 - **Range of Numbers** - [rangePrime][7] - [rangeFibonacci][8] - [rangePalindrome][6]
 
-- **Mathematical Utilities** - [Complex][49] - [frequency][40] - [gcd][10] - [getAllPerm][55] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [modInv][39] - [nCr][48] - [pow][46] - [sort][17] - [sum][18] - [toDegrees][50] - [toRadians][51]
+- **Mathematical Utilities** - [Complex][49] - [frequency][40] - [gcd][10] - [getAllPerm][55] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [min][16] - [modInv][39] - [nCr][48] - [pow][46] - [sort][17] - [sum][18] - [toDegrees][50] - [toRadians][51] - [matrixMultiply][58]
 
 - **Data Structures** - [priorityQueue][44] - [stack][53] - [graph][57]
 
@@ -126,3 +126,4 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [93]: https://github.com/pbiswas101/Mathball/blob/master/src/triangular/index.js
 [56]: https://github.com/pbiswas101/Mathball/blob/master/src/ugly/index.js
 [57]: https://github.com/pbiswas101/Mathball/blob/master/src/graph/index.js
+[58]: https://github.com/pbiswas101/Mathball/blob/master/src/matrixMultiply/index.js
