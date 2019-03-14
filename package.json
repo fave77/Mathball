@@ -1,7 +1,7 @@
 {
   "name": "mathball",
-  "version": "0.3.0",
-  "description": "A npm package for competitive programming in JavaScript",
+  "version": "0.3.1",
+  "description": "A JavaScript library for Competitive Programming",
   "keywords": [
     "competitive-programming",
     "computer-science",
