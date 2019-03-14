@@ -9,9 +9,9 @@ const matrixChain = (ar) => {
 	let m = [...Array(n)].map(x => Array(n).fill(0));
 	let cost, j;
 
-	for(let i = 0; i < n; i++)
+	for(let i = 0; i < n; i++){
 		m[i][i] = 0;
-
+}
 	for(let l = 2; l < n; l++){
 		for(let i = 1; i < (n-l+1); i++){
 			j = i + l - 1;
@@ -19,8 +19,8 @@ const matrixChain = (ar) => {
 			for(let k = i; k <= j-1; k++){
 				cost = m[i][k] + m[k+1][j] +
 						(ar[i-1]*ar[k]*ar[j]);
-				if(cost < m[i][j])
-					m[i][j] = cost;
+				if(cost < m[i][j]){
+					m[i][j] = cost;}
 			}
 		}
 	}
