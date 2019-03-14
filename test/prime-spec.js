@@ -21,6 +21,45 @@ describe('[Function: isPrime]', () => {
 		assert.strictEqual(isPrime(35), false);
 	});
 
+	it('should return \'true\' when \'5\' is passed', () => {
+		assert.strictEqual(isPrime(5), true);
+	});
+
+	it('should return \'false\' when \'1\' is passed', () => {
+		assert.strictEqual(isPrime(1), false);
+	});
+
+	it('should return \'true\' when \'2\' is passed', () => {
+		assert.strictEqual(isPrime(2), true);
+	});
+	it('should return \'false\' when \'25\' is passed', () => {
+		assert.strictEqual(isPrime(25), false);
+	});
+	it('should return \'false\' when \'12\' is passed', () => {
+		assert.strictEqual(isPrime(12), false);
+	});
+	it('should return \'false\' when \'27\' is passed', () => {
+		assert.strictEqual(isPrime(27), false);
+	});
+	it('should return \'false\' when \'169\' is passed', () => {
+		assert.strictEqual(isPrime(169), false);
+	});
+	it('should return \'false\' when \'144\' is passed', () => {
+		assert.strictEqual(isPrime(144), false);
+	});
+	it('should return \'false\' when \'121\' is passed', () => {
+		assert.strictEqual(isPrime(121), false);
+	});
+	it('should return \'true\' when \'5003\' is passed', () => {
+		assert.strictEqual(isPrime(5003), true);
+	});
+	it('should return \'true\' when \'157\' is passed', () => {
+		assert.strictEqual(isPrime(157), true);
+	});
+	it('should return \'true\' when \'3\' is passed', () => {
+		assert.strictEqual(isPrime(3), true);
+	});
+
 	it('should throw an error when a negative number is passed', () => {
 		assert.throws(() => isPrime(-20), TypeError);
 	});
