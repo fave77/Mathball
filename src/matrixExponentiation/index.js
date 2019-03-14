@@ -25,7 +25,7 @@ function matrixExpo(matrix, power, dimension){
     }
 
     while(power > 0){
-        if(power%2 == 1){
+        if(power%2 === 1){
             answer = multiply(matrix, answer);
         }
         matrix = multiply(matrix, matrix);
