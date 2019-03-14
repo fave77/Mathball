@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/mathball.svg)](https://badge.fury.io/js/mathball) [![Build Status](https://travis-ci.org/pbiswas101/Mathball.svg?branch=master)](https://travis-ci.org/pbiswas101/Mathball) [![Known Vulnerabilities](https://snyk.io/test/github/pbiswas101/Mathball/badge.svg?targetFile=package.json)](https://snyk.io/test/github/pbiswas101/Mathball?targetFile=package.json) [![codecov](https://codecov.io/gh/pbiswas101/Mathball/branch/master/graph/badge.svg)](https://codecov.io/gh/pbiswas101/Mathball) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1750f9ec92a14adea5593be4ad56d3a2)](https://www.codacy.com/app/pbiswas101/Mathball?utm_source=github.com&utm_medium=referral&utm_content=pbiswas101/Mathball&utm_campaign=Badge_Grade) ![](https://img.shields.io/github/issues/pbiswas101/Mathball.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) ![](https://img.shields.io/github/stars/pbiswas101/Mathball.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![](https://github.com/pbiswas101/Mathball/blob/master/assets/mathball-banner.png)
+![](https://github.com/pbiswas101/Mathball/raw/master/assets/mathball-banner.png)
 
 **Mathball** is a JavaScript library for competitive programming, implementing optimized algorithms for faster execution.
 
@@ -70,7 +70,7 @@ console.log(gcd([12, 18, 24])); //6
 
 ![](https://cdn-images-1.medium.com/max/600/1*47hUn6EfnP5hZkHslmUsxQ.jpeg)
 
-> **Mentors** - Neel Shah, Rishabh Malik, Mridul Aggarwal
+> **Mentors** - Neel Shah, Rishabh Malik, Mridul Aggarwal, Aditya Agarwal
 
 ## License
 
