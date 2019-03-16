@@ -28,9 +28,10 @@ const bell = require('./bell'),
 	{ ugly } = require('./ugly');
 
 /* Mathematical Utilities */
-const frequency = require('./frequency'),
-	count = require('./count'),
-  gcd = require('./gcd'),
+const avg = require('./avg'),
+    count = require('./count'),
+    frequency = require('./frequency'),	
+    gcd = require('./gcd'),
 	isEven = require('./isEven'),
 	isOdd = require('./isOdd'),
 	lcm = require('./lcm'),
@@ -98,6 +99,7 @@ module.exports = {
 	isSmith: smith.isSmith,
 	sort,
 	sum,
+	avg,
 	toDegrees: toDegrees.toDegrees,
 	toRadians: toRadians.toRadians,
 	modInv: modInv.modInv,
