@@ -18,7 +18,7 @@ function factorial(number) {
 	return result;
 }
 
-exports.factorial = num => {
+exports.find = num => {
  validate(num, 'factorial');
  return factorial(num);
 };

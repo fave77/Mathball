@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	factorial = require('../src/factorial').factorial;
+      factorial = require('../src/factorial').find;  
 
 describe('[Function: factorial]', () => {
 	it('should be a function', () => {

@@ -24,9 +24,7 @@ $ npm install mathball --save
 
 - **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isCarmichael][43] - [isDeficient][42] - [isFrugal][47] - [isHarshad][45] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [isPrime][7] - [isSmith][26] - [isStormer][52] -[isHoax][54]
 
-- **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [nCr][48] - [fibonacci][8] - [magic][9] - [padovan][41] - [smart][25] - [ugly][56]
-
-- **Find nth Number** - [bell][32] - [catalan][22] - [factorial][21] - [fibonacci][8] - [magic][9] - [smart][25] - [padovan][41] - [triangular][93]
+- **Find nth Number** - [bell][32] - [catalan][22] - [fibonacci][8] - [find][21] - [magic][9] - [nCr][48] - [fibonacci][8] - [magic][9] - [padovan][41] - [smart][25] - [triangular][93] - [ugly][56]
 
 - **Range of Numbers** - [rangePrime][7] - [rangeFibonacci][8] - [rangePalindrome][6]
 
@@ -95,7 +93,7 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [18]: https://github.com/pbiswas101/Mathball/blob/master/src/sum/index.js
 [19]: https://github.com/pbiswas101/Mathball/blob/master/CONTRIBUTING.md
 [20]: https://github.com/pbiswas101
-[21]: https://github.com/pbiswas101/Mathball/blob/master/src/factorial/index.js
+[21]: https://github.com/pbiswas101/Mathball/blob/master/src/find/index.js
 [22]: https://github.com/pbiswas101/Mathball/blob/master/src/catalan/index.js
 [23]: https://github.com/pbiswas101/Mathball/blob/master/src/kaprekar/index.js
 [24]: https://github.com/pbiswas101/Mathball/blob/master/src/lucky/index.js
