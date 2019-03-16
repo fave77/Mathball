@@ -48,7 +48,8 @@ const avg = require('./avg'),
 	toDegrees = require('./degree'),
 	toRadians = require('./radian'),
 	Complex = require('./complex'),
-	permutation=require('./permutation');
+	permutation=require('./permutation'),
+	findPrimeFactors = require('./primefactor');
 
 /* Helper Methods */
 const performance = require('./performance'),
@@ -69,6 +70,7 @@ module.exports = {
 	fibonacci: fibonacci.fibonacci,
 	padovan: padovan.padovan,
 	permutation:permutation.permutation,
+	findPrimeFactors: findPrimeFactors.findPrimeFactors,
 	gcd,
 	isHarshad: harshad.isHarshad,
 	isEven,
