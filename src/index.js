@@ -29,6 +29,7 @@ const bell = require('./bell'),
 
 /* Mathematical Utilities */
 const frequency = require('./frequency'),
+	count = require('./count'),
   gcd = require('./gcd'),
 	isEven = require('./isEven'),
 	isOdd = require('./isOdd'),
@@ -101,6 +102,7 @@ module.exports = {
 	toRadians: toRadians.toRadians,
 	modInv: modInv.modInv,
 	frequency,
+	count,
 	isDeficient,
 	PriorityQueue,
 	Stack,
