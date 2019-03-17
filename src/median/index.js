@@ -16,5 +16,4 @@ module.exports = arr => {
       else{
         return (arr[half - 1] + arr[half]) / 2.0;
       }
-    
 };
