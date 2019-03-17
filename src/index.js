@@ -13,7 +13,8 @@ const armstrong = require('./armstrong'),
 	isFrugal = require('./isFrugal'),
 	isStormer = require('./isStormer'),
 	carmichael = require('./carmichael'),
-	{ isHoax } = require('./isHoax');
+	{ isHoax } = require('./isHoax'),
+	check = require('./check');
 
 /* Find nth Number */
 const bell = require('./bell'),
@@ -98,7 +99,6 @@ module.exports = {
 	pipe,
 	pow,
 	phi: totient.phi,
-	isPrime: prime.isPrime,
 	isStormer: isStormer.isStormer,
 	rangePrime: prime.rangePrime,
 	smart: smart.smart,
@@ -120,5 +120,6 @@ module.exports = {
 	Complex,
 	isHoax,
 	ugly,
-	triangular: triangular.triangular
+	triangular: triangular.triangular,
+	check
 };
