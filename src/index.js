@@ -50,7 +50,8 @@ const avg = require('./avg'),
 	toRadians = require('./radian'),
 	Complex = require('./complex'),
 	permutation=require('./permutation'),
-	findPrimeFactors = require('./primefactor');
+	findPrimeFactors = require('./primefactor'),
+	totient = require('./totient');
 
 /* Helper Methods */
 const performance = require('./performance'),
@@ -96,6 +97,7 @@ module.exports = {
 	performance,
 	pipe,
 	pow,
+	phi: totient.phi,
 	isPrime: prime.isPrime,
 	isStormer: isStormer.isStormer,
 	rangePrime: prime.rangePrime,
