@@ -4,7 +4,7 @@
 
 const validate = require('../validation/positive-integer');
 
-exports.isPrime = num => {
+exports.check = num => {
 	validate(num, 'isPrime');
   if (num === 2 || num === 3) { return true; }
   if (num < 2 || num % 2 === 0) { return false; }
