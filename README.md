@@ -24,9 +24,9 @@ $ npm install mathball --save
 
 - **Number Checkers** - [isArmstrong][3] - [isAutomorphic][4] - [isCarmichael][43] - [isDeficient][42] - [isFrugal][47] - [isHarshad][45] - [isKaprekar][23] - [isLucky][24] - [isNeon][5] - [isPalindrome][6] - [isPerfect][27] - [M.check('prime')(Number)][7] - [isSmith][26] - [isStormer][52] -[isHoax][54]
 
-- **Find nth Number** - [bell][32] - [catalan][22] - [fibonacci][8] - [find][21] - [magic][9] - [nCr][48] - [fibonacci][8] - [magic][9] - [padovan][41] - [smart][25] - [triangular][93] - [ugly][56]
+- **Find nth Number** - [bell][32] - [catalan][22] - [fibonacci][8] - [find][21] - [magic][9] - [nCr][48] - [magic][9] - [padovan][41] - [smart][25] - [triangular][93] - [ugly][56]
 
-- **Range of Numbers** - [rangePrime][7] - [rangeFibonacci][8] - [rangePalindrome][6]
+- **Range of Numbers** - [rangePrime][7] - [range][66] - [rangePalindrome][6]
 
 - **Mathematical Utilities** - [Complex][49] - [frequency][40] - [gcd][10] - [getAllPerm][55] - [isEven][11] - [isOdd][12] - [lcm][13] - [length][14] - [max][15] - [median][64] - [min][16] - [modInv][39] - [nCr][48] - [pow][46] - [sort][17] - [sum][18] - [toDegrees][50] - [toRadians][51] - [matrixMultiply][58] - [matrixExpo][59] - [matrixChain][60] - [count][61] - [avg][62] - [findPrimeFactors][63] - [phi][67]
 
@@ -131,4 +131,5 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [62]: https://github.com/pbiswas101/Mathball/blob/master/src/avg/index.js
 [63]: https://github.com/pbiswas101/Mathball/blob/master/src/primefactor/index.js
 [64]: https://github.com/pbiswas101/Mathball/blob/master/src/median/index.js
+[66]: https://github.com/pbiswas101/Mathball/blob/master/src/range/index.js
 [67]: https://github.com/pbiswas101/Mathball/blob/master/src/totient/index.js
