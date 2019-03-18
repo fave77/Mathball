@@ -131,5 +131,5 @@ The MIT License 2019 - [Priyabrata Biswas][20].
 [62]: https://github.com/pbiswas101/Mathball/blob/master/src/avg/index.js
 [63]: https://github.com/pbiswas101/Mathball/blob/master/src/primefactor/index.js
 [64]: https://github.com/pbiswas101/Mathball/blob/master/src/median/index.js
-[64]: https://github.com/pbiswas101/Mathball/blob/master/src/range/index.js
+[66]: https://github.com/pbiswas101/Mathball/blob/master/src/range/index.js
 [67]: https://github.com/pbiswas101/Mathball/blob/master/src/totient/index.js
