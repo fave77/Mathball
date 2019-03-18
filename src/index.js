@@ -117,7 +117,7 @@ module.exports = {
 	Stack,
 	Graph,
 	isCarmichael: carmichael.isCarmichael,
-	range: range,
+	range,
 	Complex,
 	isHoax,
 	ugly,
