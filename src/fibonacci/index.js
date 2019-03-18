@@ -38,7 +38,7 @@ const rangeFib = num => {
 	return rangeArr;
 };
 
-exports.rangeFibonacci = num => {
+exports.range = num => {
 	validate(num, 'rangeFibonacci');
 	return rangeFib(num);
 };
