@@ -1,7 +1,7 @@
 const validate = require('../validation/positive-integer');
 
 function isFibbinary(num){
-    if ((num & (num >> 1)) == 0) {
+    if ((num & (num >> 1)) === 0) {
         return true;
     }
 
