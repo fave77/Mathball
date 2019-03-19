@@ -6,7 +6,6 @@ const assert = require('assert'),
 
 describe('[Function: add]', () => {
 	it('should return a function', () => {
-		console.log(typeof add);
 		assert.strictEqual(typeof add, 'function');
 	});
 
@@ -75,7 +74,7 @@ describe('[Function: add]', () => {
 	});
 
 	it('should throw an error when no object match', () => {
-		assert.throws(() => add({p: 30, q: 20}, a, {r: 10, s: 5}), TypeError)
+		assert.throws(() => add({p: 30, q: 20}, a, {r: 10, s: 5}), TypeError);
 	});
 
 	it('should throw an error when matrix has a length difference', () => {
