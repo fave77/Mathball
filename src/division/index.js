@@ -15,7 +15,7 @@ const div = (a,b) => {
 			return	divMatrix(a,b);
 		}
 		else{
-			 return divArray(a,b);
+			return divArray(a,b);
 		}
 	case Complex:
 		return divComplex(a,b);
@@ -74,7 +74,7 @@ function det(a,n){
 		return determinant;
 	}
 }
-function co_factor(a,temp, p, q, n) {
+function coFactor(a,temp, p, q, n) {
 	let i = 0, j = 0;
 	for(let row = 0; row < n; row++){
 		for(let col = 0; col < n; col++){
@@ -101,7 +101,7 @@ function _adjugate(a){
 	for(let i = 0; i < n; i++){
 		for(let j = 0; j < n; j++){
 
-			co_factor(a,temp,i,j,n);
+			coFactor(a,temp,i,j,n);
 			sign = ((i + j) % 2 === 0 ? 1: -1);
 			adj[j][i] = sign * det(temp, n - 1);
 		}
@@ -152,14 +152,14 @@ const divMatrix = (a,b) => {
 		}
 	}
 	return div;
-}
+};
 
 const divComplex = (a,b) => {
         let div = {
                 re: 0,
                 im: 0
                 };
-	let dm = Math.pow(b.re, 2) + Math.pow(b.im, 2)
+	let dm = Math.pow(b.re, 2) + Math.pow(b.im, 2);
         div.re = parseFloat(((a.re * b.re + a.im * b.re)/dm).toFixed(2));
 	div.im = parseFloat(((b.re * a.im - a.re * b.im)/dm).toFixed(2));
         return div;
