@@ -4,24 +4,6 @@
 const Complex = require('../complex');
 const validate = require('../validation/argument-length');
 
-const sub = (a,b) => {
-	switch(a.constructor){
-	case Number:
-		return  subNum(a,b);
-	case String:
-		return subString(a,b);
-	case Array:
-		if(a[0].constructor === Array){
-			return	subMatrix(a,b);
-		}
-		else {
-			 return subArray(a,b);
-		}
-	case Complex:
-		return subComplex(a,b);
-	}
-};
-
 const subNum = (a,b) => {
 	return a - b;
 };
@@ -60,6 +42,24 @@ const subComplex = (a,b) => {
         diff.re = a.re - b.re;
 	diff.im = a.im - b.im;
         return diff;
+};
+
+const sub = (a,b) => {
+	switch(a.constructor){
+	case Number:
+		return  subNum(a,b);
+	case String:
+		return subString(a,b);
+	case Array:
+		if(a[0].constructor === Array){
+			return	subMatrix(a,b);
+		}
+		else {
+			 return subArray(a,b);
+		}
+	case Complex:
+		return subComplex(a,b);
+	}
 };
 
 exports.sub = (...args) => {
