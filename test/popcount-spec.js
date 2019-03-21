@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	popcount = require('../src/popcount').popcount;
+	popcount = require('../src/popcount');
 
 describe('[Function: popcount]', () => {
 
