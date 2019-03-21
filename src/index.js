@@ -27,7 +27,7 @@ const bell = require('./bell'),
 	smart = require('./smart'),
 	triangular = require('./triangular'),
 	range = require('./range'),
-	EleAtRank = require('./EleAtRank'),
+	eleAtRank = require('./eleAtRank'),
 	{ ugly } = require('./ugly');
 
 /* Mathematical Utilities */
@@ -76,7 +76,7 @@ module.exports = {
 	isAutomorphic: automorphic.isAutomorphic,
 	bell: bell.bell,
 	catalan: catalan.catalan,
-	EleAtRank,
+	eleAtRank,
 	find,
 	fibonacci: fibonacci.fibonacci,
 	padovan: padovan.padovan,

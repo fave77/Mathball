@@ -4,7 +4,7 @@ Returns the element at a particular
 
 const validate = require('../validation/positive-integer');
 
-exports.EleAtRank = (arr, inp) => {
+exports.eleAtRank = (arr, inp) => {
     if(!Array.isArray(arr)){
         return "Argument must be an array";
     }
