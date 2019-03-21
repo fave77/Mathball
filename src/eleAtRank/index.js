@@ -13,7 +13,7 @@ exports.eleAtRank = (arr, inp) => {
         return -1;
     }
 
-    let sorted = arr.slice().sort(function(a,b){return b-a});
+    let sorted = arr.slice().sort(function(a,b){return b-a;});
     let rank = 1;
 
     for(let i = 0; i< arr.length; i++){
