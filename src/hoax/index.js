@@ -55,7 +55,7 @@ for(let i = 0; i < primeFactor.length; i++){
 	let pf = primeFactor[i];
 	while(pf > 0){
 		sum +=  pf % 10;
-		pf = parseInt(pf / 10);
+		pf = parseInt((pf / 10),10);
 	}
 	sumOfPrimeFactor += sum;
 }
