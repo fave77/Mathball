@@ -26,7 +26,7 @@ function isCarmichael(n){
 	}
 	return false;
 }
-exports.isCarmichael = n => {
+exports.check = n => {
 	validate(n, 'isCarmichael');
 	return isCarmichael(n);
 };

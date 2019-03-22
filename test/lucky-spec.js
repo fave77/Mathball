@@ -1,5 +1,5 @@
 const assert = require("assert"),
-	isLucky = require("../src/lucky").isLucky;
+	isLucky = require("../src/lucky").check;
 
 describe("[Function: isLucky]", () => {
 	it("should be a function", () => {

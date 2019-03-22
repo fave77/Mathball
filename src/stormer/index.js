@@ -27,7 +27,7 @@ function maxPrimeFactor(inp){
     return maxPrime;
 }
 
-exports.isStormer = n => {
+exports.check = n => {
 
     validate(n, 'isStormer');
     let largPFactor = maxPrimeFactor((n*n+1));

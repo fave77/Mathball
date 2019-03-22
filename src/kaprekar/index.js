@@ -4,7 +4,7 @@
 
 const validate = require('../validation/positive-integer');
 
-exports.isKaprekar = num => {
+exports.check = num => {
 	validate(num, 'isKaprekar');
 	if (num == 1) {
 		return true;

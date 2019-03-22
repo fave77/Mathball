@@ -4,7 +4,7 @@
 
 const validate = require('../validation/positive-integer');
 
-exports.isPerfect = num => {
+exports.check = num => {
     validate(num, 'isPerfect');
     var count  = 0;
     for(var i=1; i<num; i++)

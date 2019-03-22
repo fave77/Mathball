@@ -1,17 +1,13 @@
 const assert = require('assert'),
-triangular = require('../src/triangular').triangular;
+triangular = require('../src/triangular').find;
 
 describe('[Function: triangular]', () => {
 	it('should be a function', () => {
 		assert.strictEqual(typeof triangular, 'function');
 	});
 
-	it('should return true when 55 is passed', () => {
-		assert.strictEqual(triangular(55), true);
-	});
-
-	it('should return false when 40 is passed', () => {
-		assert.strictEqual(triangular(40), false);
+	it('should return 36 when 8 is passed', () => {
+		assert.strictEqual(triangular(8), 36);
 	});
 
 	it('should throw an error when a boolean is passed', () => {

@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	fibonacci = require('../src/fibonacci').fibonacci,
+	fibonacci = require('../src/fibonacci').find,
 	rangeFibonacci = require('../src/fibonacci').range;
 
 describe('[Function: fibonacci]', () => {

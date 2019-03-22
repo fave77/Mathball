@@ -24,7 +24,7 @@ exports.check = num => {
  * Function: rangePrime()
  */
 
-exports.rangePrime = (n) => {
+exports.range = (n) => {
 	validate(n, 'rangePrime');
 	let numbers = Array(n + 1).fill(true);
 	numbers[0] = numbers[1] = false;
@@ -32,7 +32,7 @@ exports.rangePrime = (n) => {
 	for (let i = 0; i < numbers.length; i++) {
 		if (numbers[i]) {
 			primeNumbers.push(i);
-			for (let j = i; j < n; j += i) {
+			for (let j = i; j <= n; j += i) {
 				numbers[j] = false;
 			}
 		}

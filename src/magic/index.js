@@ -4,7 +4,7 @@
 
 const validate = require('../validation/positive-integer');
 
-exports.magic = num => {
+exports.find = num => {
 	validate(num, 'magic');
 	let pow = 1, res = 0;
 	while (num) {

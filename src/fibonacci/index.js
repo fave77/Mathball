@@ -17,7 +17,7 @@ function fib(num) {
 	return total;
 }
 
-exports.fibonacci = num => {
+exports.find = num => {
 	validate(num, 'fibonacci');
 	return fib(num);
 };

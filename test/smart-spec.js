@@ -1,5 +1,5 @@
 const assert = require("assert"),
-	smart = require("../src/smart").smart;
+	smart = require("../src/smart").find;
 
 describe("[Function: smart]", () => {
 	it("should be a function", () => {

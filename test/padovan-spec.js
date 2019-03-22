@@ -1,5 +1,5 @@
 const assert = require("assert"),
-	padovan = require("../src/padovan").padovan;
+	padovan = require("../src/padovan").find;
 
 describe("[Function: padovan]", () => {
 	it("should be a function", () => {

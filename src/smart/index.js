@@ -5,7 +5,7 @@
 const sort = require("../sort");
 const validate = require('../validation/positive-integer');
 
-exports.smart = num => {
+exports.find = num => {
 	validate(num, 'smart');
 	const size = 3000;
 	var primes = new Array(size);

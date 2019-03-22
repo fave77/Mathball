@@ -37,7 +37,7 @@ function genPrimeList(inp){
     return list;
 }
 
-exports.isFrugal = inp => {
+exports.check = inp => {
     validate(inp, 'isFrugal');
     
     let primeFactorisation = genPrimeList(inp);

@@ -1,7 +1,7 @@
 const assert = require('assert'),
 	prime = require('../src/prime'),
 	isPrime = prime.check,
-	rangePrime = prime.rangePrime;
+	rangePrime = prime.range;
 
 describe('[Function: isPrime]', () => {
 

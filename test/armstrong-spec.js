@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	isArmstrong = require('../src/armstrong').isArmstrong;
+	isArmstrong = require('../src/armstrong').check;
 
 describe('[Function: isArmstrong]', () => {
 

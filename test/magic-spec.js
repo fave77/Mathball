@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	magic = require('../src/magic').magic;
+	magic = require('../src/magic').find;
 
 describe('[Function: magic]', () => {
 

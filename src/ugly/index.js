@@ -34,7 +34,7 @@ const getNthUglyNumber = (n) => {
   return i;
 };
 
-exports.ugly = (n) => {
+exports.find = (n) => {
   validate(n, 'ugly');
 
   return getNthUglyNumber(n);

@@ -1,5 +1,5 @@
 const validate = require('../validation/positive-integer');
-
+const check = require('../check');
 /**
  * hoax Number
  */
@@ -37,6 +37,11 @@ const findPrimeFactors = (num) => {
  * check if the number is a hoax
  */
 const isHoaxNumber = (num) => {
+
+if(check('prime')(num) === true){
+	return false;
+}
+else{
   num = num.toString();
   const primeFactor = findPrimeFactors(num);
   const sumofNum = num
@@ -44,12 +49,22 @@ const isHoaxNumber = (num) => {
     .map(val => Number(val))
     .reduce((a, b) => a + b);
 
-  const sumOfPrimeFactor = primeFactor.reduce((a, b) => a + b);
+let sumOfPrimeFactor = 0;
+for(let i = 0; i < primeFactor.length; i++){
+	let sum = 0;
+	let pf = primeFactor[i];
+	while(pf > 0){
+		sum +=  pf % 10;
+		pf = parseInt(pf / 10);
+	}
+	sumOfPrimeFactor += sum;
+}
 
   return sumofNum === sumOfPrimeFactor;
+}
 };
 
-exports.isHoax = (num) => {
+exports.check = (num) => {
   validate(num);
   return isHoaxNumber(num);
 };

@@ -5,12 +5,12 @@
 
 const validate = require('../validation/non-negative-integer');
 
-exports.isPalindrome = num => {
+exports.check = num => {
 	validate(num, 'isPalindrome');
 	return num == num.toString().split('').reverse().join('');
 };
 
-exports.rangePalindrome = (start, end) => {
+exports.range = (start, end) => {
 	validate(start, 'rangePal');
 	validate(end, 'rangePal');
 	

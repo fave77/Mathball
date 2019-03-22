@@ -59,7 +59,7 @@ function smith(num) {
 	return pDigitSum === sumDigits;
 }
 
-exports.isSmith = num => {
+exports.check = num => {
 	validate(num, 'isSmith');
 	sieveSundaram();
 	return smith(num);

@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { ugly } = require('../src/ugly');
+const  ugly  = require('../src/ugly').find;
 
 describe('[Function: ugly]', () => {
   it('should be a function', () => {

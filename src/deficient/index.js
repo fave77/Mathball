@@ -27,7 +27,7 @@ const addAllDivisors = arr => {
 	return arr.reduce(add);
 };
 
-module.exports = num => {
+exports.check = num => {
 	validate(num, 'deficient');
 	let divisors = findDivisors(num);
 	let sum = addAllDivisors(divisors);
