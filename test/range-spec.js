@@ -16,21 +16,24 @@ describe('[Function: range]', () => {
 		assert.deepEqual(range('fibonacci')(2), [0, 1, 1, 2]);
     });
     
-    it('should throw an error when no arguments passed', () => {
-        assert.throws(() => range(), TypeError);
-    });
+	it('should throw an error when no arguments passed', () => {
+			assert.throws(() => range(), TypeError);
+	});
 
-    it('should throw an error when a number is passed', () => {
-        assert.throws(() => range(31), TypeError);
-    });
+	it("should throw an error when 'sum' is passed as arg", () => {
+		assert.throws(() => range('sum')(1), TypeError)
+	});
 
-    it('should throw an error when a negative number is passed', () => {
-        assert.throws(() => range(-20), TypeError);
-    });
+	it('should throw an error when a number is passed', () => {
+			assert.throws(() => range(31), TypeError);
+	});
 
-    it('should throw an error when a floating point is passed', () => {
-        assert.throws(() => range(31.101996), TypeError);
-    });
+	it('should throw an error when a negative number is passed', () => {
+			assert.throws(() => range(-20), TypeError);
+	});
 
+	it('should throw an error when a floating point is passed', () => {
+			assert.throws(() => range(31.101996), TypeError);
+	});
 
 });
