@@ -21,7 +21,7 @@ describe('[Function: range]', () => {
 	});
 
 	it("should throw an error when 'sum' is passed as arg", () => {
-		assert.throws(() => range('sum')(1), TypeError)
+		assert.throws(() => range('sum')(1), TypeError);
 	});
 
 	it('should throw an error when a number is passed', () => {
