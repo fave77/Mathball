@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	isHarshad = require('../src/harshad').isHarshad;
+	isHarshad = require('../src/harshad').check;
 
 describe('[Function: isHarshad]', () => {
 

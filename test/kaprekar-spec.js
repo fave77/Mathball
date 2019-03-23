@@ -1,5 +1,5 @@
 const assert = require("assert"),
-	isKaprekar = require("../src/kaprekar").isKaprekar;
+	isKaprekar = require("../src/kaprekar").check;
 
 describe("[Function: isKaprekar]", () => {
 	it("should be a function", () => {

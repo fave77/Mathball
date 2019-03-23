@@ -1,5 +1,5 @@
 const assert = require("assert"),
-    bell = require("../src/bell").bell;
+    bell = require("../src/bell").find;
     
 describe("[Function: bell]", () => {
     it("should be a function", () => {

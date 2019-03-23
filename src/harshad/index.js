@@ -11,7 +11,7 @@ function isHarshad(num){
 	}
 	return num%sum === 0;
 }
-exports.isHarshad = num => {
+exports.check = num => {
 	validate(num, 'isHarshad');
 	return isHarshad(num);
 };

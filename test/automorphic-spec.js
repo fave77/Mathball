@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	isAutomorphic = require('../src/automorphic').isAutomorphic;
+	isAutomorphic = require('../src/automorphic').check;
 
 describe('[Function: isAutomorphic]', () => {
 

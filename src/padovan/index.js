@@ -18,7 +18,7 @@ function pad(num) {
 	return pNext;
 }
 
-exports.padovan = num => {
+exports.find = num => {
 	validate(num, "padovan");
 	return pad(num);
 };

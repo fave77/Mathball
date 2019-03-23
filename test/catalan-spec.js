@@ -1,5 +1,5 @@
 const assert = require("assert"),
-	catalan = require("../src/catalan").catalan;
+	catalan = require("../src/catalan").find;
 
 describe("[Function: catalan]", () => {
 	it("should be a function", () => {

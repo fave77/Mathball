@@ -13,7 +13,7 @@ function binomialCoeff(n, k) {
 	return res;
 }
 
-exports.catalan = num => {
+exports.find = num => {
 	validate(num, 'catalan');
 	let c = binomialCoeff(2 * num, num);
 	return c / (num + 1);

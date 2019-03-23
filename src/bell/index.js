@@ -27,7 +27,7 @@ function bell(number){
 
 }
 
-exports.bell = num => {
+exports.find = num => {
 
     validate(num, 'bell');
 

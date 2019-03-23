@@ -1,39 +1,39 @@
 const assert = require('assert'),
-	isPalindrome = require('../src/palindrome').isPalindrome,
-	rangePalindrome = require('../src/palindrome').rangePalindrome;
+	palindrome = require('../src/palindrome').check,
+	rangePalindrome = require('../src/palindrome').range;
 
-describe('[Function: isPalindrome]', () => {
+describe('[Function: palindrome]', () => {
 
 	it('should be a function', () => {
-		assert.strictEqual(typeof isPalindrome, 'function');
+		assert.strictEqual(typeof palindrome, 'function');
 	});
 
 	it('should return a boolean value when a non-negative integer is passed', () => {
-		assert.strictEqual(typeof isPalindrome(1), 'boolean');
+		assert.strictEqual(typeof palindrome(1), 'boolean');
 	});
 
 	it('should return \'true\' when \'141\' is passed', () => {
-		assert.strictEqual(isPalindrome(141), true);
+		assert.strictEqual(palindrome(141), true);
 	});
 
 	it('should return \'false\' when \'726\' is passed', () => {
-		assert.strictEqual(isPalindrome(726), false);
+		assert.strictEqual(palindrome(726), false);
 	});
 
 	it('should throw an error when a negative number is passed', () => {
-		assert.throws(() => isPalindrome(-20), TypeError);
+		assert.throws(() => palindrome(-20), TypeError);
 	});
 
 	it('should throw an error when a floating point is passed', () => {
-		assert.throws(() => isPalindrome(31.101996), TypeError);
+		assert.throws(() => palindrome(31.101996), TypeError);
 	});
 
 	it('should throw an error when a string is passed', () => {
-		assert.throws(() => isPalindrome('31'), TypeError);
+		assert.throws(() => palindrome('31'), TypeError);
 	});
 
 	it('should throw an error when no arguments passed', () => {
-		assert.throws(() => isPalindrome(), TypeError);
+		assert.throws(() => palindrome(), TypeError);
 	});
 
 });
