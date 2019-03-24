@@ -1,5 +1,6 @@
 const assert = require("assert"),
 	nCrCatalan = require("../src/nCrCatalan").find;
+	nCr = require('../src/nCr').nCr;
 
 describe("[Function: nCrCatalan]", () => {
 	it("should be a function", () => {
