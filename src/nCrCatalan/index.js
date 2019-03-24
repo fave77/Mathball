@@ -1,5 +1,5 @@
 /* Nth Catalan Number
- * Function: nCrcatalan()
+ * Function: nCrCatalan()
  */
  const validate = require('../validation/non-negative-integer');
  const nCr = require('../nCr/index.js');
