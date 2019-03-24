@@ -22,7 +22,7 @@ $ npm install mathball --save
 
 ## Features
 
-- **Numerals** - [Complex Number][2] - [Find nth Number][3] - [Number Checker][4] - [Range of Number][5]
+- **Numbers' Problem** - [Complex Number][2] - [Find nth Number][3] - [Number Checker][4] - [Range of Number][5]
 
 - **Helper Functions** - [Performance][6] - [Pipe][7]
 
