@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	isOdd = require('../src/isOdd');
+	isOdd = require('../src/isOdd').check;
 
 describe('[Function: isOdd]', () => {
 

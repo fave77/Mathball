@@ -1,85 +1,54 @@
-/* Number Checkers */
-const armstrong = require('./armstrong'),
-	automorphic = require('./automorphic'),
-	harshad = require('./harshad'),
-	kaprekar = require('./kaprekar'),
-	lucky = require('./lucky'),
-	neon = require('./neon'),
-	palindrome = require('./palindrome'),
-	perfect = require('./perfect'),
-	prime = require('./prime'),
-	smith = require('./smith'),
-	deficient = require('./deficient'),
-	frugal = require('./frugal'),
-	stormer = require('./stormer'),
-	carmichael = require('./carmichael'),
-	hoax = require('./hoax'),
-	check = require('./check');
-
-/* Find nth Number */
-const bell = require('./bell'),
-	catalan = require('./catalan'),
+/* Numbers' Problem */
+const Complex = require('./complex'),
+	check = require('./check'),
 	find = require('./find'),
-	fibonacci = require('./fibonacci'),
-	magic = require('./magic'),
-	nCr = require('./nCr'),
-	padovan = require('./padovan'),
-	smart = require('./smart'),
-	triangular = require('./triangular'),
-	range = require('./range'),
-	{ ugly } = require('./ugly');
+	range = require('./range');
 
-/* Mathematical Utilities */
-const avg = require('./avg'),
-    count = require('./count'),
-    frequency = require('./frequency'),	
-    gcd = require('./gcd'),
+/* Helper Functions */
+const performance = require('./performance'),
+	pipe = require('./pipe');
+
+/* Core Tools */
+const abs = require('./absolute'),
 	add = require('./addition'),
-	sub = require('./subtraction'),
-	mul = require('./multiplication'),
+	avg = require('./avg'),
+	ncr = require('./nCr').nCr,
+	/*===== */
+	toDegrees = require('./degree'), //combine these two
+	toRadians = require('./radian'), //modules into one, namely 'convert'
+	/*===== */
+	count = require('./count'),
 	div = require('./division'),
-	abs = require('./absolute'),
-	isEven = require('./isEven'),
-	isOdd = require('./isOdd'),
+	totient = require('./totient'),
+	pow = require('./pow'),
+	gcd = require('./gcd'),
 	lcm = require('./lcm'),
 	length = require('./length'),
 	max = require('./max'),
 	median = require('./median'),
 	min = require('./min'),
 	modInv = require('./modInv'),
-	matrixMultiply = require('./matrixMultiply'),
-	matrixChain = require('./matrixChain'),
-	matrixExpo = require('./matrixExponentiation'),
-	popcount = require('./popcount'),
-	pow = require('./pow'),
-	sort = require('./sort'),
-	sum = require('./sum'),
-	toDegrees = require('./degree'),
-	toRadians = require('./radian'),
-	Complex = require('./complex'),
+	mul = require('./multiplication'),
 	permutation=require('./permutation'),
 	findPrimeFactors = require('./primefactor'),
-	totient = require('./totient');
+	popcount = require('./popcount'),
+	sort = require('./sort'),
+	sub = require('./subtraction'),
+	sum = require('./sum');
 
-/* Helper Methods */
-const performance = require('./performance'),
-	pipe = require('./pipe');
-
-/* Data Structure */
-const PriorityQueue = require('./PriorityQueue'),
-	Stack = require('./stack'),
-	Graph = require('./graph');
+/* Data Structures */
+const matrixMultiply = require('./matrixMultiply'), //change the three following
+	matrixChain = require('./matrixChain'), // module implementation under
+	matrixExpo = require('./matrixExponentiation'), // one data type, 'Matrix'
+	/*=====*/
+	Graph = require('./graph'),
+	PriorityQueue = require('./PriorityQueue'),
+	Stack = require('./stack');
 
 /* M - Mathball Object */
 module.exports = {
-	isArmstrong: armstrong.isArmstrong,
-	isAutomorphic: automorphic.isAutomorphic,
-	bell: bell.bell,
-	catalan: catalan.catalan,
 	find,
-	fibonacci: fibonacci.fibonacci,
-	padovan: padovan.padovan,
-	permutation:permutation.permutation,
+	permute:permutation.permutation,
 	findPrimeFactors: findPrimeFactors.findPrimeFactors,
 	gcd,
 	add: add.add,
@@ -87,52 +56,31 @@ module.exports = {
 	mul: mul.mul,
 	div: div.div,
 	abs: abs.abs,
-	harshad: harshad.isHarshad,
-	isEven,
-	isOdd,
-	kaprekar: kaprekar.isKaprekar,
 	lcm,
 	length,
-	lucky: lucky.isLucky,
-	magic: magic.magic,
 	matrixMultiply,
 	matrixChain: matrixChain.matrixChain,
 	matrixExpo: matrixExpo.matrixExpo,
 	max,
 	median,
 	min,
-	nCr,
-	neon: neon.isNeon,
-	palindrome: palindrome.isPalindrome,
-	rangePalindrome:palindrome.rangePalindrome,
-	perfect: perfect.isPerfect,
-	frugal: frugal.isFrugal,
+	ncr,
 	performance,
 	pipe,
 	popcount,
 	pow,
 	phi: totient.phi,
-	stormer: stormer.isStormer,
-	rangePrime: prime.rangePrime,
-	smart: smart.smart,
-	smith: smith.isSmith,
 	sort,
 	sum,
 	avg,
 	toDegrees: toDegrees.toDegrees,
 	toRadians: toRadians.toRadians,
 	modInv: modInv.modInv,
-	frequency,
 	count,
-	deficient: deficient.isDeficient,
 	PriorityQueue,
 	Stack,
 	Graph,
-	isCarmichael: carmichael.isCarmichael,
 	range,
 	Complex,
-	hoax: hoax.isHoax,
-	ugly,
-	triangular: triangular.triangular,
 	check
 };

@@ -13,7 +13,7 @@ Happy Contributing :slightly_smiling_face:
 $ git clone https://github.com/<YOUR-GITHUB-USERNAME>/Mathball.git
 
 # navigate to the project's directory and install all the relevant dev-dependencies
-$ cd Mathball && npm i --dev
+$ cd Mathball && npm i --only=dev
 
 # include all the latest changes from the remote repository
 $ git remote add upstream https://github.com/pbiswas101/Mathball.git

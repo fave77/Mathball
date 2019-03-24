@@ -6,7 +6,7 @@ coverage/
 .nyc_output/
 
 # media files
-assets/
+docs/
 
 # Dependency directories
 node_modules/

@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	isEven = require('../src/isEven');
+	isEven = require('../src/isEven').check;
 
 describe('[Function: isEven]', () => {
 

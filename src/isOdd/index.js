@@ -2,7 +2,7 @@
 
 const validate = require('../validation/integer');
 
-module.exports = num => {
+exports.check = num => {
 	validate(num, 'isOdd');
 	return num & 1 ? true : false;
 };
