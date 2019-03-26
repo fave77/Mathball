@@ -5,77 +5,75 @@ const Complex = require('./complex'),
 	range = require('./range');
 
 /* Helper Functions */
-const performance = require('./performance'),
+const perf = require('./performance'),
 	pipe = require('./pipe');
 
 /* Core Tools */
 const abs = require('./absolute'),
-	add = require('./addition'),
-	avg = require('./avg'),
-	ncr = require('./nCr').nCr,
+	add = require('./add'),
+	avg = require('./average'),
+	nCr = require('./binomial-coeff'),
 	/*===== */
 	toDegrees = require('./degree'), //combine these two
 	toRadians = require('./radian'), //modules into one, namely 'convert'
+	/* convert = require('./convert'), */
 	/*===== */
 	count = require('./count'),
-	div = require('./division'),
-	totient = require('./totient'),
-	pow = require('./pow'),
+	div = require('./divide'),
 	gcd = require('./gcd'),
 	lcm = require('./lcm'),
 	length = require('./length'),
 	max = require('./max'),
 	median = require('./median'),
 	min = require('./min'),
-	modInv = require('./modInv'),
-	mul = require('./multiplication'),
-	permutation=require('./permutation'),
-	findPrimeFactors = require('./primefactor'),
+	inverse = require('./inverse'),
+	mul = require('./multiply'),
+	permute = require('./permute'),
+	phi = require('./totient'),
 	popcount = require('./popcount'),
+	pow = require('./pow'),
 	sort = require('./sort'),
-	sub = require('./subtraction'),
+	sub = require('./subtract'),
 	sum = require('./sum');
 
 /* Data Structures */
-const matrixMultiply = require('./matrixMultiply'), //change the three following
-	matrixChain = require('./matrixChain'), // module implementation under
+const matrixChain = require('./matrixChain'), // module implementation under
 	matrixExpo = require('./matrixExponentiation'), // one data type, 'Matrix'
 	/*=====*/
 	Graph = require('./graph'),
-	PriorityQueue = require('./PriorityQueue'),
+	PriorityQueue = require('./priority-queue'),
 	Stack = require('./stack');
 
 /* M - Mathball Object */
 module.exports = {
 	find,
-	permute:permutation.permutation,
-	findPrimeFactors: findPrimeFactors.findPrimeFactors,
+	permute,
 	gcd,
-	add: add.add,
-	sub: sub.sub,
-	mul: mul.mul,
-	div: div.div,
-	abs: abs.abs,
+	add,
+	sub,
+	mul,
+	div,
+	abs,
 	lcm,
 	length,
-	matrixMultiply,
+	/* ===== */
+	/* Replace these two with 'Matrix' */
 	matrixChain: matrixChain.matrixChain,
 	matrixExpo: matrixExpo.matrixExpo,
+	/* ===== */
 	max,
 	median,
 	min,
-	ncr,
-	performance,
+	nCr,
+	perf,
 	pipe,
 	popcount,
 	pow,
-	phi: totient.phi,
+	phi,
 	sort,
 	sum,
 	avg,
-	toDegrees: toDegrees.toDegrees,
-	toRadians: toRadians.toRadians,
-	modInv: modInv.modInv,
+	inverse,
 	count,
 	PriorityQueue,
 	Stack,

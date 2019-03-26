@@ -22,13 +22,13 @@ $ npm install mathball --save
 
 ## Features
 
-- **Numbers' Problem** - [Complex Number][2] - [Find nth Number][3] - [Number Checker][4] - [Range of Number][5]
+- **Numbers' Problem** - [Complex Number][2], [Find nth Number][3], [Number Checker][4], [Range of Number][5]
 
 - **Helper Functions** - [Performance][6] - [Pipe][7]
 
-- **Core Tools** - [Absolute][8] - [Addition][9] - [Average][10] - [Binomial Coeff][11] - [Convert][12] - [Count][13] - [Divide][14] - [Euler's Totient][15] - [Exponent][16] - [GCD][17] - [LCM][18] - [Length][19] - [Maximum][20] - [Median][21] - [Minimum][22] - [Modular Inverse][23] - [Multiply][24] - [Permute][25] - [Prime Factors][26] - [Set Bits][27] - [Sort][28] - [Subtract][29] - [Sum][30]
+- **Core Tools** - [Absolute][8] - [Add][9] - [Average][10] - [Binomial Coeff][11] - [Convert][12] - [Count][13] - [Divide][14] - [Euler's Totient][15] - [Modular Exponent][16] - [GCD][17] - [LCM][18] - [Length][19] - [Maximum][20] - [Median][21] - [Minimum][22] - [Modular Inverse][23] - [Multiply][24] - [Permute][25] - [Set Bits][26] - [Sort][27] - [Subtract][28] - [Sum][29]
 
-- **Data Structures** - [Graph][31] - [Matrix][32] - [Priority Queue][33] - [Stack][34]
+- **Data Structures** - [Graph][30] - [Matrix][31] - [Priority Queue][32] - [Stack][33]
 
 ## Examples
 
@@ -46,19 +46,19 @@ console.log(M.sum([4, 5, 9])); /* 18 */
 
 1. Fork the project. :fork_and_knife:
 2. Fix issues & add changes. :wrench:
-3. Follow the guidelines given in [CONTRIBUTING.md][35]. :star2:
+3. Follow the guidelines given in [CONTRIBUTING.md][34]. :star2:
 4. Make a PR. :hammer:
 5. Mission Acomplished! :tada:
 
 ## Important Notice
 
-> **Mathball** has been selected at [GirlScript Summer of Code 2019][36]!
+> **Mathball** has been selected at [GirlScript Summer of Code 2019][35]!
 
 ![](https://cdn-images-1.medium.com/max/600/1*47hUn6EfnP5hZkHslmUsxQ.jpeg)
 
 ## License
 
-The MIT License 2019 - [Priyabrata Biswas][37].
+The MIT License 2019 - [Priyabrata Biswas][36].
 
 [1]: https://en.wikipedia.org/wiki/Brendan_Eich
 [2]: https://github.com/pbiswas101/Mathball/blob/master/docs
@@ -93,7 +93,6 @@ The MIT License 2019 - [Priyabrata Biswas][37].
 [31]: https://github.com/pbiswas101/Mathball/blob/master/docs
 [32]: https://github.com/pbiswas101/Mathball/blob/master/docs
 [33]: https://github.com/pbiswas101/Mathball/blob/master/docs
-[34]: https://github.com/pbiswas101/Mathball/blob/master/docs
-[35]: https://github.com/pbiswas101/Mathball/blob/master/CONTRIBUTING.md
-[36]: https://www.gssoc.tech/
-[37]: https://github.com/pbiswas101
+[34]: https://github.com/pbiswas101/Mathball/blob/master/CONTRIBUTING.md
+[35]: https://www.gssoc.tech/
+[36]: https://github.com/pbiswas101

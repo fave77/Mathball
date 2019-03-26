@@ -77,7 +77,7 @@ const absComplex = (a) => {
         return parseFloat(Math.sqrt(Math.pow(a.re , 2) + Math.pow(a.im , 2)).toFixed(2));
 };
 
-exports.abs = (...args) => {
+module.exports = (...args) => {
 	if(args.length !== 1){
 		throw new TypeError(`Invalid argument received: ${JSON.stringify(args)}\n'abs()' only accepts only one parameter!\n`);
 	}

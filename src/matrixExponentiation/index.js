@@ -4,11 +4,11 @@
 
 const validate = require('../validation/number-array'),
       validateNumber = require('../validation/positive-integer'),
-      multiply = require('../matrixMultiply');
+      multiply = require('../multiply');
 
 function matrixExpo(matrix, power, dimension){
     let i, j, answer = [], temp = [];
-    
+
 
     //Generating identity matrix of order 'dimension'
     for(i = 0; i< dimension; i++){
@@ -36,10 +36,10 @@ function matrixExpo(matrix, power, dimension){
 }
 
 exports.matrixExpo = (mat1, power) => {
-    
+
     validateNumber(power, "matrixExpo");
     let dimension = mat1.length;
-    
+
     for(let i = 0; i< dimension; i++){
 
         validate(mat1[i], "matrixExpo");

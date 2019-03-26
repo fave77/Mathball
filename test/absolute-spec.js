@@ -1,5 +1,5 @@
 const assert = require('assert'),
-	abs = require('../src/absolute').abs,
+	abs = require('../src/absolute'),
 	Complex = require('../src/complex'),
 	a = new Complex(7,3),
 	b = new Complex(3,4);

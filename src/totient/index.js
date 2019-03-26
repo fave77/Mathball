@@ -13,17 +13,17 @@ function phi(num) {
                 num = num / i;
             }
             result = result - result/i;
-        }		
+        }
 	}
 
 	if (num > 1) {
-        result = result - result / num; 
+        result = result - result / num;
 	}
 
 	return result;
 }
 
-exports.phi = num => {
+module.exports = num => {
 	validate(num, 'phi');
 	return phi(num);
 };
