@@ -37,8 +37,7 @@ const abs = require('./absolute'),
 	sum = require('./sum');
 
 /* Data Structures */
-const matrixChain = require('./matrixChain'), // module implementation under
-	matrixExpo = require('./matrixExponentiation'), // one data type, 'Matrix'
+const Matrix = require('./Matrix'),
 	/*=====*/
 	Graph = require('./graph'),
 	PriorityQueue = require('./priority-queue'),
@@ -58,8 +57,7 @@ module.exports = {
 	length,
 	/* ===== */
 	/* Replace these two with 'Matrix' */
-	matrixChain: matrixChain.matrixChain,
-	matrixExpo: matrixExpo.matrixExpo,
+	Matrix,
 	/* ===== */
 	max,
 	median,
