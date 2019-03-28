@@ -120,7 +120,7 @@ describe('[Function: Matrix]', () => {
 
 	it('should throw a TypeError when matrix does not contain positive integers', () => {
 		assert.throws(() => {
-			const z = new Matrix([[3,4], ['4','5']])
+			const z = new Matrix([[3,4], ['4','5']]);
 		}, TypeError);
 	});
 });
