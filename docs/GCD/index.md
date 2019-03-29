@@ -22,7 +22,7 @@ The `M.gcd()` function returns the gcd of two or more numbers.
 	 * TypeError: Invalid argument received: <argument>
 	 * 'gcd()' only accept an array of positive real numbers!
 	 */
-  M.gcd(-20, 24);
+	M.gcd(-20, 24);
 	M.gcd([NaN, 5, Infinity]);
 	M.gcd(['foo', 'bar']);
 	```
