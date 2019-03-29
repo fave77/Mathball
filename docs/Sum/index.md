@@ -24,7 +24,7 @@ The `M.sum()` function returns the sum of two or more numbers.
 	 */
 	M.sum(1, 2);
 	M.sum([NaN, 5, Infinity]);
-	M.sum(['foo', 'bar'])
+	M.sum(['foo', 'bar']);
 	```
 
 ### Info:
