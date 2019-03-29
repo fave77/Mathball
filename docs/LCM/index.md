@@ -22,7 +22,6 @@ The `M.lcm()` function returns the lcm of two or more numbers.
 	 * TypeError: Invalid argument received: <argument>
 	 * 'lcm()' only accept an array of positive real numbers!
 	 */
-	M.lcm(1, 2);
 	M.lcm([-40,8]);
 	M.lcm([NaN, 5, Infinity]);
 	M.lcm(['foo', 'bar']);
