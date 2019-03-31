@@ -33,7 +33,7 @@ let toDegrees = num => {
     return num*180/Math.PI;
 };
 
-exports.convert = (num, object, trim = 0) => {         
+let convert = (num, object, trim = 0) => {         
 
     //Verification if the object variable is of type 'object'
     if(typeof object !== 'object'){
@@ -67,3 +67,5 @@ exports.convert = (num, object, trim = 0) => {
     //Returning the answer
     return value; 
 };
+
+module.exports = convert;
