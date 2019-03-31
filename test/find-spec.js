@@ -77,4 +77,8 @@ describe('[Function: find]', () => {
 	it('should throw an error when no arguments passed', () => {
 		assert.throws(() => find('factorial')(), TypeError);
 	});
+
+    it('should throw an error if sum is called', () => {
+        assert.throws(() => find('sum')([1,2,3,4]), TypeError);
+    });
 });

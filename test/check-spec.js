@@ -65,4 +65,8 @@ describe("[Function: check]", () => {
 	it("should return `true` when called `prime` with 2 as an argument", () => {
 		assert.strictEqual(check('prime')(2), true);
   });
+
+  it('should throw an error when sum is called', () => {
+        assert.throws(() => check('sum')([2,3,4]), TypeError);
+  });
 });

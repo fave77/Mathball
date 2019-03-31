@@ -2,6 +2,7 @@ const assert = require('assert'),
 	range = require('../src/range'),
 	rangePrime = range('prime'),
 	rangePalindrome = range('palindrome');
+   
 
 
 describe('[Function: range]', () => {
@@ -41,4 +42,8 @@ describe('[Function: range]', () => {
 	it('should throw an error when a floating point is passed', () => {
 		assert.throws(() => range(31.101996), TypeError);
 	});
+
+    it('should throw an error when sum is called', () => {
+        assert.throws(() => range('sum'), TypeError);
+    });
 });
