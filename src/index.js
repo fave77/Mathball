@@ -13,11 +13,7 @@ const abs = require('./absolute'),
 	add = require('./add'),
 	avg = require('./average'),
 	nCr = require('./binomial-coeff'),
-	/*===== */
-	toDegrees = require('./degree'), //combine these two
-	toRadians = require('./radian'), //modules into one, namely 'convert'
-	/* convert = require('./convert'), */
-	/*===== */
+	convert = require('./convert'),
 	count = require('./count'),
 	div = require('./divide'),
 	gcd = require('./gcd'),
@@ -77,6 +73,7 @@ module.exports = {
 	Stack,
 	Graph,
 	range,
+	convert,
 	Complex,
 	check
 };
