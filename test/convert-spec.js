@@ -23,6 +23,10 @@ describe("Function: convert", () => {
 		assert.throws(() => M.convert(true, {from: 'radian', to: 'degree'}), TypeError);
     });
 
+    it("should throw an error when an object is not passed", () => {
+      assert.throws(() => M.convert(true, 6), TypeError);
+    });
+
     it("should throw an error when a to/from is(are) absent", () => {
 		assert.throws(() => M.convert(true, {from: 'radian', an: 'degree'}), ReferenceError);
     });

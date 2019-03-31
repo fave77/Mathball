@@ -36,12 +36,12 @@ let toDegrees = num => {
 exports.convert = (num, object, trim = 0) => {         
 
     //Verification if the object variable is of type 'object'
-    if(!(typeof object === 'object')){
+    if(typeof object !== 'object'){
         throw new TypeError(`Invalid argument received: ${JSON.stringify(object)} in convert() must be an object!\n`);
     }
 
     //Check if the object variable has the required fields
-    if(!(object.hasOwnProperty('from')) || !(object.hasOwnProperty('to'))){
+    if(typeof object === 'object' && (!(object.hasOwnProperty('from')) || !(object.hasOwnProperty('to')))){
 		throw new ReferenceError(`Invalid argument received: ${JSON.stringify(object)} in convert() must contain to and from fields!\n`);
     }
 
