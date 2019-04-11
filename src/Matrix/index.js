@@ -87,7 +87,7 @@ class Matrix{
 					}
 					return true;
 				}
-				throw new TypeError(`Invalid ar"hi"gument received: '${arr}', the matrix has to be square to check '${property}' property!`);
+				throw new TypeError(`Invalid argument received: '${arr}', the matrix has to be square to check '${property}' property!`);
 
 		case 'upper-triangular':
 			if(checkSquare(arr)){
