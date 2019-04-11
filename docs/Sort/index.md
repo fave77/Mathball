@@ -1,5 +1,5 @@
 # Sort </br>  
-The ``` M.sort() ``` function returns the a sorted array of integers in either ascending or descending order.  
+The ``` M.sort() ``` function returns a sorted array of integers in either ascending or descending order.  
 
 ### Syntax  
 > M.sort(value1,value2)  
@@ -14,8 +14,9 @@ The ``` M.sort() ``` function returns the a sorted array of integers in either a
 - Valid:  
 	```js
 	M.sort([2, 30, 5, 15,],true);          // [2,5,15,30]  true=ascending order  
-	M.sort([8, -7,-5,40,9],false);         // [40,9,8,-5,-7] false=descending order
-        M.sort([8, -7,-5,40,9]);               // [-7,-5,8,9,40] default=ascending order  
+	M.sort([8, -7,-5,40,9],false);         // [40,9,8,-5,-7] false=descending order  
+	M.sort([8, -7,-5,40,9]);               // [-7,-5,8,9,40] default=ascending order  
+
 	```  
 - Invalid:  
 	```js
