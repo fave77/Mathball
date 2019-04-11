@@ -13,8 +13,9 @@ The ``` M.sort() ``` function returns the a sorted array of integers in either a
 ### Examples  
 - Valid:  
 	```js
-	M.lcm([2, 30, 5, 15,],true);          // [2,5,15,30]  true=ascending order  
-	M.lcm([8, -7,-5,40,9],false);         // [40,9,8,-5,-7] false=descending order  
+	M.sort([2, 30, 5, 15,],true);          // [2,5,15,30]  true=ascending order  
+	M.sort([8, -7,-5,40,9],false);         // [40,9,8,-5,-7] false=descending order  
+	M.sort([8, -7,-5,40,9]);               // [-7,-5,8,9,40] default=ascending order  
 	```  
 - Invalid:  
 	```js
@@ -22,9 +23,9 @@ The ``` M.sort() ``` function returns the a sorted array of integers in either a
 	 * TypeError: Invalid argument received: <argument>
 	 * 'lcm()' only accept an array of positive real numbers!
 	 */
-	M.lcm([true,8],true);
-	M.lcm([NaN, 5, Infinity],true);
-	M.lcm(['foo', 'bar'],false);
+	M.sort([true,8],true);
+	M.sort([NaN, 5, Infinity],true);
+	M.sort(['foo', 'bar'],false);
 	```
 
 ### Info:
