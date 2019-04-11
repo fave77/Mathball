@@ -5,6 +5,7 @@ Use: M.Matrix.functionality('string')
 const matrixValidate = require('../validation/integer-matrix');
 const stringValidate = require('../validation/string');
 const integerValidate = require('../validation/positive-integer');
+const matrixSortTypeValidate = require('../validation/matrix-sort-type');
 
 const matrixChain = require('../matrixChain').matrixChain;
 const matrixExpo = require('../matrixExponentiation').matrixExpo;
@@ -86,7 +87,7 @@ class Matrix{
 					}
 					return true;
 				}
-				throw new TypeError(`Invalid argument received: '${arr}', the matrix has to be square to check '${property}' property!`);
+				throw new TypeError(`Invalid ar"hi"gument received: '${arr}', the matrix has to be square to check '${property}' property!`);
 
 		case 'upper-triangular':
 			if(checkSquare(arr)){
@@ -119,6 +120,53 @@ class Matrix{
 		integerValidate(a, 'pow');
 		return matrixExpo(this.args, a);
 	}
+
+
+	transpose()
+	{   
+		let arr = this.args;
+		var col = arr.length || 0;
+        var row = arr[0].length;
+        var t_arr = [];
+ 
+		for(var i = 0; i < row; i++) {
+			t_arr[i] = [];
+		}
+        for(var i = 0; i < row; i++) {
+    		for(var j = 0; j < col; j++) {
+					t_arr[i][j] = arr[j][i];
+   			}
+ 		}
+    	return t_arr;
+	}
+
+	sort(type)
+	{
+		matrixSortTypeValidate(type,'sort');
+		switch(type)
+		{
+			case 'row':
+				let arr = this.args;
+				for (let i=0;i<arr.length;i++)
+				{
+					arr[i].sort();
+				}
+				this.args = arr;
+				return arr;
+
+			case 'col':
+				this.args = this.transpose();
+				let t_arr = this.args;
+				for (let i = 0;i < this.args.length;i++)
+				{
+					t_arr[i].sort();
+				}
+				this.args=this.transpose();
+				return this.args;
+		}
+	  	
+	}
+
 }
 
 module.exports = Matrix;
