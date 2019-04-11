@@ -1,5 +1,5 @@
 # Sort </br>  
-The ``` M.sort() ``` function returns the a sorted array of integers in either ascending or descending order.  
+The ``` M.sort() ``` function returns a sorted array of integers in either ascending or descending order.  
 
 ### Syntax  
 > M.sort(value1,value2)  
