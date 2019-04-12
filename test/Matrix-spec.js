@@ -1,10 +1,12 @@
 const assert = require('assert'),
 	Matrix = require('../src/Matrix'),
 	x = new Matrix([[1,2],[3,4]]),
+	y=new Matrix([[4,7,1],[3,2,-1]]);
 	f = new Matrix([[1,0,0],[0,0,1]]),
 	upper = new Matrix([[1,2,3,4],[0,1,2,3],[0,0,1,2],[0,0,0,1]]),
 	lower = new Matrix([[1,0,0,0],[1,2,0,0],[1,2,3,0],[1,2,3,4]]),
 	identity = new Matrix([[1,0,0],[0,1,0],[0,0,1]]);
+	
 
 describe('[Function: Matrix]', () => {
 	it('should return a function', () => {
@@ -117,10 +119,24 @@ describe('[Function: Matrix]', () => {
 			z.loc(2,1);
 		}, TypeError);
 	});
-
+   
 	it('should throw a TypeError when matrix does not contain positive integers', () => {
 		assert.throws(() => {
 			const z = new Matrix([[3,4], ['4','5']]);
 		}, TypeError);
 	});
+
+	it('should return [[1,4,7],[-1,2,3]] when sort is called with \'row\'', () => {
+		assert.deepStrictEqual(y.sort('row'), [[1,4,7],[-1,2,3]]);
+	});
+
+	it('should return [[3,2,-1],[4,7,1]] when sort is called with \'col\'', () => {
+		assert.deepStrictEqual(y.sort('col'), [[3,2,-1],[4,7,1]]);
+	});
+
+	it('should throw a TypeError when type passed to matrix.sort() is not correct', () => {
+		assert.throws(() => y.sort('notrow'), TypeError);
+	});
 });
+
+//([[4,7,1],[3,2,-1]]);
