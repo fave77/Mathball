@@ -135,8 +135,9 @@ describe('[Function: Matrix]', () => {
 		assert.deepStrictEqual(y.sort('row'), [[1, 4, 7], [-1, 2, 3]]);
 	});
 
-	it('should return [[3,2,-1],[4,7,1]] when sort is called with \'col\'', () => {
+	it('should return [[-1,2,3 ],[1,4,7]] when sort is called with \'col\'', () => {
 		assert.deepStrictEqual(y.sort('col'), [[ -1, 2, 3 ],[ 1, 4, 7 ]]);
+
 	});
 
 	it('should throw a TypeError when invalid type is passed for sort()', () => {
