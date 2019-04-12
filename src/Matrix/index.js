@@ -139,6 +139,7 @@ class Matrix {
 		matrixSortTypeValidate(type, 'sort');
 		var i;
 		switch (type) {
+
 			case 'row':
 				let arr = this.args;
 				for (i = 0; i < arr.length; i++) {
@@ -146,6 +147,7 @@ class Matrix {
 				}
 				this.args = arr;
 				return arr;
+
 			case 'col':
 				this.args = this.transpose();
 				let tarr = this.args;
