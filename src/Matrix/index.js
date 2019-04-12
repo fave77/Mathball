@@ -12,76 +12,76 @@ const matrixExpo = require('../matrixExponentiation').matrixExpo;
 
 const checkSquare = (matrix) => {
 	let len = matrix.length;
-	for(let i = 0; i < len; i++){
-		if(matrix[i].length !== len){
+	for (let i = 0; i < len; i++) {
+		if (matrix[i].length !== len) {
 			return 0;
 		}
 	}
 	return 1;
 };
 
-class Matrix{
-	constructor(args){
+class Matrix {
+	constructor(args) {
 		matrixValidate(args, 'Matrix');
 		this.args = args;
 	}
-	static chainOrder(arr){
+	static chainOrder(arr) {
 		return matrixChain(arr);
 	}
 
-	loc(row, col){
+	loc(row, col) {
 		integerValidate(row, 'loc');
 		integerValidate(col, 'loc');
 		let arr = this.args;
 		return arr[row - 1][col - 1];
 	}
 
-	diag(type){
+	diag(type) {
 
 		stringValidate(type, 'diag');
 		let arr = this.args, checkSq = checkSquare(arr);
-		if(checkSq !== 1){
+		if (checkSq !== 1) {
 			throw new TypeError(`Invalid argument: '${arr}' received! 'diag()' only returns diagonals of square matrices!`);
-	}
-	else{
-		switch(type){
-
-		case 'primary':
-
-		let primary = [], k = 0;
-		for(let i = 0; i < arr.length; i++){
-				primary[k++] = arr[i][i];
 		}
-		return primary;
+		else {
+			switch (type) {
 
-		case 'secondary':
+				case 'primary':
 
-		let secondary = [], p = 0;
-		for(let i = 0; i < arr.length; i++){
-			secondary[p++] = arr[i][arr.length - i - 1];
-		}
-		return secondary;
+					let primary = [], k = 0;
+					for (let i = 0; i < arr.length; i++) {
+						primary[k++] = arr[i][i];
+					}
+					return primary;
 
-		default:
-			throw new TypeError(`Invalid argument '${type}' received!`);
+				case 'secondary':
+
+					let secondary = [], p = 0;
+					for (let i = 0; i < arr.length; i++) {
+						secondary[p++] = arr[i][arr.length - i - 1];
+					}
+					return secondary;
+
+				default:
+					throw new TypeError(`Invalid argument '${type}' received!`);
 			}
 		}
 	}
 
-	check(property){
+	check(property) {
 
 		stringValidate(property, 'check');
 		let arr = this.args;
 
-		switch(property){
+		switch (property) {
 
-		case 'square':
-			return (checkSquare(arr) === 1)? true: false;
+			case 'square':
+				return (checkSquare(arr) === 1) ? true : false;
 
-		case 'identity':
-			if(checkSquare(arr)){
-			for(let i = 0, j = 0; i < arr.length && j < arr[0].length; i++, j++){
-					if(i === j && arr[i][j] !== 1 && arr[j][i] !== 0){
+			case 'identity':
+				if (checkSquare(arr)) {
+					for (let i = 0, j = 0; i < arr.length && j < arr[0].length; i++ , j++) {
+						if (i === j && arr[i][j] !== 1 && arr[j][i] !== 0) {
 							return false;
 						}
 					}
@@ -89,84 +89,73 @@ class Matrix{
 				}
 				throw new TypeError(`Invalid argument received: '${arr}', the matrix has to be square to check '${property}' property!`);
 
-		case 'upper-triangular':
-			if(checkSquare(arr)){
-			for(let i = 1, j = 0; i < arr.length && j < i; i++){
-					if(arr[i][j] !== 0){
-						return false;
+			case 'upper-triangular':
+				if (checkSquare(arr)) {
+					for (let i = 1, j = 0; i < arr.length && j < i; i++) {
+						if (arr[i][j] !== 0) {
+							return false;
 						}
 					}
-				return true;
-			}
-			throw new TypeError(`Invalid argument received: '${arr}', the matrix has to be square to check '${property}' property!`);
-
-		case 'lower-triangular':
-		if(checkSquare(arr)){
-		for(let i = 0, j = i + 1; i < arr.length && j < arr[0].length; i++, j++){
-				if(arr[i][j] !== 0){
-					return false;
-					}
+					return true;
 				}
-				return true;
-			}
-		throw new TypeError(`Invalid argument received: '${arr}', the matrix has to be square to check '${property}' property!`);
+				throw new TypeError(`Invalid argument received: '${arr}', the matrix has to be square to check '${property}' property!`);
 
-		default:
-			throw new TypeError(`Invalid argument '${property}' received!`);
+			case 'lower-triangular':
+				if (checkSquare(arr)) {
+					for (let i = 0, j = i + 1; i < arr.length && j < arr[0].length; i++ , j++) {
+						if (arr[i][j] !== 0) {
+							return false;
+						}
+					}
+					return true;
+				}
+				throw new TypeError(`Invalid argument received: '${arr}', the matrix has to be square to check '${property}' property!`);
+
+			default:
+				throw new TypeError(`Invalid argument '${property}' received!`);
 		}
 	}
 
-	pow(a){
+	pow(a) {
 		integerValidate(a, 'pow');
 		return matrixExpo(this.args, a);
 	}
-
-
-	transpose()
-	{   
+	transpose() {
 		let arr = this.args;
 		var col = arr.length || 0;
-        var row = arr[0].length;
-        var t_arr = [];
- 
-		for(var i = 0; i < row; i++) {
-			t_arr[i] = [];
+		var row = arr[0].length;
+		var i, j, tarr = [];
+		for (i = 0; i < row; i++) {
+			tarr[i] = [];
 		}
-        for(var i = 0; i < row; i++) {
-    		for(var j = 0; j < col; j++) {
-					t_arr[i][j] = arr[j][i];
-   			}
- 		}
-    	return t_arr;
+		for (i = 0; i < row; i++) {
+			for (j = 0; j < col; j++) {
+				tarr[i][j] = arr[j][i];
+			}
+		}
+		return tarr;
 	}
-
-	sort(type)
-	{
-		matrixSortTypeValidate(type,'sort');
-		switch(type)
-		{
+	sort(type) {
+		matrixSortTypeValidate(type, 'sort');
+		var i;
+		switch (type) {
 			case 'row':
 				let arr = this.args;
-				for (let i=0;i<arr.length;i++)
-				{
+				for (i = 0; i < arr.length; i++) {
 					arr[i].sort();
 				}
 				this.args = arr;
 				return arr;
-
 			case 'col':
 				this.args = this.transpose();
-				let t_arr = this.args;
-				for (let i = 0;i < this.args.length;i++)
-				{
-					t_arr[i].sort();
+				let tarr = this.args;
+				for (i = 0; i < this.args.length; i++) {
+					tarr[i].sort();
 				}
-				this.args=this.transpose();
+				this.args = this.transpose();
 				return this.args;
 		}
-	  	
 	}
-
 }
 
 module.exports = Matrix;
