@@ -1,7 +1,7 @@
 const assert = require('assert'),
 	Matrix = require('../src/Matrix'),
 	x = new Matrix([[1,2],[3,4]]),
-	y=new Matrix([[4,7,1],[3,2,-1]]);
+	y=new Matrix([[4,7,1],[3,2,-1]]),
 	f = new Matrix([[1,0,0],[0,0,1]]),
 	upper = new Matrix([[1,2,3,4],[0,1,2,3],[0,0,1,2],[0,0,0,1]]),
 	lower = new Matrix([[1,0,0,0],[1,2,0,0],[1,2,3,0],[1,2,3,4]]),
@@ -126,12 +126,16 @@ describe('[Function: Matrix]', () => {
 		}, TypeError);
 	});
 
+	it('should return [[4,3],[7,2],[1,-1]] when sort is called with \'row\'', () => {
+		assert.StrictEqual(y.transpose(), [[4,3],[7,2],[1,-1]]);
+	});
+
 	it('should return [[1,4,7],[-1,2,3]] when sort is called with \'row\'', () => {
-		assert.deepStrictEqual(y.sort('row'), [[1,4,7],[-1,2,3]]);
+		assert.StrictEqual(y.sort('row'), [[1,4,7],[-1,2,3]]);
 	});
 
 	it('should return [[3,2,-1],[4,7,1]] when sort is called with \'col\'', () => {
-		assert.deepStrictEqual(y.sort('col'), [[3,2,-1],[4,7,1]]);
+		assert.StrictEqual(y.sort('col'), [[3,2,-1],[4,7,1]]);
 	});
 
 	it('should throw a TypeError when type passed to matrix.sort() is not correct', () => {
