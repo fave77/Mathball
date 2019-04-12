@@ -122,7 +122,7 @@ class Matrix {
 	}
 	transpose() {
 		let arr = this.args;
-		var col = arr.length || 0;
+		var col = arr.length;
 		var row = arr[0].length;
 		var i, j, tarr = [];
 		for (i = 0; i < row; i++) {
@@ -161,3 +161,4 @@ class Matrix {
 }
 
 module.exports = Matrix;
+

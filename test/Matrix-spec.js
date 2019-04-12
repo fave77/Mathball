@@ -1,12 +1,12 @@
 const assert = require('assert'),
 	Matrix = require('../src/Matrix'),
-	x = new Matrix([[1,2],[3,4]]),
-	y=new Matrix([[4,7,1],[3,2,-1]]);
-	f = new Matrix([[1,0,0],[0,0,1]]),
-	upper = new Matrix([[1,2,3,4],[0,1,2,3],[0,0,1,2],[0,0,0,1]]),
-	lower = new Matrix([[1,0,0,0],[1,2,0,0],[1,2,3,0],[1,2,3,4]]),
-	identity = new Matrix([[1,0,0],[0,1,0],[0,0,1]]);
-	
+	x = new Matrix([[1, 2], [3, 4]]),
+	y = new Matrix([[4, 7, 1], [3, 2, -1]]),
+	f = new Matrix([[1, 0, 0], [0, 0, 1]]),
+	upper = new Matrix([[1, 2, 3, 4], [0, 1, 2, 3], [0, 0, 1, 2], [0, 0, 0, 1]]),
+	lower = new Matrix([[1, 0, 0, 0], [1, 2, 0, 0], [1, 2, 3, 0], [1, 2, 3, 4]]),
+	identity = new Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]]);
+
 
 describe('[Function: Matrix]', () => {
 	it('should return a function', () => {
@@ -18,27 +18,27 @@ describe('[Function: Matrix]', () => {
 	});
 
 	it('should return 26000 when [40,20,30,10,30] is passed to chainOrder', () => {
-		assert.strictEqual(Matrix.chainOrder([40,20,30,10,30]), 26000);
+		assert.strictEqual(Matrix.chainOrder([40, 20, 30, 10, 30]), 26000);
 	});
 
 	it('should throw a TypeError when 30,40,50 is passed to chainOrder', () => {
-		assert.throws(() => Matrix.chainOrder(30,40,50), TypeError);
+		assert.throws(() => Matrix.chainOrder(30, 40, 50), TypeError);
 	});
 
 	it('should return 3 when loc is called with 2,1', () => {
-		assert.strictEqual(x.loc(2,1), 3);
+		assert.strictEqual(x.loc(2, 1), 3);
 	});
 
 	it('should throw an error when loc is called with "2", "1"', () => {
-		assert.throws(() => x.loc('2','1'), TypeError);
+		assert.throws(() => x.loc('2', '1'), TypeError);
 	});
 
 	it('should return primary elements of the diagonal', () => {
-		assert.deepStrictEqual(x.diag('primary'), [1,4]);
+		assert.deepStrictEqual(x.diag('primary'), [1, 4]);
 	});
 
 	it('should return secondary elements of diagonal', () => {
-		assert.deepStrictEqual(x.diag('secondary'), [2,3]);
+		assert.deepStrictEqual(x.diag('secondary'), [2, 3]);
 	});
 
 	it('should throw an error when diag is called with a non-sqaure matrix', () => {
@@ -90,7 +90,7 @@ describe('[Function: Matrix]', () => {
 	});
 
 	it('should return [[7,10],[15,22]] when pow is called with 2', () => {
-		assert.deepStrictEqual(x.pow(2), [[7,10],[15,22]]);
+		assert.deepStrictEqual(x.pow(2), [[7, 10], [15, 22]]);
 	});
 
 	it('should throw an error if a string or floating point is passed to pow', () => {
@@ -115,28 +115,37 @@ describe('[Function: Matrix]', () => {
 
 	it('should throw a TypeError when a 1D array is passed', () => {
 		assert.throws(() => {
-			const z = new Matrix([3,4,5,6,7,8]);
-			z.loc(2,1);
+			const z = new Matrix([3, 4, 5, 6, 7, 8]);
+			z.loc(2, 1);
 		}, TypeError);
 	});
-   
+
 	it('should throw a TypeError when matrix does not contain positive integers', () => {
 		assert.throws(() => {
-			const z = new Matrix([[3,4], ['4','5']]);
+			const z = new Matrix([[3, 4], ['4', '5']]);
 		}, TypeError);
+	});
+
+	
+	it('should return [[4,3],[7,2],[1,-1]] when transpose() is called', () => {
+		assert.deepStrictEqual(y.transpose(), [[4, 3], [7, 2], [1, -1]]);
 	});
 
 	it('should return [[1,4,7],[-1,2,3]] when sort is called with \'row\'', () => {
-		assert.deepStrictEqual(y.sort('row'), [[1,4,7],[-1,2,3]]);
+		assert.deepStrictEqual(y.sort('row'), [[1, 4, 7], [-1, 2, 3]]);
 	});
 
 	it('should return [[3,2,-1],[4,7,1]] when sort is called with \'col\'', () => {
-		assert.deepStrictEqual(y.sort('col'), [[3,2,-1],[4,7,1]]);
+		assert.deepStrictEqual(y.sort('col'), [[ -1, 2, 3 ],[ 1, 4, 7 ]]);
 	});
 
-	it('should throw a TypeError when type passed to matrix.sort() is not correct', () => {
-		assert.throws(() => y.sort('notrow'), TypeError);
+	it('should throw a TypeError when invalid type is passed for sort()', () => {
+		assert.throws(() => {
+			const z = new Matrix([[3, 4], ['4', '5']]);
+			z.sort(true);
+		}, TypeError);
 	});
+
 });
 
 //([[4,7,1],[3,2,-1]]);
