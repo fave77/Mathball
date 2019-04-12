@@ -126,7 +126,7 @@ describe('[Function: Matrix]', () => {
 		}, TypeError);
 	});
 
-	
+
 	it('should return [[4,3],[7,2],[1,-1]] when transpose() is called', () => {
 		assert.deepStrictEqual(y.transpose(), [[4, 3], [7, 2], [1, -1]]);
 	});
@@ -136,17 +136,19 @@ describe('[Function: Matrix]', () => {
 	});
 
 	it('should return [[-1,2,3 ],[1,4,7]] when sort is called with \'col\'', () => {
-		assert.deepStrictEqual(y.sort('col'), [[ -1, 2, 3 ],[ 1, 4, 7 ]]);
+		assert.deepStrictEqual(y.sort('col'), [[-1, 2, 3], [1, 4, 7]]);
 
 	});
 
-	it('should throw a TypeError when invalid type is passed for sort()', () => {
-		assert.throws(() => {
-			const z = new Matrix([[3, 4], ['4', '5']]);
-			z.sort(true);
-		}, TypeError);
+	it('should throw an error if a integer or floating point is passed to sort()', () => {
+		assert.throws(() => x.sort(2), TypeError);
 	});
 
+	it('should throw an error if wrong type is passed to sort()', () => {
+		assert.throws(() => x.sort('cosds'), TypeError);
+	});
+
+	it('should throw an error if no argument is passed to sort()', () => {
+		assert.throws(() => x.sort(), TypeError);
+	});
 });
-
-//([[4,7,1],[3,2,-1]]);
