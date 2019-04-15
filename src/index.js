@@ -34,7 +34,7 @@ const abs = require('./absolute'),
 
 /* Data Structures */
 const Matrix = require('./Matrix'),
-	/*=====*/
+	BinaryTree = require('./binary-tree'),
 	Graph = require('./graph'),
 	PriorityQueue = require('./priority-queue'),
 	Stack = require('./stack');
@@ -69,6 +69,7 @@ module.exports = {
 	avg,
 	inverse,
 	count,
+	BinaryTree,
 	PriorityQueue,
 	Stack,
 	Graph,

@@ -28,7 +28,7 @@ $ npm install mathball --save
 
 - **Core Tools** - [Absolute][8] - [Add][9] - [Average][10] - [Binomial Coeff][11] - [Convert][12] - [Count][13] - [Divide][14] - [Euler's Totient][15] - [Modular Exponent][16] - [GCD][17] - [LCM][18] - [Length][19] - [Maximum][20] - [Median][21] - [Minimum][22] - [Modular Inverse][23] - [Multiply][24] - [Permute][25] - [Set Bits][26] - [Sort][27] - [Subtract][28] - [Sum][29]
 
-- **Data Structures** - [Graph][30] - [Matrix][31] - [Priority Queue][32] - [Stack][33]
+- **Data Structures** - [Graph][30] - [Matrix][31] - [Priority Queue][32] - [Stack][33] - [BinaryTree][37]
 
 ## Examples
 
@@ -96,3 +96,4 @@ The MIT License 2019 - [Priyabrata Biswas][36].
 [34]: https://github.com/pbiswas101/Mathball/blob/master/CONTRIBUTING.md
 [35]: https://www.gssoc.tech/
 [36]: https://github.com/pbiswas101
+[37]: https://github.com/pbiswas101/Mathball/blob/master/docs
