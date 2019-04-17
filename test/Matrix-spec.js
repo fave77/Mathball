@@ -138,6 +138,23 @@ describe('[Function: Matrix]', () => {
 
 	});
 
+
+	it('should return [[ 1,4,7 ],[ -1,2,3 ]] when sort is called with \'col\' and false', () => {
+		assert.deepStrictEqual(y.sort('col',false), [[ 1, 4, 7 ],[ -1, 2, 3 ]]);
+
+	});
+
+
+	it('should return [[ 7, 4, 1 ],[ 3, 2, -1 ]] when sort is called with \'row\' and true', () => {
+		assert.deepStrictEqual(y.sort('row',false), [[ 7, 4, 1 ],[ 3, 2, -1 ]]);
+
+	});
+
+	it('should return TypeError when sort is called with invalid second argument', () => {
+		assert.throws(() => y.sort('row',123), TypeError);
+
+	});
+
 	it('should throw a TypeError when invalid type is passed for sort()', () => {
 		assert.throws(() => {
 			const z = new Matrix([[3, 4], ['4', '5']]);

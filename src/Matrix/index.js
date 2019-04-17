@@ -5,7 +5,6 @@ Use: M.Matrix.functionality('string')
 const matrixValidate = require('../validation/integer-matrix');
 const stringValidate = require('../validation/string');
 const integerValidate = require('../validation/positive-integer');
-const matrixSortTypeValidate = require('../validation/matrix-sort-type');
 
 const matrixChain = require('../matrixChain').matrixChain;
 const matrixExpo = require('../matrixExponentiation').matrixExpo;
@@ -121,6 +120,7 @@ class Matrix{
 		return matrixExpo(this.args, a);
 	}
 
+	
 	transpose() {
 		let arr = this.args;
 		const col = arr.length;
@@ -138,13 +138,20 @@ class Matrix{
 		return tarr;
 	}
 
-	sort(type) {
-		matrixSortTypeValidate(type, 'sort');
+	sort(type, order = true) {
+		stringValidate(type, 'sort');
+		if(type != 'row' && type!='col'){
+			throw new TypeError(`Invalid argument received: ${JSON.stringify(type)}\n'sort(arg1,arg2)' only accepts row or col as arg1!\n`);
+		}	
+		if(typeof order != 'boolean'){
+			throw new TypeError(`Invalid argument received: ${JSON.stringify(order)}\n'sort(arg1,arg2)' only accepts a boolean as arg2!\n`);
+		}	
+
 		switch (type) {
 			case 'row':
 				let arr = this.args;
 				for (let i = 0; i < arr.length; i++) {
-					arr[i].sort();
+					arr[i].sort((prev, next) => order ? prev - next : next - prev);
 				}
 				this.args = arr;
 				return arr;
@@ -153,7 +160,7 @@ class Matrix{
 				this.args = this.transpose();
 				let tarr = this.args;
 				for (let i = 0; i < this.args.length; i++) {
-					tarr[i].sort();
+					tarr[i].sort((prev, next) => order ? prev - next : next - prev);
 				}
 				this.args = this.transpose();
 				return this.args;
