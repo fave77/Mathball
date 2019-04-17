@@ -125,17 +125,17 @@ class Matrix{
 		let arr = this.args;
 		const col = arr.length;
 		const row = arr[0].length;
-		let t_arr = [];
+		let tarr = [];
 
 		for (let i = 0; i < row; i++) {
-			t_arr[i] = [];
+			tarr[i] = [];
 		}
 		for (let i = 0; i < row; i++) {
 			for (let j = 0; j < col; j++) {
-				t_arr[i][j] = arr[j][i];
+				tarr[i][j] = arr[j][i];
 			}
 		}
-		return t_arr;
+		return tarr;
 	}
 
 	sort(type) {
@@ -151,9 +151,9 @@ class Matrix{
 
 			case 'col':
 				this.args = this.transpose();
-				let t_arr = this.args;
+				let tarr = this.args;
 				for (let i = 0; i < this.args.length; i++) {
-					t_arr[i].sort();
+					tarr[i].sort();
 				}
 				this.args = this.transpose();
 				return this.args;
