@@ -65,7 +65,12 @@ const findObjOccurance = (obj, occurance) => {
  * @param {string|number|string[]|number[]|object} arg - Accepts either a String or an Array
  * @param {string|number|object} occurance - The phrase or array item you want to find
  */
-module.exports = (arg, occurance) => {
+module.exports = (...args) => {
+  if(args.length > 2){
+    throw new TypeError(`Invalid input received! 'count()' does
+    not accept more than 2 parameters!`);
+  }
+  let arg = args[0], occurance = args[1];
   validate(arg, 'count');
   
   if (arg && arg.constructor === Array) {
