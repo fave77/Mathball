@@ -78,4 +78,8 @@ describe('[Function: count]', () => {
 	it('should throw TypeError when nothing is passed as arguments', () => {
 		assert.throws(() => count(), TypeError);
 	});
+
+    it('should throw a TypeError when more than 2 parameters are passed', () => {
+        assert.throws(() => count(1,2,3), TypeError);
+    });
 });
