@@ -5,6 +5,7 @@ Use: M.Matrix.functionality('string')
 const matrixValidate = require('../validation/integer-matrix');
 const stringValidate = require('../validation/string');
 const integerValidate = require('../validation/positive-integer');
+const matrixSortTypeValidate = require('../validation/matrix-sort-type');
 
 const matrixChain = require('../matrixChain').matrixChain;
 const matrixExpo = require('../matrixExponentiation').matrixExpo;
@@ -118,6 +119,45 @@ class Matrix{
 	pow(a){
 		integerValidate(a, 'pow');
 		return matrixExpo(this.args, a);
+	}
+
+	transpose() {
+		let arr = this.args;
+		const col = arr.length;
+		const row = arr[0].length;
+		let t_arr = [];
+
+		for (let i = 0; i < row; i++) {
+			t_arr[i] = [];
+		}
+		for (let i = 0; i < row; i++) {
+			for (let j = 0; j < col; j++) {
+				t_arr[i][j] = arr[j][i];
+			}
+		}
+		return t_arr;
+	}
+
+	sort(type) {
+		matrixSortTypeValidate(type, 'sort');
+		switch (type) {
+			case 'row':
+				let arr = this.args;
+				for (let i = 0; i < arr.length; i++) {
+					arr[i].sort();
+				}
+				this.args = arr;
+				return arr;
+
+			case 'col':
+				this.args = this.transpose();
+				let t_arr = this.args;
+				for (let i = 0; i < this.args.length; i++) {
+					t_arr[i].sort();
+				}
+				this.args = this.transpose();
+				return this.args;
+		}
 	}
 }
 
