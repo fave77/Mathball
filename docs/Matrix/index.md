@@ -12,42 +12,30 @@ The `M.Matrix()` function returns an object upon which various matrix-based oper
 
 ### Examples
 ```js
-	const x = new M.Matrix([ [1, 2], [3, 4] ]);
+const x = new M.Matrix([ [1, 2], [3, 4] ]);
 ```
 
-### Info:
+### Info
 > Implemented using JavaScript's built-in `class`
 
-### Methods:
-- **loc**
-- **diag**
-- **check**
-- **pow**
-
-##### loc
-> Returns the element in the matrix of specified row and column number.
-
-##### diag
-> Returns array of numbers which contains either diagonal or anti-diagonal elements based on the argument.
-
-##### check
-> Returns boolean on checking if matrix is square, identity, upper-triangular or lower-triangular.
-
-##### pow
-> Returns a matrix after multiplying the same matrix, the number of times provided as the argument.
+### Methods
+- **loc** - returns the element in the matrix of specified row and column number.
+- **diag** - returns array of numbers which contains either diagonal or anti-diagonal elements based on the argument.
+- **check** - returns a boolean on checking if matrix is square, identity, upper-triangular or lower-triangular.
+- **pow** - returns a matrix after multiplying the same matrix, the number of times provided as the argument.
 
 ------
 
-##### Syntax
+###### Syntax
 > x.loc([value1, value2])
 
-##### Arguments
+###### Arguments
 > \<Row Number\> , \<Column Number\>
 
-##### Return
+###### Return
 > Number
 
-##### Examples
+###### Examples
 - Valid:
 	```js
 	const x = new M.Matrix([ [1, 2], [3, 4] ]);
@@ -65,22 +53,22 @@ The `M.Matrix()` function returns an object upon which various matrix-based oper
 	x.loc(2, -1);
 	```
 
-##### Info:
+###### Info
 Only positive numbers should be in the arguments,
 because that denotes the row and column number of a matrix.
 
 ------
 
-##### Syntax
+###### Syntax
 > x.diag(value)
 
-##### Arguments
+###### Arguments
 > \<'primary'\> or \<'secondary'\>
 
-##### Return
+###### Return
 > Array \<Number\>
 
-##### Examples
+###### Examples
 - Valid:
 	```js
 	const x = new M.Matrix([ [1, 2], [3, 4] ]);
@@ -102,22 +90,22 @@ because that denotes the row and column number of a matrix.
 	x.diag('secondary');
 	```
 
-##### Info:
+###### Info:
 First it checks, if matrix is square, and then
 returns the diagonal as per the correct argument.
 
 ------
 
-##### Syntax
+###### Syntax
 > x.check(value)
 
-##### Arguments
+###### Arguments
 > \<'square'\> or \<'identity'\> or \<'upper-triangular'\> or \<'lower-triangular'\>
 
-##### Return
+###### Return
 > Boolean
 
-##### Examples
+###### Examples
 - Valid:
 	```js
 	const x = new M.Matrix([ [1, 2], [3, 4] ]);
@@ -145,22 +133,22 @@ returns the diagonal as per the correct argument.
 	 const x = new M.Matrix([ [1, 2, 5], [3, 4] ]);
 	```
 
-##### Info:
+###### Info
 First it checks, if matrix is square, and then
 returns the diagonal as per the argument.
 
 ------
 
-##### Syntax
+###### Syntax
 > x.pow(value)
 
-##### Arguments
+###### Arguments
 > \<Number\>
 
-##### Return
+###### Return
 > Matrix
 
-##### Examples
+###### Examples
 - Valid:
 	```js
 	const x = new M.Matrix([ [1, 2], [3, 4] ]);
@@ -179,21 +167,26 @@ returns the diagonal as per the argument.
 	 x.pow(0)
 	```
 
-##### Info:
+###### Info
 Implemented using `matrixExponentiation()` function.
 
 ------
 
-##### Syntax
-> x.chainOrder([value1, value2, ...])
+### Additional
 
-##### Arguments
+###### Matrix Chain Order
+> Matrix Chain Order returns the minimum number of multiplications required when the dimension of matrices are provided in order for finding the most efficient way to multiply these matrices together.
+
+###### Syntax
+> M.Matrix.chainOrder([value1, value2, ...])
+
+###### Arguments
 > Array \<Number\>
 
-##### Return
+###### Return
 > Number
 
-##### Examples
+###### Examples
 - Valid:
 	```js
 	M.Matrix.chainOrder([40, 20, 30, 10])  //14000
@@ -209,11 +202,7 @@ Implemented using `matrixExponentiation()` function.
   M.Matrix.chainOrder([10, -20, 40, 10]) //Error: not positive integers
 	```
 
-##### Info:
-Only positive numbers should be in the array,
-because that denotes the number of rows in a matrix.
-
-### Additional:
-> M.Matrix.chainOrder()
+###### Info
+Only positive numbers should be in the array, because that denotes the number of rows in a matrix.
 
 ------
