@@ -1,10 +1,10 @@
 /* String Permutation
- * Function: getAllPerm()
+ * Function: permute()
  */
 
 const validate = require('../validation/string');
 
-function getAllPerm(str) {
+function permute(str) {
 	let letters = str.split(''),
 		results = [[letters.shift()]];
 	while (letters.length) {
@@ -29,5 +29,5 @@ function getAllPerm(str) {
 
 module.exports = str => {
 	validate(str, 'permutation');
-	return getAllPerm(str);
+	return permute(str);
 };
