@@ -1,8 +1,8 @@
-# phi </br>  
+# Euler's Totient </br>  
 The ``` M.phi() ``` function for an input n returns count of numbers in {1, 2, 3, …, n} that are relatively prime to n, i.e., the numbers whose GCD (Greatest Common Divisor) with n is 1   
 
 ### Syntax  
-> M.sort(num)  
+> M.phi(num)  
 
 ### Arguments  
 > Number  
@@ -14,8 +14,8 @@ The ``` M.phi() ``` function for an input n returns count of numbers in {1, 2, 3
 - Valid:  
 	```js
 	M.phi(9);                                // 6
-	M.phi(0);                               // 0
-	phi(10)                                // 4 
+	M.phi(0);                                // 0
+	M.phi(10)                                // 4 
 	```  
 - Invalid:  
 	```js
@@ -25,9 +25,9 @@ The ``` M.phi() ``` function for an input n returns count of numbers in {1, 2, 3
 	 */
 	M.phi("31")
 	M.phi(true)
-    M.phi(31.101996)
-    M.phi(-20)
-    M.phi(0)
+  M.phi(31.101996)
+  M.phi(-20)
+  M.phi(0)
 	```
 
 ### Info:
