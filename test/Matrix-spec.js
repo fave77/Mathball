@@ -145,7 +145,7 @@ describe('[Function: Matrix]', () => {
 	});
 
 
-	it('should return [[ 7, 4, 1 ],[ 3, 2, -1 ]] when sort is called with \'row\' and true', () => {
+	it('should return [[ 7, 4, 1 ],[ 3, 2, -1 ]] when sort is called with \'row\' and false', () => {
 		assert.deepStrictEqual(y.sort('row',false), [[ 7, 4, 1 ],[ 3, 2, -1 ]]);
 
 	});
