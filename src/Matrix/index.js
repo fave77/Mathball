@@ -119,6 +119,53 @@ class Matrix{
 		integerValidate(a, 'pow');
 		return matrixExpo(this.args, a);
 	}
+
+	
+	transpose() {
+		let arr = this.args;
+		const col = arr.length;
+		const row = arr[0].length;
+		let tarr = [];
+
+		for (let i = 0; i < row; i++) {
+			tarr[i] = [];
+		}
+		for (let i = 0; i < row; i++) {
+			for (let j = 0; j < col; j++) {
+				tarr[i][j] = arr[j][i];
+			}
+		}
+		return tarr;
+	}
+
+	sort(type, order = true) {
+		stringValidate(type, 'sort');
+		if(type != 'row' && type!='col'){
+			throw new TypeError(`Invalid argument received: ${JSON.stringify(type)}\n'sort(arg1,arg2)' only accepts row or col as arg1!\n`);
+		}	
+		if(typeof order != 'boolean'){
+			throw new TypeError(`Invalid argument received: ${JSON.stringify(order)}\n'sort(arg1,arg2)' only accepts a boolean as arg2!\n`);
+		}	
+
+		switch (type) {
+			case 'row':
+				let arr = this.args;
+				for (let i = 0; i < arr.length; i++) {
+					arr[i].sort((prev, next) => order ? prev - next : next - prev);
+				}
+				this.args = arr;
+				return arr;
+
+			case 'col':
+				this.args = this.transpose();
+				let tarr = this.args;
+				for (let i = 0; i < this.args.length; i++) {
+					tarr[i].sort((prev, next) => order ? prev - next : next - prev);
+				}
+				this.args = this.transpose();
+				return this.args;
+		}
+	}
 }
 
 module.exports = Matrix;

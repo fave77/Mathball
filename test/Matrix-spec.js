@@ -1,6 +1,7 @@
 const assert = require('assert'),
 	Matrix = require('../src/Matrix'),
 	x = new Matrix([[1,2],[3,4]]),
+	y = new Matrix([[4, 7, 1], [3, 2, -1]]),
 	f = new Matrix([[1,0,0],[0,0,1]]),
 	upper = new Matrix([[1,2,3,4],[0,1,2,3],[0,0,1,2],[0,0,0,1]]),
 	lower = new Matrix([[1,0,0,0],[1,2,0,0],[1,2,3,0],[1,2,3,4]]),
@@ -123,4 +124,51 @@ describe('[Function: Matrix]', () => {
 			const z = new Matrix([[3,4], ['4','5']]);
 		}, TypeError);
 	});
+
+	it('should return [[4,3],[7,2],[1,-1]] when transpose() is called', () => {
+		assert.deepStrictEqual(y.transpose(), [[4, 3], [7, 2], [1, -1]]);
+	});
+
+	it('should return [[1,4,7],[-1,2,3]] when sort is called with \'row\'', () => {
+		assert.deepStrictEqual(y.sort('row'), [[1, 4, 7], [-1, 2, 3]]);
+	});
+
+	it('should return [[-1,2,3 ],[1,4,7]] when sort is called with \'col\'', () => {
+		assert.deepStrictEqual(y.sort('col'), [[ -1, 2, 3 ],[ 1, 4, 7 ]]);
+
+	});
+
+
+	it('should return [[ 1,4,7 ],[ -1,2,3 ]] when sort is called with \'col\' and false', () => {
+		assert.deepStrictEqual(y.sort('col',false), [[ 1, 4, 7 ],[ -1, 2, 3 ]]);
+
+	});
+
+
+	it('should return [[ 7, 4, 1 ],[ 3, 2, -1 ]] when sort is called with \'row\' and false', () => {
+		assert.deepStrictEqual(y.sort('row',false), [[ 7, 4, 1 ],[ 3, 2, -1 ]]);
+
+	});
+
+	it('should return TypeError when sort is called with invalid second argument', () => {
+		assert.throws(() => y.sort('row',123), TypeError);
+
+	});
+
+	it('should throw a TypeError when invalid type is passed for sort()', () => {
+		assert.throws(() => {
+			const z = new Matrix([[3, 4], ['4', '5']]);
+			z.sort(true);
+		}, TypeError);
+	});
+
+	it('should throw an error if invalid type is passed to sort()', () => {
+		assert.throws(() => x.sort('cosds'), TypeError);
+	});
+
+	it('should throw an error if no argument is passed to sort()', () => {
+		assert.throws(() => x.sort(), TypeError);
+	});
 });
+
+
