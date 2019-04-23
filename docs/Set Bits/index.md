@@ -20,7 +20,7 @@ The `M.popcount()` function returns the count of the total number of 1s present 
     ```js
     /*
      * TypeError: Invalid argument received: <argument>
-     * 'sum()' only accept an integer value.
+     * 'popcount()' only accept an integer value.
      */
     M.popcount(1, 2);
     M.popcount('one');
