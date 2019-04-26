@@ -84,6 +84,88 @@ class Graph{
         }
         return output;
     }
+
+
+
+<<<<<<< HEAD
+// // Main DFS method
+// dfs(startNode)
+// {
+//
+// 	if(!Array.from(this.Adjlist.keys()).includes(startNode))
+// 	{
+//             return "Node doesn't exist in the Graph";
+// 	}
+// 	let visited = [];
+// 	let output = [];
+//
+// 	for (let i = 0; i < this.noOfVertices; i++)
+// 		visited.push(false);
+//
+// 	this.dfs_rec(startNode, visited, output);
+//
+// 	return output;
+// }
+//
+// dfs_rec(vert, visited, output)
+// {
+// 	visited[vert] = true;
+// 	output.push(vert);
+//
+// 	var get_neighbours = this.Adjlist.get(vert);
+//
+// 	if(get_neighbours.length > 0)
+// 	{
+//
+// 		for (var i in get_neighbours) {
+// 		var get_elem = get_neighbours[i];
+// 		if (!visited[get_elem])
+// 			this.dfs_rec(get_elem, visited, output);
+// 	 }
+// 	}
+//
+// }
+=======
+// Main DFS method
+dfs(startNode)
+{
+
+	if(!Array.from(this.Adjlist.keys()).includes(startNode))
+	{
+            return "Node doesn't exist in the Graph";
+	}
+	let visited = [];
+	let output = [];
+
+	for (let i = 0; i < this.noOfVertices; i++)
+		visited.push(false);
+
+	this.dfs_rec(startNode, visited, output);
+
+	return output;
+}
+
+dfs_rec(vert, visited, output)
+{
+	visited[vert] = true;
+	output.push(vert);
+
+	var get_neighbours = this.Adjlist.get(vert);
+
+	if(get_neighbours.length > 0)
+	{
+
+		for (var i in get_neighbours) {
+		var get_elem = get_neighbours[i];
+		if (!visited[get_elem])
+			this.dfs_rec(get_elem, visited, output);
+	 }
+	}
+
+}
+>>>>>>> c82a447... added dfs to graph
+
+
 }
 
 module.exports = Graph;
