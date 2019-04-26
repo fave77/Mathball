@@ -118,7 +118,7 @@ dfsRec(vert, visited, output)
 	if(getNeighbours.length > 0)
 	{
 
-		for (let i in getNeighbours)
+		for (let i=0; i<getNeighbours.length; i++)
 		{
 			let getElem = getNeighbours[i];
 				if (!visited[getElem])
