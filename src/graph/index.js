@@ -96,8 +96,9 @@ dfs(startNode)
 	let visited = [];
 	let output = [];
 
-	for (let i = 0; i < this.noOfVertices; i++)
+	for (let i = 0; i < this.noOfVertices; i++){
 		visited.push(false);
+	}
 
 	this.dfsRec(startNode, visited, output);
 
@@ -116,8 +117,10 @@ dfsRec(vert, visited, output)
 
 		for (let i=0; i<getNeighbours.length; i++) {
 		var getElem = getNeighbours[i];
-		if (!visited[getElem])
+		if (!visited[getElem]){
 			this.dfsRec(getElem, visited, output);
+		}
+
 	 }
 	}
 
