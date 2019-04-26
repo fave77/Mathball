@@ -118,19 +118,16 @@ dfsRec(vert, visited, output)
 	if(getNeighbours.length > 0)
 	{
 
-		for (let i in getNeighbours) {
-		let getElem = getNeighbours[i];
-		if (!visited[getElem]) {
-			this.dfsRec(getElem, visited, output);
+		for (let i in getNeighbours)
+		{
+			let getElem = getNeighbours[i];
+				if (!visited[getElem])
+				{
+					this.dfsRec(getElem, visited, output);
+				}
 		}
-		}
-	 }
 	}
-
-
-
-
-
+}
 }
 
 module.exports = Graph;
