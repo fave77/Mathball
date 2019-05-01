@@ -12,7 +12,7 @@ The `M.Stack()` function returns an object upon which various stack-based operat
 
 ### Examples
 ```js
-const s=new M.Stack();
+const s = new M.Stack();
 console.log(s);   // Stack { stack: [] }
 ```
 
@@ -41,22 +41,22 @@ console.log(s);   // Stack { stack: [] }
 
 ###### Examples
 - Valid:
-	```js
-	const s=new M.Stack();
-    s.push(10);
-    s.push(20);
-    s.push(30);
-	```
+```js
+const s = new M.Stack();
+s.push(10);
+s.push(20);
+s.push(30);
+```
 - Invalid:
-	```js
-	/*
-	 * TypeError: Invalid argument received: <argument>
-	 * 'Stack.push()' only accept a number!
-	 */
-    s.push("40");
-    s.push("ten");
-    s.push([10,20]);
-	```
+```js
+/*
+ * TypeError: Invalid argument received: <argument>
+ * 'Stack.push()' only accept a number!
+ */
+	s.push("40");
+	s.push("ten");
+	s.push([10,20]);
+```
 
 ###### Info
 Implemented using JavaScript's built-in `push` function.
@@ -73,17 +73,17 @@ Implemented using JavaScript's built-in `push` function.
 > Number
 
 ###### Examples
-	```js
-	const s=new M.Stack();
-    s.push(10);
-    s.push(20);
-    s.push(30);
-    console.log(s.pop())   // 30
+```js
+const s=new M.Stack();
+s.push(10);
+s.push(20);
+s.push(30);
+console.log(s.pop())   // 30
 
-    const s=new M.Stack();
-    s.push(10);
-    console.log(s.pop())   // 10
-	```
+const s=new M.Stack();
+s.push(10);
+console.log(s.pop())   // 10
+```
 
 ###### Info
 Implemented using JavaScript's built-in `pop` function.
@@ -100,18 +100,18 @@ Implemented using JavaScript's built-in `pop` function.
 > Boolean
 
 ###### Examples
-	```js
-	const s=new M.Stack();
-    s.push(10);
-    s.push(20);
-    s.push(30);
-    console.log(s.isEmpty());   // false
+```js
+const s=new M.Stack();
+s.push(10);
+s.push(20);
+s.push(30);
+console.log(s.isEmpty());   // false
 
-    const s1=new M.Stack();
-    s1.push(10);
-    s1.pop();
-    console.log(s1.isEmpty());   // true
-	```
+const s1=new M.Stack();
+s1.push(10);
+s1.pop();
+console.log(s1.isEmpty());   // true
+```
 
 ###### Info
 Implemented using JavaScript's built-in `size` function.
@@ -128,21 +128,21 @@ Implemented using JavaScript's built-in `size` function.
 > Number
 
 ###### Examples
-	```js
-	const s=new M.Stack();
-    s.push(10);
-    s.push(20);
-    s.push(30);
-    console.log(s.head());   // 30
+```js
+const s=new M.Stack();
+s.push(10);
+s.push(20);
+s.push(30);
+console.log(s.head());   // 30
 
-    const s1=new M.Stack();
-    s1.push(10);
-    s1.pop()
-    console.log(s1.head());   // Empty Stack
+const s1=new M.Stack();
+s1.push(10);
+s1.pop()
+console.log(s1.head());   // Empty Stack
 
-    const s2=new M.Stack();
-    console.log(s2.head());   // Empty Stack
-	```
+const s2=new M.Stack();
+console.log(s2.head());   // Empty Stack
+```
 
 ###### Info
 Implemented using JavaScript's built-in `size` function.
@@ -159,16 +159,16 @@ Implemented using JavaScript's built-in `size` function.
 > Number
 
 ###### Examples
-	```js
-	const s=new M.Stack();
-    s.push(10);
-    s.push(20);
-    s.push(30);
-    console.log(s.size());   // 3
+```js
+const s=new M.Stack();
+s.push(10);
+s.push(20);
+s.push(30);
+console.log(s.size());   // 3
 
-    const s1=new M.Stack();
-    console.log(s1.size());   // 0
-	```
+const s1=new M.Stack();
+console.log(s1.size());   // 0
+```
 
 ###### Info
 Implemented using JavaScript's built-in `size` function.
@@ -185,14 +185,14 @@ Implemented using JavaScript's built-in `size` function.
 > Object
 
 ###### Examples
-	```js
-	const s1=new M.Stack();
-    s1.push(10);
-    s1.push(20);
-    const s=s1.copy();
-    console.log(s);   // Stack { stack: [ 10, 20 ] }
-    console.log(s.size());   // 2
-	```
+```js
+const s1=new M.Stack();
+s1.push(10);
+s1.push(20);
+const s=s1.copy();
+console.log(s);   // Stack { stack: [ 10, 20 ] }
+console.log(s.size());   // 2
+```
 
 ###### Info
 Implemented using JavaScript's built-in `size` and `size` function.
@@ -209,13 +209,13 @@ Implemented using JavaScript's built-in `size` and `size` function.
 > String
 
 ###### Examples
-	```js
-	const s=new M.Stack();
-    s.push(10);
-    s.push(20)
-    s.push(30)
-    console.log(s.display());   // 30 20 10
-	```
+```js
+const s=new M.Stack();
+s.push(10);
+s.push(20)
+s.push(30)
+console.log(s.display());   // 30 20 10
+```
 
 ###### Info
 Implemented using JavaScript's built-in `reverse` and `join` function.
