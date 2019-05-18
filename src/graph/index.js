@@ -107,7 +107,7 @@ class Graph{
         let neighbours = this.Adjlist.get(node);
         for(let i = 0; i < neighbours.length; i++){
             if(visited[Array.from(this.Adjlist.keys()).indexOf(neighbours[i])] === false){
-                this.dfsUtil(neighbours[i], visited, output)
+                this.dfsUtil(neighbours[i], visited, output);
             }
         }
     }
