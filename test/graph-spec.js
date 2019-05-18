@@ -87,7 +87,19 @@ const assert = require('assert'),
         it(`should return 'Node doesn't exist in the Graph' when 'bfs('f')' is called`, () => {
             assert.deepEqual(sample.bfs('f'), 'Node doesn\'t exist in the Graph');
         });
+
+        it(`should return 'Node doesn't exist in the Graph' when 'dfs('f')' is called`, () => {
+            assert.deepEqual(sample.dfs('f'), 'Node doesn\'t exist in the Graph');
+        });
         
+        it(`should return 'object' type when 'dfs('A')' is called`, () => {
+            assert.strictEqual(typeof sample.dfs('A'), 'object');
+        });
+
+        it(`should return '[ 'A', 'B', 'D', 'C', 'E' ]' type when 'dfs('A')' is called`, () => {
+            assert.deepEqual(sample.dfs('A'), ["A", "B", "D", "E", "C"]);
+        });
+
         it(`should return 'D' when 'removeEdge('A', 'D')' is called`, () => {
             assert.strictEqual(sample.removeEdge('A', 'D'), 'D');
         });
