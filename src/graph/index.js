@@ -84,6 +84,33 @@ class Graph{
         }
         return output;
     }
+
+    dfs(startNode){
+
+        if(!Array.from(this.Adjlist.keys()).includes(startNode)){
+            return "Node doesn't exist in the Graph";
+        }
+        let visited = [];
+        let output = new Array();
+
+        for(let i = 0; i < this.noOfVertices; i++){
+            visited.push(false);
+        }
+        this.dfsUtil(startNode, visited, output);
+        return output;
+    }
+
+    dfsUtil(node, visited, output){
+        visited[Array.from(this.Adjlist.keys()).indexOf(node)] = true;
+        output.push(node);
+
+        let neighbours = this.Adjlist.get(node);
+        for(let i = 0; i < neighbours.length; i++){
+            if(visited[Array.from(this.Adjlist.keys()).indexOf(neighbours[i])] === false){
+                this.dfsUtil(neighbours[i], visited, output);
+            }
+        }
+    }
 }
 
 module.exports = Graph;
