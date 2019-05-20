@@ -5,14 +5,17 @@ const validate = require('../validation/float');
 
  function fgcd(a, b) 
 { 
-     if (a < b) 
+     if (a < b) {
         return fgcd(b, a); 
+		 }
   
-     if (Math.abs(b) < 0.001) 
+     if (Math.abs(b) < 0.001) {
         return a; 
+		 }
   
-    else
+    else{
         return (fgcd(b, a - Math.floor(a / b) * b));  
+		}
 } 
  
 module.exports = (a, b) => {
