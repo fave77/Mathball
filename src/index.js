@@ -30,7 +30,8 @@ const abs = require('./absolute'),
 	pow = require('./pow'),
 	sort = require('./sort'),
 	sub = require('./subtract'),
-	sum = require('./sum');
+	sum = require('./sum'),
+	union = require('./union');
 
 /* Data Structures */
 const Matrix = require('./Matrix'),
@@ -69,6 +70,7 @@ module.exports = {
 	avg,
 	inverse,
 	count,
+	union,
 	BinaryTree,
 	PriorityQueue,
 	Stack,
