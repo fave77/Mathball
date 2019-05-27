@@ -1,10 +1,10 @@
 const assert = require('assert'),
-        BinaryTree = require('../src/binary-tree'),
-        tree = new BinaryTree();
+        BinarySearchTree = require('../src/binary-tree'),
+        tree = new BinarySearchTree();
 
-    describe('[function: BinaryTree]', () => {
+    describe('[function: BinarySearchTree]', () => {
         it("should be a function", () => {
-            assert.strictEqual(typeof BinaryTree, 'function');
+            assert.strictEqual(typeof BinarySearchTree, 'function');
         });
 
         it('should return "Empty Tree" when remove() is called', () => {
