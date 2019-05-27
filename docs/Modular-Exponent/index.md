@@ -15,7 +15,7 @@ The `M.pow()` function returns the modular exponent of the arguments.
     ```js
     M.pow (6, 3, 5);    // 1
     M.pow (8, 4, 5);     // 1
-    M.pow (5, 3);   // 25
+    M.pow (5, 3);   // 125
     ```
 - Invalid:
     ```js
