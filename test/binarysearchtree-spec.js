@@ -1,5 +1,5 @@
 const assert = require('assert'),
-        BinarySearchTree = require('../src/binary-tree'),
+        BinarySearchTree = require('../src/binary-search-tree'),
         tree = new BinarySearchTree();
 
     describe('[function: BinarySearchTree]', () => {
