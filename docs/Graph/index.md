@@ -1,5 +1,7 @@
 # Graph
-The `M.Graph()` function returns an object upon which various Graph-based operations can be performed.
+The `M.Graph()` function returns an object upon which various Graph-based operations can be performed. This implementation uses a **adjacency matrix** representation to store the the graph. This is a **unweighted directed graph**. 
+
+The implementation involves adding all the involved edges, with their names being __strings__. Then the edges can be added as per requirement, while remembering that this graph is **directed**.
 
 ### Syntax
 > new M.Graph(noOfVertices)
@@ -34,7 +36,7 @@ console.log(g);   // Graph { noOfVertices: 6, Adjlist: Map {} }
 > g.addVertex(vertex)
 
 ###### Argument
-> Number/String
+> String
 
 ###### Return
 > Object
@@ -57,7 +59,7 @@ const vertices1 = [ 1,2,3,4];
 for (var i = 0; i < vertices1.length; i++) { 
     g2.addVertex(vertices1[i]); 
 } 
-console.log(g2);   //  // Graph { noOfVertices: 4, Adjlist: Map { 1 => [ 2 ], 2 => [ 3 ], 3 => [ 4 ], 4 => [ 1 ] } }
+console.log(g2);   //  // Graph { noOfVertices: 4, Adjlist: Map { 1 => [], 2 => [], 3 => [], 4 => [] } }
 ```
 
 ###### Info
@@ -69,7 +71,7 @@ Implemented using JavaScript's built-in `set` function.
 > g.addEdge(source, destination)
 
 ###### Arguments
-> Number/String
+> String
 
 ###### Return
 > Number
@@ -120,7 +122,7 @@ console.log(g.printGraph());   //  Map { 'A' => [ 'B' ], 'B' => [ 'C' ], 'C' => 
 > g.removeVertex(vertex)
 
 ###### Argument
-> Number/String
+> String
 
 ###### Return
 > Boolean
@@ -154,7 +156,7 @@ Implemented using JavaScript's built-in `delete` function.
 > g.removeEdge(vertexName, edgeName)
 
 ###### Arguments
-> Number/String
+> String
 
 ###### Return
 > String
@@ -190,7 +192,7 @@ Implemented using JavaScript's built-in `get`, `indexOf`, `toString` and `splice
 > g.bfs(startNode)
 
 ###### Arguments
-> Number/String
+> String
 
 ###### Return
 > Object
@@ -220,7 +222,7 @@ Implemented using JavaScript's built-in `from`, `keys`, `includes`, `push`,  and
 > g.dfs(startNode)
 
 ###### Arguments
-> Number/String
+> String
 
 ###### Return
 > Object
