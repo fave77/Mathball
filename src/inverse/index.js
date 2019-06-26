@@ -2,7 +2,7 @@
 * function : modInv()
 */
 
-const validate = require('../validation/integer');
+const validate = require('../validation/positive-integer');
 
 const gcd = require('../gcd');
 
