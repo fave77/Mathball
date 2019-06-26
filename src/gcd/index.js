@@ -4,14 +4,14 @@ const validate = require('../validation/number-array');
 
 function gcd(a, b) {
 	return (a == 0) ? b : gcd(b % a, a);
-};
+}
 
 const getDecimalCount = value => {
 	var decimals = 0;
 	if (value % 1 === 0) {
 		return decimals;
 	}
-	decimals++
+	decimals++;
 	for (var i = 1; i < 11; i++) {
 		if ((value * Math.pow(10, i)) % 1 !== 0) {
 			decimals++;
