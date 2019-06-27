@@ -19,6 +19,18 @@ describe('[Function: gcd]', () => {
 		assert.strictEqual(gcd([24, 28]), 4);
 	});
 
+	it('should return \'1.1\' when \'[1.1, 5.5]\' is passed', () => {
+		assert.strictEqual(gcd([1.1, 5.5]), 1.1);
+	});
+
+	it('should return \'0.0000001\' when \'[923.2398423, 9497853.2249]\' is passed', () => {
+		assert.strictEqual(gcd([923.2398423, 9497853.2249]), 0.0000001);
+	});
+
+	it('should return \'2\' when \'[-8, 6] is passed\'', () => {
+		assert.strictEqual(gcd([-8, 6]), 2);
+	});
+
 	it('should throw an error when a negative number is passed', () => {
 		assert.throws(() => gcd(-20), TypeError);
 	});
