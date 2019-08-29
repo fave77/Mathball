@@ -19,12 +19,12 @@ describe('[Function: gcd]', () => {
 		assert.strictEqual(gcd([24, 28]), 4);
 	});
 
-	it('should throw an error when a negative number is passed', () => {
-		assert.throws(() => gcd(-20), TypeError);
+	it('should return \'0.012\' when \'[0.48, 0.108]\' is passed', () => {
+		assert.strictEqual(gcd([0.48, 0.108]), 0.012);
 	});
 
-	it('should throw an error when a floating point is passed', () => {
-		assert.throws(() => gcd(31.101996), TypeError);
+	it('should throw an error when a negative number is passed', () => {
+		assert.throws(() => gcd(-20), TypeError);
 	});
 
 	it('should throw an error when a string is passed', () => {
