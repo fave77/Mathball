@@ -3,15 +3,17 @@
 const validate = require('../validation/positive-float-integer-array');
 
 function gcd(a, b) {
-	if(a < b)
+	if (a < b) {
 		return gcd(b, a);
-  	return (Math.abs(b) < 0.001) ? a : gcd(b, a - Math.floor(a / b) * b);
+	}
+	return (Math.abs(b) < 0.001) ? a : gcd(b, a - Math.floor(a / b) * b);
 }
 
 function countDecimals(value) {
-	if(value === 0 || Number.isInteger(value))
+	if (value === 0 || Number.isInteger(value)) {
 		return 0;
-	return value.toString().split(".")[1].length || 0
+	}
+	return value.toString().split(".")[1].length || 0;
 }
 
 module.exports = arr => {
