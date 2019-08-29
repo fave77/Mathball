@@ -15,6 +15,7 @@ The `M.gcd()` function returns the gcd of two or more numbers.
 	```js
 	M.gcd([12, 18, 24]);   // 6
 	M.gcd([8, 7]);         // 1
+	M.gcd([0.3, 0.9]);	   // 0.3
 	```
 - Invalid:
 	```js
