@@ -7,10 +7,10 @@ module.exports = (arg, func) => {
 	if(arg && arg.constructor == Array) {
 		arg.forEach(item => {
 			if(!(Number(item) == item && item % 1 > 0)){
-				isNotFloat = 1
+				isNotFloat = 1;
 			}
 			if(typeof item != 'number' || item + 1 == item || isNotFloat || item != item) {
-				if(!Number.isInteger(item)) 
+				if(!Number.isInteger(item)){
 					flag = 1;
 			}
 		});
